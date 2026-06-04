@@ -1,0 +1,224 @@
+project:
+  name: A_MAGE_R3
+  description: "中青杯 A 题问题 1：数学建模论文质量综合评价"
+  random_seed: 2026
+
+paths:
+  project_root: "."
+  input_pdf_dir: "data/appendix1_papers"
+  extracted_text_dir: "data/extracted_text"
+  intermediate_dir: "data/intermediate"
+  output_tables_dir: "output/tables"
+  output_charts_dir: "output/charts"
+  output_logs_dir: "output/logs"
+
+pdf_parser:
+  normal_pdf_engine: "pymupdf"
+  output_page_marker: true
+  report_filename: "pdf_parse_report.xlsx"
+  log_filename: "pdf_parse.log"
+  enable_ocr_for_scanned_pdf: true
+  step2_enable_ocr_fallback: false
+  ocr_engine: "tesseract_or_fallback"
+  scanned_pdf_text_threshold: 100
+  ocr_languages:
+    - "chi_sim"
+    - "eng"
+
+section_splitter:
+  sections_subdir: "sections"
+  report_filename: "section_split_report.xlsx"
+  log_filename: "section_split.log"
+  max_heading_chars: 60
+
+section_keywords:
+  abstract:
+    - "摘要"
+    - "摘 要"
+  keywords:
+    - "关键词"
+    - "关键字"
+  problem_statement:
+    - "问题重述"
+    - "问题的重述"
+    - "问题背景"
+    - "问题提出"
+    - "问题描述"
+  problem_analysis:
+    - "问题分析"
+    - "问题一的分析"
+    - "问题二的分析"
+    - "问题三的分析"
+  assumptions:
+    - "模型假设"
+    - "基本假设"
+    - "假设条件"
+  symbols:
+    - "符号说明"
+    - "主要符号"
+    - "变量说明"
+  model_building:
+    - "模型建立"
+    - "模型构建"
+    - "模型的建立"
+    - "模型建立与求解"
+    - "模型的建立与求解"
+  model_solving:
+    - "模型求解"
+    - "模型的求解"
+    - "求解过程"
+    - "模型建立与求解"
+    - "模型的建立与求解"
+  results:
+    - "结果分析"
+    - "求解结果"
+    - "模型结果"
+    - "结果与分析"
+  sensitivity_analysis:
+    - "灵敏度分析"
+    - "敏感性分析"
+    - "稳健性分析"
+  error_analysis:
+    - "误差分析"
+    - "残差分析"
+  model_evaluation:
+    - "模型评价"
+    - "模型优缺点"
+    - "模型推广"
+    - "模型的评价"
+  references:
+    - "参考文献"
+    - "参考资料"
+  appendix:
+    - "附录"
+
+logic_connectives:
+  - "首先"
+  - "其次"
+  - "然后"
+  - "最后"
+  - "因此"
+  - "所以"
+  - "由此"
+  - "综上"
+  - "可见"
+  - "进一步"
+  - "同时"
+  - "为了"
+  - "基于"
+  - "由于"
+  - "针对"
+  - "进而"
+  - "从而"
+  - "若"
+  - "则"
+  - "故"
+  - "可得"
+  - "证明"
+  - "验证"
+
+grading:
+  labels:
+    - "优秀"
+    - "良好"
+    - "中等"
+    - "及格"
+    - "不及格"
+  score_thresholds:
+    excellent: 85
+    good: 75
+    medium: 65
+    pass: 55
+
+features:
+  normalize_method: "min_max"
+  missing_value_strategy: "median"
+
+feature_extraction:
+  raw_feature_filename: "appendix1_features_raw.xlsx"
+  normalized_feature_filename: "appendix1_features_normalized.xlsx"
+  log_filename: "feature_extraction.log"
+  density_per_chars: 1000
+  expected_problem_default: 3
+  formula_line_patterns:
+    - "[=<>≤≥≈∑∏√±]"
+    - "\\bmax\\b|\\bmin\\b|最大化|最小化"
+    - "目标函数|约束条件|矩阵|向量|权重|变量"
+    - "[A-Za-zα-ωΑ-Ω]\\s*[_=]"
+  model_keywords:
+    - "AHP"
+    - "层次分析"
+    - "熵权"
+    - "TOPSIS"
+    - "灰色关联"
+    - "回归"
+    - "随机森林"
+    - "XGBoost"
+    - "主成分"
+    - "聚类"
+    - "遗传算法"
+    - "粒子群"
+    - "模拟退火"
+    - "多目标"
+    - "线性规划"
+    - "整数规划"
+    - "强化学习"
+    - "结构方程"
+    - "神经网络"
+    - "LSTM"
+    - "Transformer"
+  validation_keywords:
+    - "一致性检验"
+    - "显著性"
+    - "敏感性"
+    - "灵敏度"
+    - "稳健性"
+    - "误差"
+    - "残差"
+    - "拟合"
+    - "RMSE"
+    - "MAE"
+    - "R²"
+    - "R2"
+    - "CR"
+  innovation_keywords:
+    - "创新"
+    - "改进"
+    - "优化"
+    - "融合"
+    - "动态"
+    - "智能"
+    - "多目标"
+    - "深度"
+    - "自适应"
+    - "协同"
+    - "闭环"
+  application_keywords:
+    - "推广"
+    - "应用"
+    - "建议"
+    - "策略"
+    - "政策"
+    - "实施"
+    - "价值"
+    - "实际"
+    - "政府"
+    - "路径"
+    - "落地"
+    - "管理"
+  chart_explanation_keywords:
+    - "可知"
+    - "显示"
+    - "说明"
+    - "表明"
+    - "分析"
+    - "结果"
+    - "趋势"
+    - "对比"
+    - "由图"
+    - "由表"
+
+weights:
+  subjective_method: "ahp"
+  objective_method: "critic"
+  fusion_alpha: 0.6

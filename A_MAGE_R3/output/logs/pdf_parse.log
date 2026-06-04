@@ -1,0 +1,69 @@
+2026-06-05 01:09:55 [INFO] Starting PDF parsing: input_dir=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\appendix1_papers output_dir=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\extracted_text
+2026-06-05 01:09:55 [INFO] 01.pdf parsed successfully: pages=18 chars=11444 blank_pages=0
+2026-06-05 01:09:55 [INFO] 02.pdf parsed successfully: pages=37 chars=27015 blank_pages=0
+2026-06-05 01:09:55 [INFO] 03.pdf parsed successfully: pages=18 chars=9625 blank_pages=0
+2026-06-05 01:09:55 [INFO] 04.pdf parsed successfully: pages=24 chars=12057 blank_pages=0
+2026-06-05 01:09:55 [INFO] 05.pdf parsed successfully: pages=25 chars=13703 blank_pages=0
+2026-06-05 01:09:55 [INFO] 06.pdf parsed successfully: pages=53 chars=33021 blank_pages=0
+2026-06-05 01:09:55 [INFO] 07.pdf parsed successfully: pages=37 chars=27885 blank_pages=0
+2026-06-05 01:09:55 [INFO] 08.pdf parsed successfully: pages=84 chars=39784 blank_pages=0
+2026-06-05 01:09:55 [INFO] 09.pdf parsed successfully: pages=25 chars=17512 blank_pages=0
+2026-06-05 01:09:55 [INFO] 10.pdf parsed successfully: pages=19 chars=9216 blank_pages=0
+2026-06-05 01:09:55 [INFO] 11.pdf parsed successfully: pages=24 chars=13827 blank_pages=0
+2026-06-05 01:09:55 [INFO] 12.pdf parsed successfully: pages=14 chars=6093 blank_pages=0
+2026-06-05 01:09:55 [INFO] 13.pdf parsed successfully: pages=13 chars=8649 blank_pages=0
+2026-06-05 01:09:55 [INFO] 14.pdf parsed successfully: pages=33 chars=25008 blank_pages=0
+2026-06-05 01:09:56 [INFO] 15.pdf parsed successfully: pages=46 chars=34873 blank_pages=0
+2026-06-05 01:09:56 [INFO] 16.pdf parsed successfully: pages=21 chars=11531 blank_pages=0
+2026-06-05 01:09:56 [INFO] 17.pdf parsed successfully: pages=35 chars=26711 blank_pages=0
+2026-06-05 01:09:56 [INFO] 18.pdf parsed successfully: pages=15 chars=9758 blank_pages=0
+2026-06-05 01:09:56 [INFO] 19.pdf parsed successfully: pages=11 chars=6515 blank_pages=0
+2026-06-05 01:09:56 [INFO] 20.pdf parsed successfully: pages=13 chars=8437 blank_pages=0
+2026-06-05 01:09:56 [INFO] 21.pdf parsed successfully: pages=38 chars=16271 blank_pages=0
+2026-06-05 01:09:56 [INFO] 22.pdf parsed successfully: pages=20 chars=11397 blank_pages=0
+2026-06-05 01:09:56 [INFO] 23.pdf parsed successfully: pages=19 chars=10476 blank_pages=0
+2026-06-05 01:09:56 [INFO] 24.pdf parsed successfully: pages=77 chars=42039 blank_pages=0
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 1 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 2 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 3 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 4 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 5 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 6 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 7 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 8 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 9 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 10 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 11 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 12 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 13 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 14 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 15 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 16 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 17 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 18 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 19 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 20 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 21 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 22 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 23 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 24 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 25 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 26 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 27 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 28 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 29 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 30 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 31 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 32 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 33 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 34 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 35 extracted empty text
+2026-06-05 01:09:56 [WARNING] 25.pdf | page 36 extracted empty text
+2026-06-05 01:09:56 [INFO] 25.pdf parsed successfully: pages=36 chars=0 blank_pages=36
+2026-06-05 01:09:57 [INFO] 26.pdf parsed successfully: pages=54 chars=53483 blank_pages=0
+2026-06-05 01:09:57 [INFO] 27.pdf parsed successfully: pages=66 chars=46381 blank_pages=0
+2026-06-05 01:09:57 [INFO] 28.pdf parsed successfully: pages=62 chars=46468 blank_pages=0
+2026-06-05 01:09:57 [INFO] 29.pdf parsed successfully: pages=60 chars=53194 blank_pages=0
+2026-06-05 01:09:57 [INFO] 30.pdf parsed successfully: pages=18 chars=13943 blank_pages=0
+2026-06-05 01:09:57 [INFO] PDF parse report saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\pdf_parse_report.xlsx
+2026-06-05 01:09:57 [INFO] Finished PDF parsing: total=30 failed=0

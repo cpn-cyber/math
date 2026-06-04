@@ -1,0 +1,34 @@
+{
+  "paper_id": "25",
+  "filename": "25.txt",
+  "sections": {
+    "abstract": "",
+    "problem_statement": "",
+    "assumptions": "",
+    "symbols": "",
+    "model_building": "",
+    "model_solving": "",
+    "results": "",
+    "sensitivity_analysis": "",
+    "error_analysis": "",
+    "model_evaluation": "",
+    "references": "",
+    "appendix": "",
+    "keywords": "",
+    "problem_analysis": ""
+  },
+  "missing_sections": [
+    "abstract",
+    "problem_statement",
+    "assumptions",
+    "symbols",
+    "model_building",
+    "model_solving",
+    "results",
+    "sensitivity_analysis",
+    "error_analysis",
+    "model_evaluation",
+    "references",
+    "appendix"
+  ]
+}
