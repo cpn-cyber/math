@@ -1,0 +1,52 @@
+2026-06-05 01:29:19 [INFO] Starting feature extraction: sections_dir=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections text_dir=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\extracted_text
+2026-06-05 01:29:19 [INFO] 01.json features extracted
+2026-06-05 01:29:19 [INFO] 02.json features extracted
+2026-06-05 01:29:19 [INFO] 03.json features extracted
+2026-06-05 01:29:19 [INFO] 04.json features extracted
+2026-06-05 01:29:19 [INFO] 05.json features extracted
+2026-06-05 01:29:20 [INFO] 06.json features extracted
+2026-06-05 01:29:20 [INFO] 07.json features extracted
+2026-06-05 01:29:20 [INFO] 08.json features extracted
+2026-06-05 01:29:20 [INFO] 09.json features extracted
+2026-06-05 01:29:20 [INFO] 10.json features extracted
+2026-06-05 01:29:20 [INFO] 11.json features extracted
+2026-06-05 01:29:20 [INFO] 12.json features extracted
+2026-06-05 01:29:20 [INFO] 13.json features extracted
+2026-06-05 01:29:20 [INFO] 14.json features extracted
+2026-06-05 01:29:20 [INFO] 15.json features extracted
+2026-06-05 01:29:20 [INFO] 16.json features extracted
+2026-06-05 01:29:20 [INFO] 17.json features extracted
+2026-06-05 01:29:20 [INFO] 18.json features extracted
+2026-06-05 01:29:20 [INFO] 19.json features extracted
+2026-06-05 01:29:20 [INFO] 20.json features extracted
+2026-06-05 01:29:20 [INFO] 21.json features extracted
+2026-06-05 01:29:20 [INFO] 22.json features extracted
+2026-06-05 01:29:20 [INFO] 23.json features extracted
+2026-06-05 01:29:20 [INFO] 24.json features extracted
+2026-06-05 01:29:20 [INFO] 25.json features extracted
+2026-06-05 01:29:20 [INFO] 26.json features extracted
+2026-06-05 01:29:21 [INFO] 27.json features extracted
+2026-06-05 01:29:21 [INFO] 28.json features extracted
+2026-06-05 01:29:21 [INFO] 29.json features extracted
+2026-06-05 01:29:21 [INFO] 30.json features extracted
+2026-06-05 01:29:21 [WARNING] 03.txt | missing feature values: I08_结果结论一致性
+2026-06-05 01:29:21 [WARNING] 04.txt | missing feature values: I08_结果结论一致性
+2026-06-05 01:29:21 [WARNING] 05.txt | missing feature values: I08_结果结论一致性
+2026-06-05 01:29:21 [WARNING] 06.txt | missing feature values: I06_模型假设与问题匹配度
+2026-06-05 01:29:21 [WARNING] 07.txt | missing feature values: I08_结果结论一致性
+2026-06-05 01:29:21 [WARNING] 08.txt | missing feature values: I08_结果结论一致性
+2026-06-05 01:29:21 [WARNING] 10.txt | missing feature values: I08_结果结论一致性
+2026-06-05 01:29:21 [WARNING] 11.txt | missing feature values: I06_模型假设与问题匹配度
+2026-06-05 01:29:21 [WARNING] 12.txt | missing feature values: I06_模型假设与问题匹配度
+2026-06-05 01:29:21 [WARNING] 13.txt | missing feature values: I06_模型假设与问题匹配度,I08_结果结论一致性
+2026-06-05 01:29:21 [WARNING] 14.txt | missing feature values: I08_结果结论一致性
+2026-06-05 01:29:21 [WARNING] 17.txt | missing feature values: I08_结果结论一致性
+2026-06-05 01:29:21 [WARNING] 18.txt | missing feature values: I06_模型假设与问题匹配度,I08_结果结论一致性
+2026-06-05 01:29:21 [WARNING] 19.txt | missing feature values: I08_结果结论一致性
+2026-06-05 01:29:21 [WARNING] 20.txt | missing feature values: I08_结果结论一致性
+2026-06-05 01:29:21 [WARNING] 21.txt | missing feature values: I06_模型假设与问题匹配度
+2026-06-05 01:29:21 [WARNING] 25.txt | missing feature values: I01_核心章节完整率,I02_摘要完整性,I03_图表编号规范率,I04_附录代码存在性,I05_问题重述覆盖率,I06_模型假设与问题匹配度,I07_逻辑连接词密度,I08_结果结论一致性,I09_模型数量与任务匹配度,I10_公式密度,I11_变量定义覆盖率,I12_目标函数约束完整性,I13_方法合理性语义评分,I14_结果完整率,I15_图表解释率,I16_灵敏度分析存在性,I17_误差分析存在性,I18_参考文献规范率,I19_语言可读性,I20_创新性表达,I21_推广应用价值
+2026-06-05 01:29:21 [WARNING] 30.txt | missing feature values: I08_结果结论一致性
+2026-06-05 01:29:21 [INFO] Raw feature table saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\appendix1_features_raw.xlsx
+2026-06-05 01:29:21 [INFO] Normalized feature table saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\appendix1_features_normalized.xlsx
+2026-06-05 01:29:21 [INFO] Finished feature extraction: total=30

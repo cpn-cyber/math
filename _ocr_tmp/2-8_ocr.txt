@@ -1,0 +1,1597 @@
+
+
+===== page 1 =====
+ETIEREEII
+[ET
+教育 数字 化 转型 下 高 校 教 捕 数字 胜任 力 增值 评价
+与 影响 因素 建 模 研究
+摘 要
+
+在 教育 数字 化 转型 的 大 背景 下 , 提升 高 校 教师 数字 胜任 力 对 推动 高 等 教育 数字 化 进
+程 、 保 障 人 才 培 养 质量 意义 重大 .本 文 针对 高 校 教 师 数 字 胜 任 力 提 升 中 的 问题 , 构建 数学
+模型 深入 分 析 ， 旨 在 制定 科学 策略 ， 助 力 教育 数字 化 转型 .
+
+针对 问题 一 ， 鉴 于 《教师 数字 素养 》 标 准 难以 满足 高 校 教师 职业 特性 需求 ， 本 文 抽
+取 标 准 中 的 相关 指标 , 并 结合 高 校 教师 职业 特性 扩展 , 形成 初始 候选 指标 库 . 运 用 德尔 菲
+法 开展 两 轮 专家 咨询 ,依据 均值 和 变异 系数 筛选 关键 指标 ， 再 采用 层次 分 析 法 构建 判断
+年 阵 ， 通 过 几何 平均 法 计算 权重 并 进行 一 致 性 检验 ， 最 终 构建 高 校 教 师 数 字 胜 任 力 增值
+评价 指标 体系 ， 为 后 续 研 究 筑 牢 基础 .
+
+针对 问题 二 ， 考 虑 到 高 校 类 型 、 区 域 位 置 等 差异 对 教师 数字 胜任 力 提升 的 影响 ,本
+文 基于 问题 一 构建 的 指标 体系 计算 教师 数字 胜任 力 增值 得 分 (VA) ， 融 合 高 校 分 类 属
+性 、 区 域 位 置 及 资源 投入 等 数据 , 运用 多 层 线性 模型 分 解 教师 层 和 学 校 层 变 量 对 VA 的
+影响 .同时 , 利用 随机 森林 算法 捕捉 变量 间 非 线性 关系 并 计算 特征 重要 性 , 深入 剖析 各 因
+素 对 教师 数字 胜任 力 增值 的 作用 ， 为 分 层 分 类 培育 策略 制定 提供 依据 .
+
+针对 问题 三 ， 教 师 个 体 属性 对 数字 胜任 力 发 展 和 人 才 培 养 质量 存在 不 同 程度 影响 .
+本 文 收 集 教师 个 体 属性 、VA 得 分 及 以 学 生 评 教 量化 的 人 才 培 养 质量 数据 ， 运 用 扩展 多
+层 线性 模型 处 理 三 层 嵌 套 结构 数 据 ， 借 助 XGBoost 捕捉 复杂 非 线 性 关系 ， 利 用 结构 方
+程 模型 验证 传导 路 径 及 中 介 效 应 .经 数据 预 处 理 、 模 型 求解 及 中 介 效 应 判定 , 从 微观 层面
+剖析 各 因素 作用 ， 为 个 性 化 提升 策略 制定 提供 支撑 .
+
+针对 问题 四 ,在 明确 评价 指标 体系 与 各 因素 影响 机 制 后 ， 本文 整合 前 三 个 问题 的 成
+果 , 运用 PDCA 循环 实现 持续 改进 ， 通 过 动态 监测 机 制 、 分 层 分 类 培育 、 技 术 赋 能 及
+多 元 协同 生态 等 模型 求解 ， 制 定 与 《深化 新 时 代 教 育 评价 改革 总 体 方案 》 契 合 的 对 接 策
+略 ， 进 而 提出 提升 高 校 教 师 数 字 胜 任 力 的 实施 方案 与 培育 路 径 .
+
+本 文 构 建 的 模型 综合 考虑 多 方面 因素 ， 具 有 科学 性 、 针 对 性 ， 但 存在 数据 要 求 高 、
+计算 复杂 、 模 型 假设 局 限 性 等 不 足 .未 来 可 通过 优化 数据 管理 、 简 化 计算 方法 、 完 善 模型
+假设 改进 .该 研究 成 果 对 提升 高 校 教师 数字 胜任 力 、 推 动 教育 数字 化 转型 意义 深远 , 能 为
+教育 政策 制定 与 高 校 教 师 发 展 提供 理论 与 实践 指导 .
+关键 词 : 高 校 教师 ， 数 字 胜 任 力 ; 增 值 评 价 ， 多 层 线性 模型 ， 结 构 方程 模型
+
+第 1 页
+
+
+===== page 2 =====
+一 、 问题 重 述
+HS vvS
+= QQ
+区 上
+人 |.
+KK 一
+图 1 教育 数字 化
+1.1 ， 问题 背景
+随 着 人 工 智 能 等 数字 技术 莲 勃 发 展 , 教育 数字 化 转型 成 为 必然 趋势 .欧盟 发 布 《数字
+教育 行动 计划 〈2021-2027 年 ) 》 明 确 两 大 核心 战略 ， 我 国 持续 推进 国家 教育 数字 化 战
+略 行动 ， 从 构建 智能 教育 体系 、 制 定 教师 数字 素养 标准 ， 到 将 “发 展 数字 教育 纳入 科教
+兴国 战略 ,不断 强调 以 数字 化 助力 教育 变革 .在 此 背景 下 ,教学 模式 革新 催生 新 教育 生态 ，
+对 高 校 教师 数字 胜任 力 提 出 更 高 要 求 ， 而 《深化 新 时 代 教 育 评价 改革 总 体 方案 》《 教 师
+数字 素养 》 等 政策 文件 ， 也 为 其 评价 与 提升 指明 方向 .
+1.2 ”要 解决 的 问题
+结合 上 述 政策 背景 与 高 校 教 师 数字 胜任 力 发 展 需求 ， 需 完成 以 下 四 项 任务 :
+任务 一 : 依据 《教师 数字 素养 》 行 业 标准 ， 结 合 高 校 教 师 数字 胜任 力 发 展 特征 ， 细
+化 二 级 指标 《如 将 “数字 技术 应 用 ?分解 为 "在线 教学 平台 熟练 度 ”“ 数 据 分 析 工 具 使 用 频
+率 "等 ) ， 构 建 高 校 教师 数字 胜任 力 增值 评价 指标 体系 .引入 德尔 菲 法 与 层次 分 析 法 ， 通
+过 专家 打分 确定 指标 权重 ， 并 说 明 一 致 性 检验 过 程 以 确保 体系 科学 性 .
+任务 二 : 运用 任务 一 构建 的 评价 指标 体系 ， 综 合 高 校 分 类 属性 〈 如 “ 双 一 流 " 高 校 、
+地 方 院 校 ) 与 区 域 位 置 《 东 部 、 中 部 、 西 部 ) ， 构 建 可 持续 提升 高 校 教师 数字 胜任 力 的
+增值 评价 模型 .结合 附件 4 数据 ， 分 析 各 因素 对 提升 数字 胜任 力 的 促进 作用 .
+任务 三 : 在 任务 二 基础 上 ， 纳 入 教师 个 体 属性 〈 性 别 、 职 称 、 年 龄 、 教 龄 、 专 业 、
+学 历 、 授 课 类 型 等 ) ， 利 用 附件 4 数据 ， 进 一 步 分 析 各 因素 对 提升 教师 数字 胜任 力 与 人
+才 培 养 质量 的 影响 机 制 .
+任务 四 : 结合 数字 技术 赋 能 高 校 发 展 定位 转变 、 育 人 环境 改善 及 技术 嵌入 等 维度 ，
+对 接 《 深 化 新 时 代 教 育 评价 改革 总 体 方案 》， 提 出 提升 高 校 教师 数字 胜任 力 的 实施 方案
+与 培育 路 径 ， 并 分 析 教 育 数字 化 对 数字 胜任 力 增值 评价 的 赋 能 举措 .
+二 、 问题 分 析
+第 2 页
+
+
+===== page 3 =====
+问题 1 是 整个 问题 链条 的 基础 , 它 构建 了 测量 高 校 教师 数字 胜任 力 增 值 评价 的 指标
+体系 ， 为 问题 2 和 问题 3 提供 了 统一 的 测量 标准 和 计算 VA 得 分 的 依据 .问题 2 在 问题 1
+的 基础 上 ， 综 合 高 校 分 类 属性 和 区 域 位 置 ， 构 建 增值 评价 模型 ， 分 析 宏观 环境 因素 对 才
+师 数字 胜任 力 增 值 的 影响 ， 其 结论 为 问题 4 的 分 层 培育 策略 提供 依据 ， 同 时 为 问题 3 的
+教师 个 体 属性 分 析 提供 宏观 背景 .问题 3 在 问题 2 的 基础 上 ,考虑 教师 个 体 属性 , 分 析 微
+观 个 体 因素 对 教师 数字 胜任 力 和 人 才 培 养 质量 的 促进 作用 ,其 结论 为 问题 4 的 个 性 化 培
+育 路 径 提供 微观 依据 .问题 4 则 是 前 三 个 问题 的 实践 转化 ,将 理论 成 果 转化 为 提升 高 校
+师 数 字 胜 任 的 实施 方案 和 培 育 路 径 ， 形 成 一 个 完整 的 评价- 分析- 干预" 闭环
+2.1 。 任务 一 的 分 析
+
+本 问题 需 以 《教师 数字 素养 》 行业 标准 为 基础 ， 结 合 高 校 教师 教学 、 科 研 、 育 人 三
+位 一 体 的 职业 特性 , 构建 适用 于 高 校 教师 的 数字 胜任 力 增值 评价 指标 体系 .首先 从 标准 中
+提取 5 个 一 级 维度 、13 个 二 级 维度 及 33 个 三 级 维度 作为 初始 指标 库 ， 结 合 高 校 科研 数
+字 化 、 跨 学 科 资 源 整 全 等 需求 扩展 "科研 数据 可 视 化 能 力 "路 学 科 数 字 资 源 整 合 能 力 "等
+候选 指标 ， 形 成 40-50 个 三 级 指标 的 初始 集合 .通过 德尔 非法 邀请 10-15 名 歼 盖 不 同 区 域
+与 高 校 类 型 的 教育 技术 及 管理 专家 ， 经 2-3 轮 问卷 利 选 出 20-25 个 关键 三 级 指标 .采用 层
+次 分 析 法 AHP) 构建 各 层级 判断 垂 阵 ， 通 过 专家 对 指标 两 两 比较 的 1-9 标 度 打分 计算
+特征 向 量 确定 权重 ， 并 进行 一 致 性 检验 (CR<0.1) 以 确保 科学 性 ， 重 点 需 平衡 高 校 教师
+与 中 小 学 教师 的 能 力 差异 ， 突 出 科研 数字 化 等 特性 .
+2.2 。 任务 二 的 分 析
+
+在 问题 一 构建 的 指标 体系 基础 上 ， 计 算 教师 数字 胜任 力 增值 得 分 (VA= 后 测 得 分 -
+前 测 得 分 》 ， 分 析 高 校 类 型 《 双 一 流 /地 方 院 校 )》 与 区 域 位 置 《 东 部 /中 部 /西部 ) 对 VA
+的 影响 .采用 多 层 线性 模型 (HLM) 建 模 ， 其 中 教师 层 纳 入 教龄 、 职 称 等 个 体 局 性 作为
+控制 变量 ， 学 校 层 引 入 高 校 类 型 区域、 资源 投入 等 宏观 变量 ， 通 过 虚拟 变量 转换 实现
+分 类 变量 量化 .同时 运用 随机 森林 模型 补充 分 析 非 线性 关系 及 变量 重要 性 排序 , 预期 拉 示
+双 一 流 高 校 因 资源 优势 在 VA 上 的 领先 性 、 东 部 地 区 教师 在 数字 技术 技能 维度 的 增值 关
+异 ， 以 及 西部 院 校对 政策 支持 的 需求 .数据 处 理 需 标准 化 VA 得 分 以 确保 路 区 域 可 比 性 ，
+并 验证 附件 4 中 学 校 层 与 教师 层 变量 的 完整 性 .
+2.3 。 任务 三 的 分 析
+
+本 问题 在 问题 二 的 宏观 分 析 基础 上 ， 聚 焦 教 师 个 体 届 性 《性 别 、 职 称 、 年 龄 、 专 业 、
+学 历 等 ) 对 VA 及 人 才 培养 质量 的 影响 机 制 .通过 多 元 线性 回归 分 析 个 体 属性 与 VA 的 直
+接 关联 ， 如 教授 职称 在 "数字 化 教学 研究 与 创新 "维度 的 得 分 差异 、 理 科教 师 在 "数据 分
+析 工 具 使 用 "维度 的 增值 优势 利用 结构 方程 模型 《SEM) 验证 "个体 届 性 一 VA- 学 生 评
+教 分 数 "的 中 介 效应 ， 量 化 技术 接受 度 、 经 验 积累 等 因素 的 传导 路 径 . 需 注意 年 龄 与 教具
+的 共 线 性 问题 ， 对 学 生 评 教 分数 进行 标准 化 处 理 以 降低 主观 偏差， 揭示 高 职称 教师 通过
+
+第 3 页
+
+
+===== page 4 =====
+数字 化 教学 设计 提升 学 生 科 研 参与 度 、 年 轻 教 师 借助 新 技术 接受 度 改 善 教学 效果 的 具体
+路 径 .
+2.4 。， 任务 四 的 分 析
+基于 前 三 个 问题 的 结论 ， 本 问题 需 将 理论 成 果 转 化 为 对 接 《 深 化 新 时 代 教 育 评价 改
+革 总 体 方案 》 的 实践 方案 .首先 依托 问题 一 的 指标 体系 建立 教师 数字 胜任 力 电子 档案 , 通
+过 学 习 分 析 平台 实时 采集 在 线 教学 时 长 、 资 源 使 用 频率 等 过 程 数据 ， 生 成 VA 趋势 图 以
+支持 增值 评价 与 过 程 评价 .针对 高 校 类 型 与 区 域 差异 ， 实 施 分 层 培育 ， 双 一 流 高 校 聚 焦
+AT 教学 创新 工作 坊 ， 地 方 院 校 提 供 低 成 本 数字 工具 包 与 区 域 共享 资源 库 ， 针 对 教师 个
+体 ， 为 新 教师 设计 技术 适应 力 培训 、 为 文科 教师 增设 数字 资源 制作 工作 坊 、 鼓 励 教授 群
+体 开展 数字 化 教学 研究 .构建 "政府 -企业 -高 校 "三 元 协同 生态 ， 政 府 设立 专项 基金 ， 企 业
+提供 技术 接口 《如 腾讯 课堂 API) ， 高 校 将 VA 纳入 职称 评审 《前 20% 优 先 晋 升 ) ， 通
+过 智能 备课 系统 、 学 习 分 析 仪表 盘 等 技术 工具 降低 使 用 门槛 ， 确 保 方案 的 政策 契合 度 与
+实 操 可 行 性 -
+三 、 问题 假设
+为 了 能 解决 此 建 模 问题 ， 我 们 做 出 了 以 下 假设 :
+1 假设 经 2-3 轮 德尔 菲 法 ， 专 家 意见 趋 稳 ， 且 群体 覆盖 多 领域 、 区 域 及 高 校 类 型 ， 意
+见 具 代表 性 与 客观 性 -
+2 假设 高 校 类 型 、 区 域 位 置 对 教师 数字 胜任 力 增值 得 分 的 影响 独立 且 可 通过 量化 变量
+表征 .
+3 指标 层级 结构 契合 高 校 教师 教学 -科研 - 育 人 "特性 ， 三 级 指标 可 有 效 反映 数 字 胜 任
+力 动态 增值 .
+4 假设 指标 相对 重要 性 可 通过 1-9 标 度 两 两 比较 量化 为 判断 算 阵 ， 且 矩阵 满足 传递 性
+与 一 致 性 假设 .
+5 假设 教师 层 变量 教龄、 职称 ) 与 学 校 层 变量 高校 类 型 、 区 域 、 资 源 投入 ) 无 显
+著 共 线性 (VIF<5) -
+四 、 符号 说 明
+
+为 了 能 解决 此 评价 类 问题 ， 我 们 使 用 了 以 下 符号 :
+
+符号 说 明
+
+C={CCG.…CJ 一 级 维度 集合 ， 对 应 《教师 数字 素养 》 标 准 中 的 5 个 一 级 维度
+
+Ta 三 级 指标 5x 的 总 权重
+
+CR 一 致 性 比率
+
+7m 多 层 线性 模型 (HLM)》 中 学 校 层 变量 对 教师 层 截 距 的 回归 系数
+
+记 多 层 线性 模型 中 教师 层 控制 变量 〈 如 教龄 、 职 称 ) 对 VA 的 回归 系数
+
+第 4 页
+
+
+===== page 5 =====
+Importance() 随机 森林 XGBoost 模型 中 变量 及 的 特征 重要 性
+Q 以 学 生 评 教 分 数量 化 的 人 才 培养 质量 指标 ， 取 值 范围 为 [0.1]
+VIF 用 于 检验 自 变 量 问 共 线性 的 指标
+五 、 模型 建立 与 求解
+5.1 问题 一 建 模 与 求解
+ai
+图 2 问题 一 流程 图
+
+本 问 旨 在 构建 高 校 教师 数字 胜任 力 增 值 评价 指标 体系 , 为 此 采用 德尔 菲 法 与 层次 分
+析 法 (AHP) .其 中 ,德尔 菲 法 用 于 筛选 关键 指标 ， 层 次 分 析 法 用 于 确定 指标 权重 并 开展
+一 致 性 检验 .
+5.1.1 数据 预 处 理
+
+构建 指标 体系 依赖 两 类 数据 .其 一 ，《 教 师 数 字 素养 TY/T0646 一 2022》 标 准 文本 所
+提供 的 5 个 一 级 维度 、13 个 二 级 维度 和 33 个 三 级 维度 的 指标 框架 ， 以 此 生成 候选 指标
+清单 ， 其 二 ， 专 家 对 指标 两 两 比较 的 打分 数据 ， 借 助 层次 分 析 法 计算 指标 权重 ， 保 障 指
+标 体系 兼 具 科学 性 与 合理 性 .
+5.1.2 模型 构建
+1. 指 标 筛 选 ， 德尔 菲 法 流程
+
+《教师 数字 素养 》 标 准 提供 了 33 个 三 级 指标 ， 结 合 高 校 教师 职业 特性 《如 "科研 数
+据 可 视 化 能 力 " 跨 学 科 数 字 资 源 整合 能 力 "), 扩展 构建 初始 候选 指标 库 4ayv ,包含 40-50
+
+第 5 页
+
+
+===== page 6 =====
+个 三 级 指标 ， 全 面 涵盖 高 校 教师 数字 胜任 力 各 方面 .
+接着 邀请 大 名 专家 对 4 中 指标 从 "重要 性 "1-5 分 ) 和 "高 校 教 师 特 性 相关 性 "(1-5
+1 蕊 一 2
+本 - - 1 二 本 下
+分 7 评分 .对 指标 7 均值 公式 为 忆 = 大 疡 3 一 到 性 衡 量 公式 为 C 四 = ，
+| 了
+变异 系数 越 小 ， 专 家 意见 越 一 致 -最 后 保留 条 件 为 忌 >4 且 CZ <0.2， 形 成 初步 利 选 指标
+库 4a。 (30-35 个 指标 ) .
+然后 进行 第 二 轮 德尔 菲 咨询 ， 针 对 争议 指标 (元 <4 或 C 有 > 0.2 ) 进行 闸 释 .重新 计算 与
+最 终 币 选 ， 最 终 保留 条 件 为 >42 且 CP <0.15 ， 形 成 关键 指标 库 Lo (20-25 个 三 级
+指标 ， 对 应 12-15 个 二 级 指标 )
+2 .权重 计算 ， 层 次 分 析 法 (AHP)
+首先 构造 判断 甜 阵 ， 以 一 级 维度 判断 矩阵 Me 为 例 ， 为 5x5 甜 阵 ;
+7 ID 7015
+|
+7151 71152 四 71055
+其 中 mu 人 L3.5.7.9} (六 比 4 重要 程度 递增 ) ，ma =1/mo
+了 UVm
+然后 计算 特征 向 量 〈 权 重 )， 步 奏 如 F 首 计算 每 行 几何 玖 到 =| Tom] ，
+4
+然后 归 一 化 得 权重 :
+几 =- 可 “最 后 进行 一致 性 检验 , 其 中 最 大 特征 根 为 和 s = 工 六 CC22 ，(M 机) 为
+了 五 72 PP1 Mrp
+2 “
+短 阵 M 与 向 量 下 乘积 的 第 了 个 元 素 . 按 着 计算 一 致 性 指标 CT= es 2， 最 终 计算 一致
+， CT7
+性 比率 CR= 呈 ，
+若 CR<0.1， 判 断 矩 阵 一 致 性 可 接受 ， 否 则 需 调整.
+3 .增值 评价 指标 体系 组 合 公式
+三 级 指标 4x* 总 权重 为 ws。 二 WiC xf XT 妈
+其 中 re 为 一 级 指标 权重 ，wa 为 二 级 指标 权重 ，wsa 为 三 级 指标 局 部 权重 《通过 AHP
+第 6 页
+
+
+===== page 7 =====
+计算 ) .
+了 玖
+增值 得 分 计算 : 到 = 并 六 和 (Sa -Sa jxws ,其中 Say 和 Sci 4 为 指标 前 后 测
+村 启 知
+得 分 (0-100 分 ) .
+5.1.3 模型 求解
+在 层次 分 析 法 (AHP ) 中 ,一致 性 检验 是 确保 权重 计算 有 效 性 的 关键 步骤 .以 下 通过
+构建 一 级 维度 判断 息 阵 Mec 为 例 ， 详 细 说 明 一 致 性 检验 的 计算 过 程 .
+假设 针对 高 校 教 师 数 字 胜 任 力 的 $ 个 一 级 维度 〈 如 数字 教学 能 力 、 科 研 创新 能 力 、
+育 人 实践 能 力 、 资 源 整合 能 力 、 专 业 发 展 能 力 ) ， 专 家 给 出 的 判断 和 矩阵 Mec 如 下 :
+专家 意见 合成 矩阵 〈 几 何平 均 法 )
+“~ 加
+中 sm 二 运 十 本
+和
+5
+CrrmarzrmCerc 必
+图 3 专家 意见 合成 拒 阵
+首先 计算 每 行 元 素 的 几何 平均 数 现 :
+两 =(1.000x2.289x2.621x0.437x0.275)!5 ~ 0.90 ，
+击 =(0.437x1.000x1.260x0.275x0.215)!5 < 0.40 ，
+丙 =(0.382x0.794x1.000x0.255x0.203)05 < 0.30 ，
+现 =(2.289x3.634x3.915x1.000x0.500)!5 = 1.74 ，
+丽 =(3.634x4.642x4.932x2.000x1.000)15 < 2.89 ，
+第 7 页
+
+
+===== page 8 =====
+然后 进行 归 一 化 处 理 得 到 权重 向 量 W 的 各 分 量 :
+一 级 指标 权重 分 布
+本
+闻
+加
+闻 可
+息
+oa
+本
+国 国 国
+机
+轴 要 字 做 意识 数字 技术 知识 与 技能 数字 化 应 用 数字 社会 责任 专业 发 展
+一 级 指标
+图 4 一 级 权重 分 布 图
+即 权重 向 量 刺 = (0.1462,0.0787.0.0680,0.2728,0.4342)7 .
+接 下 来 计算 最 大 特征 根 ?ee。. 先 计算 矩阵 Mec 与 权重 向 量 W 的 乘积 Me : 球 的 各 分 量 :
+(Me . 矿 )) =1x0.49+2x0.29+3x0.15+Sx0.07+7x0.05< 2.22，
+CMVMc . 矿 ) -了 049+1x029+2x0.15+3x007+Sx0.05w 1.30，
+(Me . 矿 ); = 3 x0.49 十 2 x0.29+1x0.15+2x0.07+3x0.05= 0.78，
+CMV - 矿 ), = 了 x049+3x029 十 了 045 +1x0.07+2x0.05< 0.48 ，
+CU . 矿 )) = 了 >x049 + 了 x029+ 了 x0.15+ x0.07+1x0.05< 0.26 ，
+民
+、 adc : 丽
+再 计算 Ce 的 值 :
+1
+忆
+QU 弄 ) 222 、453，
+让 0.49
+Ce-m 130 448，
+1 0.29
+Ce 下方 、0.78 、520，
+1 0.15
+第 8 页
+
+
+===== page 9 =====
+Ce 下 hh 048 686，
+1 0.07
+Ce 下) 、026 、520，
+1 0.05 一
+最 后 计算 最 大 特征 根 和。 :
+= 已 (5.43+4.48+5.20+ 6.86+5.20) ~ 5.0651，
+计算 一 致 性 指标 CI:
+CT _ ou -7 _ 5.0651-5_0.0651 三 0.016275 ,
+7-1 5-1 4
+查 随机 一 致 性 指标 表 ， 当 n=s 时 ，RT=1.12 .计算 一 致 性 比率 CR:
+CR= 红 -0016275 、0.0145，
+RT 1.12
+由 于 CR=0.0145<0.1， 因 此 判断 窍 阵 Mc 有 具有 可 接受 的 一 致 性 ， 权 重 向 量 W 有 效 .
+通过 一 致 性 检验 后 ， 可 确认 一 级 维度 权重 分 配合 理 ， 即 数字 教学 能 力 0.47、 科 研 创 新 能
+0.28、 育 人 实践 能 力 0.16、 资 源 整合 能 力 0.09、 专 业 发 展 能 力 0.05. 后 续 可 基于 此 权重 体
+系 ， 进一步 计算 二 级 和 三 级 指标 的 权重 ， 最 终 构建 完整 的 高 校 教师 数字 胜任 力 评价 指标
+体系 .
+通过 德尔 菲 法 筛选 关键 指标 ， 结 合 层 次 分 析 法 确定 权重 并 通过 一 致 性 检验 ， 最 终 构
+建 了 包含 20 个 三 级 指标 、10 个 二 级 指标 、5 个 一 级 维度 的 高 校 教师 数字 胜任 力 增值 评
+价 指标 体系 ， 权 重 分 布 合理 ， 可 有 效 衡量 教师 数字 胜任 力 的 动态 提升
+5.2 问题 二 建 模 与 求解
+[一 wm
+多 属 乒 性 模型 【HLM) 学 校 层 模型 和
+多 导线 性 模型 (HLM) 组 合 模型 { 0 Wi
+em [en
+oorvamean 十 nacarans
+图 $ 问题 二 流程 图
+本 问 研究 旨 在 构建 可 持续 助力 提升 高 校 教 师 数 字 胜 任 力 的 增值 评价 模型 ， 基 于 此 ，
+选用 多 层 线性 模型 (HLM) 与 随机 森林 算法 .多 层 线 性 模型 用 于 剖析 有 具有 嵌 套 结构 的 数
+第 9 页
+
+
+===== page 10 =====
+据 ， 能 有 效 分 解 教师 层 和 学 校 层 变量 对 教师 数字 胜任 力 增值 得 分 (VA) 的 影响 ， 随 机
+森林 算法 则 用 于 捕捉 变量 问 可 能 存在 的 非 线性 关系 , 并 计算 各 变量 对 VA 的 特征 重要 性 ，
+以 补充 多 层 线性 模型 的 线性 假设 局 限 .
+5.2.1 数据 预 处 理
+
+问题 二 所 需 数据 涵盖 基于 问题 1 构建 的 指标 体系 计算 得 出 的 教师 数字 胜任 力 增值 得
+分 (VA) ， 以 及 附件 4 中 高 校 分 类 属性 〈 如 双 一 流 /地 方 院 校 ) 、 区 域 位 置 〈 东 部 /中 部
+/西部 ) 、 资 源 投入 ， 还 有 教师 个 体 属 性 中 的 教龄 、 职 称 等 数据 .其 中 ，VA 得 分 作为 因 变
+量 ， 反 映 教师 数字 胜任 力 的 提升 情况 ， 高 校 分 类 、 区 域 位 置 、 资 源 投入 等 作为 自 变量 ，
+用 于 探究 不 同 高 校 和 区 域 因素 对 教师 数字 胜任 力 增值 的 影响 .通过 对 这 些 数 据 的 分 析 , 可
+明确 各 因素 对 教师 数字 胜任 力 的 促进 作用 .
+5.2.2 模型 建立
+
+多 层 线性 模型 (HierarchicalLinearModeLHLM) 用 于 解析 教师 数字 胜任 力 增值 C(VA)
+在 个 体 层 与 学 校 层 的 嵌 套 结构 关系 ， 揭 示 不 同 层级 变量 的 影响 机 制 .
+〈1) 教师 层 模型 〈 第 一 层 )
+
+教师 层 模型 可 表示 为 :
+
+4 = 十 记 T +
+
+因 变 量 : FA4; 表示 第 ;位 教师 在 第 7 了 所 学 校 的 数字 胜任 力 增值 得 分 , 反映 教师 能 力 的
+动态 变化 .
+
+固定 效应 :
+
+ 。) 为 学 校 层 截 距 ， 表 征 第 7 所 学 校 教师 增值 的 平均 水 平 〈 控 制 教龄 、 职 称 等 变
+量 ) .
+
+忆 和 有 尿 分 别 为 教龄 (3 ) 和 职称 〈2y ) 的 回归 系数 ， 量 化 教师 个 体 特征 对 增值 的
+影响 强度 .
+
+随机 误差 项 : 六 ~ (0,c) 表示 教师 个 体 层面 的 随机 扰动 ， 体 现 未 观测 到 的 个 体 差
+异 〈 如 学 习 机 会 、 职 业 发 展 路 径 等 ) .
+《2) 学 校 层 模型 《第 二 层 )
+
+学 校 层 模型 构建 为 :
+
+Li 三 7o +7joiZv 十 oa2Z2y 十 No3Z3y 十 josZ4j 十 Moj ，
+
+总 截 距 : yo 为 所 有 学 校 的 平均 增值 水 平 ， 即 模型 的 全 局 基准 值 .
+
+固定 效应 :
+
+马 (高 校 关 型 ， 双 一 流 =1， 地 方 高 校 =0) 、Z:，( 区 域 经 济 水 平 ) 、Z;，( 区 域 教育
+
+第 10 页
+
+
+===== page 11 =====
+政策 指数 ) 、Z，( 学 校 数字 资源 投入 ) 的 回归 系数 加 -au ， 分 别 刻画 学 校 属性 对 教师
+增值 平台 的 影响 方向 与 程度 .
+
+随机 蕉 距 项 :wo ~ N(0.r?) 反映 学 校 层面 的 随机 变异 〈 如 内 部 管理 政策 、 突 发 教育
+
+项 目 等 ) .
+(3) 联 立 教师 层 与 学 校 层 模型 ， 得 到 完整 的 多 层 线性 模型
+7 =7m+7ol2 Ja2Z2j +703231 十 ja424j 十 局 十 局 Yay Mo 二 三 ，
+
+该 模型 通过 分 层 参 数 y 《学校 层 ) 与 1 (教师 层 ) ， 实 现 对 “环境 -个 体 "交互 作用 的
+量化 分 析 .例如 ， 双 一 流 高 校 的 资源 投入 〈 Z。 ) 可 能 通过 提升 间接 促进 教师 增值 ，
+而 教龄 〈 部， ) 的 影响 则 独立 于 学 校 环境 .
+
+(4) 随机 森林 (RandomForestRF ) 通过 集成 学 习 算 法 构建 非 线性 预测 模型 ， 并 评估 变
+量 重要 性
+预测 模型 表达 式 为 ;
+疡 = 工 六 TCD)，
+了 所
+
+其 中 ， 疯 为 增值 得 分 预测 值 ， 为 决策 树 数量 (通常 取 甩 = 500-1000 ) .五 GK.Z) 表
+示 第 5 棵 决策 树 , 基于 教师 层 特征 = Lu ,ay} 和 学 校 层 特征 己 = {Zj, Zaj,Za,Zu} 生成
+预测 结果 .
+
+通过 自助 抽样 Bootstap) 和 随机 特征 选择 构建 树 群 ， 利 用 投票 机 制 〈 回 归 问题 取
+均值 ) 降低 过 拟 合 风险 ， 提 升 模型 泛 化 能 力 -
+
+《5) 采用 均 方 误差 增益 法 计算 变量 重要 性 :
+加
+JImportance( 有 ) = CE 一 MSEisumsn) “
+
+其 中 ，MSEs sm 为 原始 数据 在 第 棵 树 的 预测 均 方 误差 ， MSEs smesom 为 随机 打
+乱 变 量 广 后 的 数据 预测 均 方 误差.
+
+若 变量 斑 的 重要 性 得 分 显著 为 正 ， 表 明 其 对 模型 预测 具有 关键 作用 ， 得 分 越 高 则 解
+释 力 越 强 .
+
+《6) 多 层 线性 模型 估计
+
+采用 限制 极 大 似 然 法 (REML ) 估计 模型 参数 ， 通 过 组 内 相关 系数 ICC) 验证 分
+层 结构 合理 性 ;
+
+第 11 页
+
+
+===== page 12 =====
+己
+ICC= 天 +，
+
+若 ICC 值 显著 大 于 0 (如 忆 <0.05 ) ， 表 明教 师 增值 存在 显著 的 学 校 间 差 异 ， 支 持
+多 层 模型 的 适用 性 .
+5.2.3 模型 求解
+1 数据 预 处 理
+
+在 获取 教师 数字 胜任 力 增 值得 分 〈 54, ) 、 高 校 分 类 属性 、 区 域 位 置 、 资 源 投入 等
+数据 后 ， 首 先 对 7 进行 标准 化 处 理 .计算 所 有 教师 7 的 均值 ws 与 标准 差 ms ， 通 过 公
+区 2 = 全 将 原 反 得 分 转化 为 标准 分 数 ， 消除 量 纲 差异 .同时 , 将 区 域 位 置 变量 进
+
+2
+
+行 虑 拟 化 处 理 ,以 西部 为 参照 组 , 构建 两 个 虚拟 变量 分 别 表示 东部 与 中 部 地 区 .针对 数据
+中 的 缺失 值 ， 采 用 多 重 填补 法 ， 对 于 教龄 数据 ， 根 据 学 校 类 型 与 职称 分 层 计算 均值 进行
+填充 ， 资 源 投入 数据 则 结合 区 域 经 济 水 平 与 高 校 层级 进行 预测 填充 ， 确 保 数据 完整 性 .
+2. 多 层 线性 模型 (HLM) 参数 估计
+
+使 用 Python 语言 对 多 层 线性 模型 进行 估计 .首先 构建 教师 层 模型
+1 = BA +D， 将 教龄 区 与 职称 部， 纳入 模型 .在 学 校 层 ， 通 过
+而 = 加 +72 二 和 2 十 72 + 加 2 +za) 分 析 高 校 类 型 Z) 、 区 域 Za 、Zs) 和 资源 投
+入 Z， 的 影响 .
+
+在 参数 估计 过 程 中 , 采用 限制 极 大 似 然 法 (REML) 迭代 求解 .以 资源 投入 系数 j 为
+例 ， 初 始 假设 7u =0 ， 通 过 最 小 化 模型 残 差 平方 和 六 六 zx4 - 疯 / ， 逐 步调 整 参数 值
+
+坷 后
+经 200 次 迭代 后 ， 得 到 ju = 0.001 〈 书 < 0.001 ) ， 表 明 资源 投入 每 增加 1 万 元 ， 标 准 化
+后 的 SVAS 得 分 提升 0001. 完 整 参数 估计 结果 显示 : 总 截 距 jm =0.5， 双 一 流 高 校 系数
+和 =03 〈P<0.001) ， 东 部 区 域 系数 yo =0.2 (PP<0.01) ， 中 部 区 域 系数 =0.1
+(P<0.05) ， 教 龄 系数 忆 = 0.02 ( 记 <0.001) ， 职 称 系数 房 =0.1 (PP<0.001) .
+3. 多 层 线性 模型 (HLM) 假设 检验
+第 12 页
+
+
+===== page 13 =====
+各 高 校 教师 平均 数字 胜任 力 增值
+ax ] 必
+相 个
+出
+图 6 数字 胜任 力 增 信 图
+在 变量 独立 性 检验 中 ， 计 算 方 差 膨 胀 因 子 〈VIE ) .以 教龄 与 高 校 类 型 的 共 线 性 检验
+为 例 ， 先 将 教龄 对 高 校 类 型 及 其 他 控制 变量 进行 回归 ， 得 到 判定 系数 R ， 再 通过
+1F= 王 计算 结果 显示 所 有 变量 ITZF <3 ， 满 足 无 共 线性 假设 .对 于 方差 齐 性 检验 ，
+绘制 标准 化 残 差 与 预测 值 的 散 点 图 ， 发 现 残 差分 布 未 呈现 明显 的 漏斗 形 或 扇形 ， 结 合
+Levene 检验 〈 疡 = 0.12> 0.05 ) ， 接 受 方 差 齐 性 假设 .
+4. 随 机 森林 模型 构建 与 训练
+使 用 Python 的 `scikitlearn 库 构 建 随 机 森林 模型 , 设 定 决策 树 数量 召 = 500. 在 训练 过
+程 中 ,每 棵 决策 树 通过 自助 抽样 (Bootstrap) 从 原始 数据 中 随机 抽取 80% 样 本 ， 并 随机
+选取 3 个 特征 进行 节点 分 裂 .
+迪 aa esaaaa 四
+一 vanrvnoun 国 国 四
+-ee 国 国
+|
+一“EEEE
+~~eevEEEEEEE
+-~
+-ES
+~~~EEEea
+~~-nrEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+图 7 特征 什 重 要 性 图
+以 资源 投入 变量 的 重要 性 计算 为 例 ， 首 先 记录 原始 模型 在 测试 集 上 的 均 方 误差
+第 13 页
+
+
+===== page 14 =====
+MSFEueana =0.15; 随后 随机 打 乱 资源 投入 变量 的 取 值 顺序 ， 重 新 计算 模型 均 方 误差
+加
+MSFnys = 0.23 .通过 公式 Importance(P)= XU -MSEisuamsat) ,得 到 资源 投
+1
+入 的 特征 重要 性 为 (0.23-0.15)=0.08, 经 500 棵 树 平均 后 最 终 重 要 性 为 0.42. 类 似 地 , 计
+算出 高 校 类 型 重要 性 为 0.31， 教 龄 为 0.18， 职 称 为 0.16， 区 域 为 0.12.
+5. 结 果 分 析
+区 域 对 综合 评分 的 影响
+: =
+习 愉 地 失
+区 域
+图 8 区域 对 综合 评分 影响 图
+
+从 多 层 线性 模型 结果 可 知 ， 双 一 流 高 校 使 教师 数字 胜任 力 增值 平均 提升 0.3 个 标准
+差 ， 东 部 和 中 部 区 域 分 别提 升 0.2 和 0.1 个 标准 差 ， 资 源 投入 与 教龄 、 职 称 的 正 向 作用
+也 得 到 验证 .随机 森林 模型 进一步 揭示 资源 投入 的 非 线性 关键 作用 : 当 资 源 投入 超过 200
+万 元 时 ,通过 交叉 验证 发 现 模型 预测 误差 显著 下 降 , 印证 其 “ 闵 值 效应 ”高 校 类 型 的 重要
+性 源 于 资源 聚集 效应 , 而 区 域 差异 更 多 通过 资源 投入 间接 影响 增值 .教龄 与 职称 的 相对 弱
+影响 表明 ， 个 体 发 展 需 依托 学 校 资 源 支持 才能 充分 发 挥 作 用 .
+
+综 上 ,资源 投入 与 高 校 类 型 是 提升 教师 数字 胜任 力 的 核心 因素 ， 区 域 发 展 不 平衡 可
+通过 资源 倾斜 改善 , 教师 个 体 发 展 需 结合 学 校 资 源 配套 策略 .建议 优先 保障 地 方 院 校 资源
+投入 ,推动 双 一 流 高 校 资 源 共享 ,实施 区 域 差异 化 扶持 政策 ， 并 建立 教师 分 层 培养 机 制 .
+5.3 问题 三 的 模型 建立 与 求解
+
+第 14 页
+
+
+===== page 15 =====
+相 E: 三 0
+一 Meana 全 本
+加 FE==: 二
+图 9 问题 三 流程 图
+
+根据 问题 要 求 ， 本 问 选用 扩展 多 层 线性 模型 (三 层 HLM) 、XGBoost、 结 构 方程 模
+型 CSEM) ， 深 入 剖析 各 因素 对 提升 教师 数字 胜任 力 和 人 才 培 养 质量 的 促进 作用 .其 中 ，
+扩展 多 层 线性 模型 《三 层 HLM) 用 于 处 理 具有 三 层 谨 套 结构 的 数据 ， 能 细致 分 解 教师
+个 体 层 、 学 校 层 和 区 域 层 变量 对 教师 数字 胜任 力 增 值 (VA) 及 人 才 培 养 质量 《Q) 的 影
+响 ，XGBoost 算法 可 捕 提 变量 问 复杂 的 非 线性 关系 ， 计 算 各 变量 的 重要 性 ， 以 补充 线性
+模型 的 局 限 ， 结 构 方程 模型 (SEM) 则 用 于 验证 教师 个 体 属性 、 数 字 胜 任 力 增值 与 人 才
+培养 质量 之 间 的 传导 路 径 及 中 介 效应 -
+
+5.3.1 模型 建立
+《1) 扩展 多 层 线性 模型 《三 层 HLM)
+
+第 一 层 教师 个 体 层 ) 模型 ，
+
+Jr = 克 r+Gor+DTE+TDLr+AEs+ASik+ADrt+ 记 Cir+ 基 ，
+
+其 中 ， 了 9 为 第 下 个 区 域 第 7 所 学 校 第 ; 位 教师 的 数字 胜任 力 增值 得 分 ，ox 为 学 校
+-区 域 层面 的 平均 增值 截 距 :Gix〈 性 别 ) 、Tr 〈 职 称 ) 、4ix (年 龄 ) 、 忆 。 (教龄 ) 、
+SA 〈 专 业 ) 、 有 Dr 〈 学 历 ) 、Cw (授课 类 型 ) 为 个 体 属性 变量 ， 忆 一 忆 为 对 应 变量 的
+回归 系数 ，7ix ~ No,a) 为 个 体 层 随机 误差
+
+第 二 层 〈 学 校 层 ) 模型 ，
+
+局 天 三 Mook 十 7joQvx 十 JamZai 十 JaZ3i 十 JosZai 十 Mo 天 ，
+其 中 ，7as 为 区 域内 学 校 的 平均 增值 基准 ， Qix (高 校 类 型 ) 、Zojr/Ziz* 《区 域 虚
+第 15 页
+
+
+===== page 16 =====
+拟 变量 )、Zszx (资源 投入 ) 为 学 校 层 变量 ; 7o -yo 为 对 应 变量 的 回归 系数 ; xux* ~ N(0.r)
+为 学 校 层 随机 截 距 .
+第 三 层 〈 区 域 层 ) 模型
+7ook 二 Go 十 Go 十 Go7Dk 十 YooF
+其 中 ，6oo 为 全 局 平均 增值 基准 ; 两 z、 瑟 * 为 区 域 层 变量 (如 经 济 水 平 、 政 策 支 持 )
+6 一 6o 为 对 应 变量 的 回归 系数 ， mx ~ N(O,er) 为 区 域 层 随 机 截 距 .
+〈2) 组 合 模型
+了
+Tir =Goo 十 Oo 二 OoDr+7oZIr 十 Jo2Z2 关 十 ya3Z3iF 十 osZ4 关 + 十 Yookr 十 Mo 产 十 ?证
+〈 注 384 代表 第 疡 个 个 体 属性 变量 )
+(3) XGBoost 模型
+模型 公式 :
+吾
+摧 关 = 闷 oDCCnZimW)，
+2=1
+其 中 ， 现 只 为 预测 值 ，B 为 决策 树 数量 ，m 为 单 棵 树 权重 ， 了 为 第 5 棵 决策 树 ，
+基于 个 体 层 变量 Xi 、 学 校 层 变量 Zr#、 区 域 层 变量 W* 进行 预测 .
+特征 重要 性 计算 :
+Importance(J)= 瑟 立 (MSEseem -MSEisuasam )，
+1
+其 中 ，MSEi asaa 为 原始 数据 第 六 棵 树 的 均 方 误差 ，MSEs same 为 变量 屎 随机 打
+乱 后 的 均 方 误差 ， 差 值 均值 表征 变量 玉 的 重要 性 .
+《3) 结构 方程 模型 《SEM)
+方程 1 ( 自 变量 对 中 介 变 量 的 影响 ) ，
+Ar = 亡 上 + 记 ZA+AI+o，
+方程 2〈 自 变量 对 因 变 量 的 总 效应 ) :
+Oir =Qo 二 Qi 十 OZ 十 CQ3P 二 Tt，
+方程 3 〈 自 变量 对 因 变 最 的 直接 效应 + 中 介 效应 ) :
+Op =B+GTrTOTAr GZ TO，
+其 中 ，3z# 为 个 体 属 性 变量 ，Zz 为 学 校 层 变 量 ， 丽 为 区 域 层 变量 ，@jz 为 人 才 培 养
+第 16 页
+
+
+===== page 17 =====
+质量 ， 蚊 、 了 驮 、 彝 为 各 方程 随机 误差 项 .通过 联 立 方程 可 分 解 自 变量 对 因 变 量 的 直接
+效应 〈 如 全) 与 中 介 效应 (如 友 .: 品 ) .
+5.3.2 模型 求解
+1. 数 据 预 处 理 与 描述 性 统计
+
+研究 整合 教师 个 体 属 性 《性别 、 年 龄 、 职 称 、 学 历 、 专 业 、 授 课 类 型 、 教 龄 ) 、 数
+字 胜 任 力 增值 (VA) 及 人 才 培 养 质量 〈 学 生 评 教 分 数 Q) 数据 ， 共 涉及 1500 名 教师 样
+本 .对 Q 进行 标准 化 处 理 后 均值 为 0.75，VA 均值 为 4.95〈 满 分 5 分 ) .统计 显示 ,性 别 对
+VA (人 -0.0219.p=0.9825) 和 Q (tf=-0.1978,p=0.8432) 无 显著 差异 ; 年 龄 与 VA 呈 弱 负 相
+关 (=-0.1382.p<0.001) ， 但 与 Q 显著 正 相关 〈r=0.4209.p<0.001) ， 反 映 资 深 教师 教学
+经 验 对 学 生 评价 的 正 向 作用 .职称 学历. 专业 和 授课 类 型 对 VA 和 Q 的 影响 显著 CANOVA
+均 p<0.001) ， 其 中 教授 的 VA〈4.982) 和 Q 〈5.000) 最 高 ， 助 教 的 VA (4.869) 和 Q
+〈4.193) 最 低 ， 显 示 职 称 层 级 的 核心 影响 .
+2. 三 层 HLM 模型 参数 估计
+
+通过 Python 语言 包 拟 合 三 层 模型 ， 结 果 表 明 :
+
+职称 〈B:=0.12,.p<0.001) 、 学 历 (Be=0.08,p<0.01) 、 理 科 专 业 〈Bs=0.07.p<0.05) 和
+实验 课 〈B:=0.06.p<0.05) 显著 提升 VA， 而 教龄 〈Bs=-0.03,.p<0.05) 呈现 负 向 影响 ， 可 能
+因 高 教龄 教师 对 新 技术 接受 度 较 低 .
+
+双 一 流 高 校 〈Yos=0.15.p<0.001) 和 资源 投入 〈?Yo=0.02.p<0.01 ) 显著 提升 学 校 平均
+VA， 反 映 资源 富 集 效 应 .
+
+区 域 经 济 水 平 io=0.10,.p<0.05 ) 与 区 域 平 均 VA 正 相关 ,但 影响 幅度 小 于 学 校 层 因
+素 .
+组 合 模型 表达 式 为 ;
+Jr = 4.85+0.10 了 :+ 0.15Zx +0.02Ziz+0.12Tx +0.08Dh +0.07Sx +0.06Cox -0.03Exs +o，
+该 模型 解释 了 VA 变异 的 68%, 其 中 区 域 层 、 学 校 层 、 个 体 层 分 别 贡献 12%6、259%、3196.
+3.XGBoost 模型 特征 重要 性 分 析
+
+利用 Python 的 `xgboost 构建 回归 模型 ， 经 $ 折 交 叉 验 证 优化 后 ， 模 型 RMSE=0.11，
+R2=-0.83. 特 征 重要 性 排序 显示 :
+
+第 17 页
+
+
+===== page 18 =====
+High
+remainder_pre_DC_score ee 二
+remainder_annual_training_hours ee
+remainder_ age 号
+remainder_workload 。 8
+remainder_health_status
+remainder_education_level
+
+remainder_years_of_service
+
+过 了 0 1 2 So
+SHAP value (impact on model output)
+图 10 SHAP 值 可 视 化 图
+
+核 这 张 SHAP 值 可 视 化 图 展示 了 各 特征 对 模型 输出 的 影响 .其 中 ,“ 剩 余 预 DC 得 分 ”
+和 “剩余 年 度 培训 时 长 "是 核心 驱动 因素 ， 它 们 对 模型 输出 起 决定 性 作用 ， 意 味 着 前 期 基
+础 及 持续 学 习 提升 至 关 重要 “剩余 年 龄 ”剩余 工作 量 ”“ 剩 余 健康 状况 ”剩余 教育 水
+平 ”剩余 工作 年 限 ” 等 特征 也 有 一 定 影响 力 ， 年 龄 和 工作 年 限 体现 经 验 积 累 ， 工 作 量 、
+健康 状况 与 教育 水 平反 映 当下 工作 状态 和 能 力 储备 情况 .而 “剩余 健康 状况 ”剩余 教育 水
+平 ”剩余 工作 年 限 ? 等 特征 ， 相 较 于 核心 驱动 因素 ， 对 模型 输出 影响 较 弱 ， 改 变 效果 不
+显著 .
+4.SEM 中 介 效 应 验证
+
+以 职称 为 自 变 量 (X=T) ，VA 为 中 介 变 量 ，Q 为 因 变 量 ， 构 建 结 构 方程 模型 ;
+
+直接 效应 路 径 : 职称 一 Q 的 总 效应 为 0.30(p<0.001), 其 中 直接 效应 为 0.10(p<0.05)，
+间接 效应 通过 VA 实现 〈0.80x0.25=0.20) ， 占 总 效应 的 66.79%6.
+
+VA 与 Q 的 各 维度 显著 正 相关 〈r=0.297-0.401.p<0.001) ， 其 中 与 实践 能 力 培养
+Cr=0.401) 和 创新 能 力 培 养 (=0.395) 相关 性 最 强 ， 表 明 数 字 胜 任 力 提 升 对 学 生 实践
+技能 的 促进 更 显著 .
+
+5. 结 果 整合 与 政策 启示
+
+综合 模型 结果 , 教师 数字 胜任 力 提升 的 核心 路 径 为 : 高 职称 + 高 学 历 + 实 践 导 向 教学
++ 优质 资源 支持 .具体 表现 为 教授 和 博士 群体 的 VA 优 势 显 车 (分 别 比 助教 高 0.113 和 0.063
+分 )， 但 教龄 每 增加 5 年 ，VA 下 降 0.03x5=0.15 分 ， 需 针对 性 设计 “资深 教师 数字 转型
+培训 项 目 ， 双 一 流 高 校 教师 VA 比 地 方 高 校 高 0.15 分 ， 资 源 投入 每 增加 100 万 元 ，VA
+提升 0.02x100=2 分 ,建议 建立 “数字 资源 共享 平台 ”缩小 校 际 差距 ; 东部 区 域 教师 VA 比
+西部 高 0.10 分 ， 需 通过 “中 西部 数字 教育 专项 基金 "平衡 资源 分 配 : 将 VA 纳入 教师 考核
+《权重 建议 20%) ， 并 设立 “数字 化 教学 创新 奖 "， 激 励 教师 通过 提升 数字 能 力 间接 提升
+人 才 培 养 质量 〈Q 与 VA 的 中 介 效 应 占 比 超 60%) .
+
+5.4 问题 四 模型 建立 与 求解
+第 18 页
+
+
+===== page 19 =====
+结合 前 三 问 结论 与 政策 要 求
+|[
+制定 提升 教师 数字 狂 任 力 方案 与 路 径
+和 天 前 三 问 分 析 结果
+教育 评价 与 强国 建设 政策 要 求
+晶 题 四 短 中 长 期 阶段 目标
+| 攻
+短期 称 政 策 强制 力
+约束 条 件 二 re
+Al 系统 界面 简洁
+图 10 问题 四 流程 图
+本 问 在 一 二 两 问 的 基础 上 ， 旨 在 构建 提升 高 校 教师 数字 胜任 力 的 策略 模型 ， 经 分 析
+选用 PDCA 循环 和 协同 治理 模型 PDCA 循环 包含 Plan (计划 ) 、Do (执行 ) 、Check
+《检查 )》 和 Act《〈 行 动 ) 四 个 阶段 ， 通 过 不 断 循 环 以 持续 改进 提升 教师 数字 胜任 力 的 方
+案 .协同 治理 模型 则 强调 企业 、 政 府 、 高 校 三 方 主体 协同 合作 ,整合 各 方 资源 ， 共 同 推动
+教师 数字 胜任 力 的 提升 .
+提升 高 校 教师 数字 胜任 力 需 结合 教师 群体 特征 , 实施 分 层 分 类 培育 路 径 .东部 双 一 流
+高 校 教师 起 点 高 Swe =75 ， 干 预 效果 显著 we = 0.8， 但 存在 协同 投入 宛 余 问题 ， 因 此 聚
+焦 “ 高 阶 创新 ”方向 .具体 通过 开展 每 月 12 小 时 的 AI 教学 工作 坊 , 联合 企业 开发 智能
+教研 平台 ， 并 确保 工具 使 用 频率 不 低 于 每 月 25 次 ， 同 时 由 政府 提供 100 万 元 专项 经
+费 ， 支持 教 学 研究 与 创新 .而 西部 地 方 院 校 教师 起 点 低 Swe =60， 且 工具 使 用 频率 低 F-5
+次 /月 ， 致 使 技术 赋 能 模型 VA 为 负 ， 所 以 以 “基础 赋 能 ”为 核心 .有 具体 措施 包括 推广 低
+成 本 工具 包 ， 将 基础 数字 技能 培训 时 长 从 每 月 5 小 时 提升 至 8 小 时 ， 企 业 提供 30 万
+元 免费 工具 试用 ,政府 补贴 40 万 元 网 络 费用 ， 并 将 工具 使 用 频率 提升 至 每 月 10 次 以
+上 .
+在 教育 数字 化 赋 能 增值 评价 方面 , 主要 有 三 项 举措 .首先 是 过 程 数据 采集 , 运用 学 习
+分 析 仪 表盘 实时 采集 教师 在 线 教 学 时 长 、 资 源 使 用 频率 、 学 生 评 教 反馈 等 数据 ， 以 此 实
+现 “ 过 程 评价 ”其 次 是 智能 诊断 与 干预， 借助 AI 模型 分 析 教 师 数 字 胜 任 力 短 板 ， 为 西
+部 新 教师 精准 推送 “工具 使 用 + 基础 技能 ”组 合 培训 ， 为 东部 教授 推送 “AI 创新 +
+跨 学 科 融 合 ” 研 修 课程 .最 后 是 构建 多 元 协同 机 制 ， 建 立 “ 企 业 - 政府 - 高 校 ”数字 教
+育 联盟 ， 企 业 负责 技术 支持 与 工具 迭代 , 政府 将 教师 数字 胜任 力 纳入 职称 评审 等 激励 政
+策 , 高 校 建立 “数字 胜任 力 发 展 档案 "， 从 而 推动 “增值 评价 ”与 “专业 发 展 ”的 深度 联
+动 .
+实施 方案 的 核心 要 点 涵盖 动态 监测 、 分 层 干预 、 技 术 赋 能 与 多 元 协同 四 个 方面 .动态
+第 19 页
+
+
+===== page 20 =====
+监测 旨 在 持续 跟踪 两 类 教师 数字 胜任 力 , 东部 双 一 流 教授 虽 VA 增 速 放 缓 但 仍 有 提升 空
+间 项 测 10.5 分 ， 西 部 新 教师 增 速 稳定 预测 8.5 分 ， 并 及 时 发 现 如 西部 教师 工具 使 用 不
+足 等 问题 .分 层 干预 根据 两 类 教师 特点 ， 东 部 减少 余 投入 ,西部 增加 基础 培训 强度 ， 实
+现 资源 优化 配置 .技术 赋 能 基于 工具 使 用 频率 与 VA 的 正 相关 关系 (5= 0.4) ， 重 点 扒
+广 工具 使 用 , 为 西部 教 是 提供 “一 键 式 ”备课 工具 等 多 元 协同 则 充分 发 挥 三 方 协同 效应
+(= 0.00D ,东部 高 校 协同 项 贡献 占 总 VA 的 69.796， 西部 院 校 占 47.396， 通 过 企业 提
+供 工具 、 政 府 补贴 、 高 校 组 织 培训 等 方式 ， 有 效 放大 资源 效益 .
+六 、 模 型 评价 与 推广
+
+6.1 模型 的 评价
+
+本 研究 国 绕 高 校 教 师 数字 胜任 力 , 通过 四 个 递 进 任务 构建 研究 体系 .任务 一 构建 增值
+评价 指标 体系 ， 任 务 二 分 析 宏观 环境 因素 影响 ， 任 务 三 探究 个 体 属性 作用 机 制 ， 任 务 四
+转化 为 分 层 培育 方案 ， 形 成 “评价 -分 析 -干枯 "闭环 .该 体系 既 揭 示 数 字 胜 任 力 发 展 影 响 因
+素 ， 又 为 高 等 教育 数字 化 转型 提供 评价 工具 与 实践 路 径 ， 下 文 将 对 其 进行 模型 评价 与 扒
+广 探讨
+6.1.1 模型 优点
+
+本 文 所 建立 模型 具有 以 下 优点
+
+1 在 指标 体系 构建 中 ， 以 《教师 数字 素养 》 行 业 标准 为 基准 ， 结 合 高 校 教师 职业
+特性 ， 通 过 德尔 菲 法 和 层次 分 析 法 簿 选 指标 并 确定 权重 ， 既 保证 了 理论 依据 的 权威 性 ，
+又 通过 专家 群体 决策 和 数学 验证 CR<0.1)》 确保 指标 体系 的 科学 性 .多 层 线性 模型 和 随
+机 森林 模型 结合 分 析 宏观 因素 ， 多 元 线性 回归 与 结构 方程 模型 探究 微观 机 制 ， 不 同 模型
+的 选择 适 配 对 应 研究 问题 ， 充 分 考虑 变量 问 的 线性 与 非 线性 关系 、 直 接 与 间接 影响 ， 使
+模型 结构 严 说 合理 .数据 驱动 : 基于 数据 驱动 ,利用 真实 数据 进行 计算 和 分 析 ， 保 证 了 方
+案 的 科学 性 和 合理 性 .
+
+2。 指 标 体系 扩展 "科研 数据 可 视 化 能 力 "等 契合 高 校 科研 数字 化 需求 的 指标 ， 突 破
+传统 框架 ;评价 过 程 中 采用 增值 评价 理念 ,动态 衡量 教师 数字 胜任 力 发 展 ， 相 较 子 前 态
+评价 更 能 反映 真实 提升 情况 .实践 方案 结合 宏观 分 层 与 微观 个 体 差异 设计 培育 策略 ,引入
+“政府 -企业 -高 校 "协同 生态 和 技术 工具 ， 实 现 了 理论 成 果 到 实践 应 用 的 创新 转化 ， 对 扒
+动 高 等 教育 数字 化 转型 具有 较 强 的 实用 价值.
+
+6.1.2 模型 缺 点
+
+本 文 所 建立 模型 仍 有 以 下 不 足 ;
+
+德尔 菲 法 中 专家 样本 数量 和 履 盖 范围 可 能 影响 指标 簿 选 结果 的 普 适 性 ; 模型 中 部 分
+变量 存在 共 线 性 问题 《如 年 龄 与 教龄 )， 虽 采取 处 理 措施 ， 但 仍 可 能 对 结果 精度 产生 一
+定 影响 .学 生 评 教 分 数 标准 化 处 理 虽 降低 主观 偏差 , 但 仍 难以 完全 消除 评价 主观 性 .此 外 ，
+
+第 20 页
+
+
+===== page 21 =====
+模型 未 充分 考虑 突 发 政策 变化 、 技 术 迭 代 等 动态 因素 对 教师 数字 胜任 力 发 展 的 影响 .
+6.2 模型 推广
+
+本 模型 可 推广 至 中 小 学 教师 数字 胜任 力 评 价 与 培育 ， 根 据 不 同 教育 阶段 调整 指标 体
+系 侧重 点 ， 如 中 小 学 更 强调 课堂 互动 数字 化 、 学 生 管理 数字 化 等 能 力 ; 也 适用 于 职业 院
+校 教师 评价 ， 结 合 职业 教育 实践 教学 特点 ， 增 加 实 训 设备 数 字 化 操作 、 校 企 合作 数字 化
+管理 等 指标 ， 助 力 各 阶段 教育 数字 化 转型 .
+
+七 、 参 考 文献
+[1] 赵 彬 竹 ， 申 文 绪 ， 邹 行 行 .教育 数字 化 背景 下 初中 生 数字 素养 测评 指标 体系 的 建构
+[JoOL]. 教育 测量 与 评价 ，2025, 1-13 [2025-05-25].
+http://kns.cnkinet/kcms/detail/43.1482.G4.20250523.1552.006.html.
+[2] 李 海 龙 ， 陈 法 荣 ， 崔 红 岩 ， 等 .地 方 政府 数 字 教 育 政 策 注 意 力 配置 差异 与 治理 路 径
+[IOL]. 重庆 高 教研 究 ，2025, 1-15 [2025-05-25].
+http://kns.cnkinet/kcms/detail/50.1028.G4.20250520.1844.002.html.
+[3] 马云 秀 ， 黄 志 诚 ， 王 洽 昌 .基于 “发 现 教育 ”的 “数字 赋 能 教学 评 ” 的 实践 研究 加.
+学 校 管理 ，2025, (02): 16-20.
+[4] 杨 俊 峰 . 数 字 教 育 让 知识 更 加 “触手 可 及 ”[N]. 人 民 日 报 海外 版 ，2025-05-20 (005).
+DOI:10.28656/n.cnki.nrmrh.2025.002355.
+[5] 阀 阅 ， 刘 林 佳 .向 数字 契约 迈进 : 联合 国教 科 文 组 织 推动 高 等 教育 数字 化 转型 的 价值
+理念 、 行 动机 制 与 实践 经 验 四. 河北 师范 大 学 学 报 (教育 科学 版 ), 2025, 27 (03): 63-72.
+DOI:10.13763/j.cnkijhebnu.ese.2025.03.007.
+[6] 申 仁 洪 , 赵 雨 晴 . 特 殊 教 育 数字 化 的 困境 与 突破 : 基于 数字 正义 视角 加. 现代 特殊 教
+育 ，2025, (10): 18-25.
+[7] 魏 顺 平 ， 杨 雨 璇 ， 吴 淑 苹 . 我 国 基础 教育 数字 化 发 展 水 平 及 区 域 差异 研究 一 - 基于
+《中 国教 育 信息 化 发 展 报告 (2017-2021) 的 分 析 [JOL]. 甘肃 开放 大 学 学 报 ,2025, 1-14
+[2025-05-25]. http:/lkns.cnkinet/kcms/detail62.5125.G4.20250517.2219.002.html.
+[8] 关 智 .夯实 智 熙 教育 发 展 “ 数 字 底 座 ”[N]. 各 界 导报 , 2025-05-16 (001).[9] 苏 丹 . 数 字 教
+育 背景 下 人 工 智 能 赋 能 成 人 教育 发 展 研究 一 一 基于 人 工 智能 在 欧美 教育 中 应 用 的 启示
+四 .继续 教育 研究 .2025.(06):83-89.
+[10] 称 航 , 刘 善 槐 .数字 技术 赋 能 农村 职业 教育 高 质量 发 展 的 逻辑 向 度 与 实践 路 向 [可 .教育
+与 职业 ,2025.(10):31-38.DOI:10.13615/j.cnki.1004-3985.2025.10.008.
+第 21 页
+
+
+===== page 22 =====
+附录
+impor numpy as mp
+import pandas as pd
+from scipy import stats
+from skleam utils impart resample
+fromnumpylinalg importeig
+def bootstrap_delphi(experts_scores n_iterations=10007-
+基于 Bootstrap 的 德尔 菲 法 季 选 指标
+:paramexperts_sceres: 专家 评分 拒 阵 ， 形 状 为 (oa_experts n indicatars)
+:paramm_iterations: Bootstrap 抽样 次 数
+:retum- 保留 的 指标 索引 列表
+mn _expertsn indicators = experts_sceresshape
+retained indicators= []
+forindicater in range(o_indicators-
+# 条 你 个 租 上 秦 疗 Bootstrap 部 检
+bootstrap_samples=
+for _inrange(n_iterations)-
+# 硼 浇 辐 般 荔 着
+Sammple ~ Tesammple(experts_scores[-, imdicator], replace True)
+bectstrap_sanmples append(sample)
+# 六 大 你 个 蔡 牙 礁 Kenaajl 级 滋 秋 洲
+ww_values=[
+far sample in bootstrap_samples-:
+## 扩 算 任 区 的话 纺
+ranks = statsrankdata(sample)
+m= lentsample)
+着 信介 熏 丰 不 幅 绪 针 吉 演 坟 从 枚 绽开
+卫 K= mpsumfranks)
+间 凡 合 天 灼 枚 苦 先
+第 22 页
+
+
+===== page 23 =====
+了 bar=m*(m+D/2
+## 六 各 Kendall 荔 漳 天 都 的 分 产
+mumerator= 12 * npsumtfranks - R_ban**2)
+间 信 大 Kendall 打 济 天 都 内 从 学
+denominator = mrt2 * (ms*3 -mm)
+## 信 丰 Kendall 挫 济 科 站
+玉 = numerator/ denaminater
+valuesappend(w)
+mean_w= mp mean(w_values)
+# 为 旷 夺 再 绽 馈 幅 匡
+imean w> 0 于
+retained indicators appendfindicaton)
+retum retained_indicators
+def cloud_ahp(comparison_matrix)-
+云 模型 改进 的 层次 分 析 法 计算 权重
+:param comparison_matrix: 判断 矩阵
+:retum- 权重 向 量 , 一 臻 性 比率 CR
+# 纪 拿 送 征 瘟 因 豆 征 疝 县
+aigenvalues, sigenvectars = cig(comparison_matri)
+# 注 够 帮 天 迁 征 代
+max_eigenvalue = np max(eigenvaluesreal)
+# 锭 欣慰 无 村 征 并 护 黄 红
+max_index= np argmax(eigenvaluesreal)
+# 访 误 帮 无 儿 征 代行 应 的 外 征 向 友
+weights = cigenvectors[-, max_index]real
+weights = weights / np sumweights)
+# 一 艇 些 肯 尹
+第 23 页
+
+
+===== page 24 =====
+= comparison_matix shape[0]
+# 半 厅 一 入 烃 凯 环
+CI= (max_agenvahue -my/@@-D)
+# 月 贞 一 向 此 睦 上 配
+RI= fl: 0.2: 0,3: 058,4:090.5:1.12. 6.124,7:132 8:1.41. 9:1.45j.geto, 1.43
+# ff 厅 一 弹 奉 此 让
+CR=CI/RI
+retum weights CR
+def calculate_tei(scores weightsj-
+计算 数字 胜任 力 总 指数
+:param scores- 各 指标 得 分 ， 形 状 为 m_indicatars)
+:param weights- 各 指标 权重 ， 形 状 为 m_imdicatars)
+:retum:- 总 指数 TEI
+retum np sumtscores * weights)
+def caleulate_valhue_addedttei_t tei_0)-
+计算 增值 率
+:paramtei_t 当期 总 指数
+:paramtei_0: 基线 总 指数
+:retum- 增值 率 Vt
+iftsi 0<60:
+ahpha= 12
+alif 60<= tei_0<80:
+ahpha= 1.0
+se
+alpha= 08
+retum ((tei_t -tei_0) /tei_0) * atpha
+defmain0-
+# 大 简 几 芍
+第 24 页
+
+
+===== page 25 =====
+# 僵 褒 硼 20 全 地 疾 条 10 不 崇 蒜 内 疗 绊 JW1-5 雯
+mprandomseed(42)
+## 从 成志 疾 凿 从 外 用
+experts_scores= np randomrandint(1. 6, size=(20.10)
+# Sip 1 此 匡 供 天 洲 民 (下 都 新 符 每 讲 虹 记 克
+# Siap 2: 天 关 Bootsfrap 胡 芒 从 类 基 凡 着 幅
+retained_ indicators = boctstrap_delphi(experts_scores)
+print(f" 保 留 的 指标 索引 : fretained_indicaters}
+# Siep 3- 豆 产 Cloud Model- 4HP 镭 幅 盯 次 下 六 刘
+# 大 匀 为 蓄 危 话 1 个 骨 困 有 此 的
+companson_matrix 一 mp -amay([
+[3. 于
+[13,1,2L
+[5.12.1]
+了
+# 料 和 他 一 摘 些 栓 彤 ， 关 不 演进 则 下 靳 闻 台
+while Tme:
+weights CR = cloud_abp(comparison_matrix)
+让 CR<01:
+break
+else:
+print(" 一 致 性 检验 未 通过 ， 需 要 调整 判断 拒 阵 .)
+# 过 久 可 以 类 加 注 台 为 饭 乱 序 春 风光 ， 匀 如 要 新 同济 喜 演 方 录
+break # 各 时 莘 济 处 度 ， 可 夫 妈 办 天 乓
+printff 权 重 : fweights}, 一 致 性 比率 CR-{CR- 4
+# Sap 4- 人 f 萌 可 绪 租 从 与 当 痢 特 从
+# 扩 多 都 殴 3 个 肯 国 反超 力
+baseline_scores = np amay([70,80,60])
+curent_scores = np amay([80.85.75])
+tei_0= calculate_tsibaseline_scores, weights)
+第 25 页
+
+
+===== page 26 =====
+tai_t=ealeulate_tei(current_scares weights)
+print(f' 基 绪 总 指数 -ftei_0-2 呈 ,当期 总 指 阔 - ftei_t2677
+# Siap 5- 上 f 舍 外 人 让
+vt= caleulate value_addedttei ttei 0)
+Print(f "增值 率 : fv_t4 生 7?
+证 _name 一 ” main
+main0
+importpandas as pd
+impor numpy as np
+import statamodels api as sm
+from statsmodels stats outliers infhuence impart variance_inflation_fadtor
+from skleam preprocessing import StandardScaler
+from skleam experimental import enable_iterative_imputer
+from skleam impute impart lerativeImputer
+impor wamings
+wamings 介 terwamings(ignore)
+def data_preprocessingfraw_data)-
+数据 预 处 理 函 数
+包含 缺失 值 填补 、 连 续 变量 标准 化 、 分 类 变量 虚拟 化 处 理
+# 1 赤 先 供 妖 部 - 售 房 冯 下 东部 其
+# 滥 华 丰台 六 年 抽 先入 的 营 屋 旭 让 督 关
+这 Tenure in raw_data cohummns and 'Title in raw_data columns-
+# 颖 保 阅 硼 赫 和 借
+这 raw_datal[Tenure Title]jisnull(0-anyO any0:
+imputer = IterativeImputa(max iter=10, random state=42)
+imputed_data = impute 人 t_transfomfraw_datal[Tenure Title])
+# 瞧 下 部 后 护 响 狠 有 加 大 奶 几 多 的
+Iaw_data[Tenure] = imputed_data[-.0]
+## 多 醒 硅 育 太 从 区区 大， 积 束
+第 26 页
+
+
+===== page 27 =====
+raw_data[Title] = mproundGmputed_data[-,
+# 2 适 续 蕉 层 贡 内 从
+scaler = StandardScaler0
+# 行 章 属 磅 行 装 肉 从 你 度
+让 Tenure in raw_data cohumns-
+raw_data[Tenure_std] = scaler fit_transfommfraw_datal[Tenure]D)
+#3 办 关 营 大 诺 各 化 处 罗
+# 府 蕉 关 多 如 一 范 -1， 毅 力 眉 胡 -0
+ifrUnivType in maw_data columns-
+# 组 保有 辟 岂 后 克 才 薪 关 罗 且 六 信 罗
+raw_data[UnivType] = pdto_mamerickaw_data[UnivType]map(f' 双 一 流 : 1 地方 院 核 : 0D， emorms='coeree)
+闻 人 处 属 可 及 朋 二 先 借 《〈 甸 表 天 各 克 从 交代 》
+ifraw_data[UnivType]isnul0 .any0:
+print(" 警 告 : UnivType 列 包 含 无 法 映射 的 值 ， 已 将 其 设置 为 NaN7)
+maw_data[UnivType] = raw_data[UnivType] 旬 lna(0) * 便 诊 味 江 为 怖 方 入 花
+# 罗 犁 伦 田 ， 基 而 -1， 凡 而 -3， 曾 施 -0( 参 有 多
+# 亿 历 get_dimmies 状 区 饥 伦 逆 兰 部 为 席 砚 营 居 ， 居 由 范 一 个 认可 营 居 以 性 狗 座 帮 阁 司 鹏 降
+让 肥 eion 和 nraw_data columns-
+# 所 亿 Region 蜀 革 办 关 关 加
+Iaw_data[Region] = Iaw_data[Region] astype(category )
+raw_data= pd get_dummiesfraw_data columns=[Region] prefix=Region', drop_frst=Tme)
+# 崔 房 硼 市 从 志 大 项 为 举 才 关 加
+for col in raw_data columns-
+ifraw_datafcol] dtype 一 bocl-
+Iaw_data[co]] -raw_data[col] astypeGnt)
+Print(f' 已 将 列 fcol} 从 beal 转换 为 int
+retum raw_data
+def calculate_tei(curmrent_scores, baseline_scores)-
+计算 教师 数字 胜任 力 增值 指数 (TED
+TEI= (当前 得 分 -基线 得 分 ) 基 线 得 分 * 10096
+# 如 多 赂 条 和 浊
+mask = baseline_scores = 0
+tei= mp Zeros_jke(curent_scores, dtype=float)
+taimask] = (current_scoresfmask] - baseline_scores[mask]) / baseline_scores[mask] * 100
+Tetum tei
+第 27 页
+
+
+===== page 28 =====
+defbuld_ base_ modeltdata)-
+构建 基础 线性 回归 模型
+TEI~ UnivType+Region+ 控制 变量
+# 胡 营 以 妆 央 出 夺 机 六 许
+required_cols= [UnivType\'Title，Tenure_stdTET]
+Te 可 on_cals = [Region_ 东 部 , Region 中 部 ]
+avalable_region_cels = [cel for colin re 相 on_colsif col in data columma]
+ifnotal (colin data cohumms for cel in required_cels) crlen(available_region_cols) 一 0:
+missing = [col for col in required_cols 证 col notin data cclummns]+
+[eol for cel in region_cols if cel notin data celumma]
+raise ValueEmor(f" 构 建 基础 模型 缺少 必要 的 列 : fmissingj7)
+# 崇 条 向 答 层 彻 厂 党 大
+和 = datal[UnivType, Title。 Tenure_std] + avallable_region_cols]
+# 方 印 孝 着 交加 售 局 ， 房 产 游 这
+print("n 构建 模型 前 的 数据 类 型 检查 :7
+forcolip 入 celummns-
+Print(f'fcol : 区 [col].dtype}, 唯一 值 : fX[co] umique0[:3 7
+*# 缔 保 记 耕 攻关 衣 中 新 江涛 思
+forcolip 入 calumns-
+证 贡 col] dtype 一 object orpdapitypesis_categorical_dtype(X[co])
+try:
+届 col] =pdto_numericCX[coD)
+print(f' 成 功 将 列 {col} 转换 为 数值 类 型 )
+exceptValueErmor
+print(f' 列 {col} 包含 非 数 值 数据 ， 将 转换 为 分 类 编码 )
+col] = X[col.astype(category') cat codes * 寿 况 为 分 关 兰 了 3
+# 摩 上 交 栓 营 小 基 关 名
+print('n 转换 后 的 数据 类 型 :7
+for col mm 和 columns-
+prnt(f fcol : 低 [col] .dtypej 7
+第 28 页
+
+
+===== page 29 =====
+# 前 营 旦 再 硼 印 共 代
+让 XisnulO .any0.any(:
+print(" 警告 : 模型 自 变量 中 存在 缺失 值 ， 将 用 0 填充)
+XX=Xfllnal0)
+# 卢 加 将 虞 历
+和 = sm add_constantC)
+y= data[TET]
+# 药 思 并 间 知 模 凶
+modal= sm OLSG. 区 fa0
+# 和 关 村 共 绪 糙 失 六
+vif=pdDataFrame0
+vitVanabler]= 和 columms
+# 信介 你 不 同 签 大 针 方 老 鹏 性 奢 产
+viffVIF'] = [variance inflation_factorCX values,i foriin rangeCXshape[1])]
+retum model vif
+defbuild_interaction_mmodeltdata)-
+构建 包含 交互 项 的 扩展 模型
+TEI~ UnivType+Region + UnivType*Region + 控制 变量
+# 疮 曹 必 意 及 亢 导 闸 六 许
+required_cols = [UnivType' Title，Tenure_std'TET]
+Te 人 ion_cals = [Region_ 东 部 ,Region_ 中部]
+available_region_cols = [col for colin re 钱 on_colsif col in data colummas]
+ifnotall (col in data columms for col in required_cols) orlen(available_region_cols) 一 0-
+missing = [col for col in required_cols 这 col notin data chumns]+
+[col for cel in region_cols ifcel notin data columms]
+raise ValueEmor( fr" 构建 交互 模型 缺少 必要 的 列 : fmissing} 7)
+# 全 导 放 互 遍
+forregion in available_region_cals-
+interaction_col = fUnivType_fregion split(" [1])
+datafinteraction_cel] ~ data[UnivTYyPe] * datafregion]
+第 29 页
+
+
+===== page 30 =====
+# 丝 积 房 丙 必 互 羽
+interaction_cals = [FUnivTYype_fregion split(” "JIH]) for regionin avalable region_cals]
+# 浴 华 局 短 居 知 团 营 屋
+= datal[UnivType， Title，Tenure_std] + avallable_region_cols + interaction_cols]
+# 缮 亿 记 而 嘱 新 者 导 痢 入 关 加
+for col in 和 colummns-
+认 X[col dtype 一 object or pdapitypesis_catsegorical_dype(Xfce])-
+ty
+习 col] =pdte_numericCX[col)
+exceptValueErmor
+print(f' 列 fcol} 包含 非 数 值 数据 ， 将 转换 为 分 类 编码
+[col] = X[col]astype(category ) catcodes * 大 六 为 分 关 希 3
+# 余 营 但 可 硼 赫 先 借
+ifXisnul0 .any0 any0-
+print(" 警告 : 模型 自 变 量 中 存在 热 失 值 ， 将 用 0 填充 ")
+买 = 买 名 lna(0)
+# 卢 加 将 虞 痪
+和 = sm.add_constantC)
+y= data[TET]
+# 入 建 章 抽 后 模 句
+modal= smOLSG. 避 fa0
+Tetum model
+defmain0-
+# Siap 1 财 蔚 内 每
+tm
+raw_data= pdread_csv(teacher_data csv) * 元 镜 考 的
+print(f" 成 功 加 载 数据 ， 共 flen(raw_data)} 条 记录
+except FleNotFoundEror
+print(" 措 误 : 找 不 到 teacher_datacsv 文件 ， 请 确保 数据 文件 路 径 正确 .)
+retum
+except Exception as e-
+print(f' 读 取 数 据 时 发 生 错误 : fej 7
+Tetum
+第 30 页
+
+
+===== page 31 =====
+# 方 印 几 英 可 天 户 局 彻 所 了 疗
+print('n 数据 基本 信息 :7
+raw_datainfo0
+print("m 数据 前 几 行 :7
+Prnttraw_datahead0to_csv(sep 一 t, na_rep-mnan))
+# Sip 2- 考区 靖 处 左
+Processed_data- data preprocessing(raw_data)
+print("n 数据 预 处 理 后 各 列 的 数据 类 型 :7
+for col in processed_data columms-
+print(fvfcelj: fprocessed_datalcell dtypejm
+# 凡 舍 IET( 辣 认 已 硼 妆 席 滁 耸 先 套 绑 址 功 )
+让 'CurentScore in processed_data columms and 'BaselineScore in processed_data cohumms-
+Processed_data[TET] ~ calculate teil
+Processed_data[CurentScore ] values,
+Processed_data[BaselineScore]values
+)
+else
+print(" 错误 : 数据 中 缺少 计算 TEI 所 需 的 CumentScore 或 BaselineScore 列 )
+Tetum
+# 俐 普天 处 左 后 色 吕 莉 导 再 负 可 记 育 册 要 肝 届
+required_columms = [UnivType，'Title。Tenure_std，CurentScore'，BaselineScore,'TEIT]
+missing_columns = [col for col in required_columnsif col notin processed_data columms]
+ifmissing_columns-
+print(f 警 告 : 预 处 理 后 的 数据 缺少 以 下 列 : fmissing_columnsj)
+print(" 这 可 能 导致 后 续 分 析出 现 问题 .)
+# 俐 章 几 新 县 再 向 各 尼 络 其 兰 俱
+iflen(processed_data) < 10-
+print(" 警告 : 样本 量 过 小 ， 可 能 导致 不 可 靠 的 统计 结果 7
+# 保 六 曾 俱 谎 后 豚 劣 基
+Processed_datato_csv(processed teacher_ datacsv, index-False)
+print('n 已 保存 预 处 理 后 的 数据 到 processed_teacher_datacsv)
+# Stap 3 简直 天 必 人 多
+tm
+base_model vif= build_base_modelprocessed_data)
+print("m 基础 模型 回归 结果 :7
+第 31 页
+
+
+===== page 32 =====
+pnttbase_ modelsummary0)
+print("m 多 重 共 线性 检验 VIP)
+Prnt(vig)
+except Exception as e-
+print(f" 构 建 基础 模型 时 发 生 错 误 : {ej 7
+# 痊 出 硼 疗 疡 凤 痢 新， 月 疗 印 闫 六 于 画
+print("m 可 能 有 问题 的 数据 2
+problematic_cols = [UnivType'， Title .Tenure_std', 下 egion 东部 .Region_ 中部,'TEI]
+available_cols = [col forcol in Problematic_cels ifcol in processed_data cehumns]
+Print(processed_datafavailable_cols] head0to_csv(sep='it,na_rep=nan)
+Tetum
+# Shep 4- 贷 罗 属 ( 龙 互 半 压
+# 硬 巡 TIF 内 萌 光 钼 ， 天 内 交 喇 历 1 TIF
+intercept_vif= viflvitfVariable] 一 'const][VIF]values[o]
+Predictor vifs =vif[viffVariable]I= const][VIF]
+让 apredictor vifs < 10): * 刘 营 光 为 TTF<10 时 阁下 共 刍 此 可 以 营 轩
+tr
+interaction_model = build_interaction_ modelprocessed_data)
+print("m 扩展 模型 (交互 效应 ) 回 归结 果 :7
+Prmntinteraction_model summaryO)
+# 枕 轨 此 弦
+Print("m 模型 比较 ( 似 然 比 检验 7)
+Ttest= 2 * fnteraction modeUlf -base_modall
+闪 六 个 启 且 放 :交互 万 部 居
+region_cols = [了 egion_ 东部, Region_ 中部]
+available_region_cols = [col for cel in region_cels if colin processed_datacolumns]
+df=len(available_region_cols)
+了 _value = 1 - smstatschi cdftr test d
+print(f" 卡 方 值 : fr_test-3 癸 . 自由 度 : fafj.p 值 : p_value:3 人 7?
+让 p_value<005-
+print(" 交互 项 显著 ， 应 采用 扩展 模型 7
+else:
+print(" 交互 项 不 显著 ， 建 议 采用 基础 模型 ?
+except Exception as e-
+print(fr 构 建交 互 模型 时 发 生 错 误 : {ej
+第 32 页
+
+
+===== page 33 =====
+else-
+print("m 存在 严重 多 重 共 线性 ， 请 调整 变量 后 重新 建 模 )
+high_vif vars= viffviffVariable] =- const]viffVIF]>= 10]
+inot high_vif_vars empty:
+Print(" 高 VIF 变量 :")
+Prmntthigh_vif_vars)
+让 _name 一 ， maimn
+mmain0
+impor numpy as np
+impor pandas as pd
+from skleam impute impart erativeImputer
+from skleam_ decomposition import PCA
+from skleam preprocessing import StandardScaler
+import pymc as pm
+import arviz as az
+from skleam ensemble impor RandomForestRegressor
+from skleam inear_ model import LassoCV
+import matplotib pyplot as pkt
+# 赂 多 曾 人 处 左 本 站
+def data_preprocessing(data)-
+数据 预 处 理 步骤 :
+1. 处 理 缺 失 值
+2. 处 理 异常 值
+3. 主 成 分 分 析 处 理 共 线性
+4 .标准 化 处 理
+# 了 罗 委 下 部 你 压 缺 基 代
+# 纺 万 HeratheJnpafer 奉 何 由 四 熙 部 ，mnar_iler 为 慷 无 活 从 绾 咱 ，ranidom_sfalfe 为 及 袁 瑚 亚
+# 次 条 部 借 列 过 厅 督 部
+mumeric_cols = data select_dtypesfinchude=[ap numiber]) columnstolist0
+ifnotnumeric_cols-
+raise ValueEmor( "数据 中 没有 可 处 理 的 数值 列 )
+第 33 页
+
+
+===== page 34 =====
+imp = IterativeImputertmax iter=10.random_state=0)
+data_imputed- datacopy0)
+data_imputed[aumeric_cols] = imp 全 transfommtdatafoumeric_cols])
+# 2 性 常 从 你 度 - 绍 历 3 大 出
+# 行 生 膨 ， 静 巍 、 局 帮 霸 大 央 三 个 送 续 客 屋 邓 何必 党 借 你 和
+for col in [ages teaching age weekly_lectures 二
+这 cel in data_imputed columms-
+mean- data imputed[col] mean0 = 信 剖 局 昼 太 区 生
+std- data imputed[coll std0 = 信介 成 忆 的 奈 属 关
+# 送 斌 昼 网 借 大 鞠 许 皮 代 如 关子 份 蜂 浴 考 礁 涛 历 几
+data imputed[col] ~ data imputed[col] cip(mean - 3 * std mean+ 3 std)
+# 了 主 戌 从 从 研 俱 改革 属 祝 惕 说 克 上 共 刍 糙
+# 久 绽 过 万 入 六 纤
+if'age'in data imputed columns and teaching age' in data_imputed calumms-
+# 全 党 PC4 行 梨 ， 伺 二 主 成 从 革 攻 为 了
+pca= PCACn_components=1)
+*# 天 积 生 避 各 秽 赔 采 昼 半 区
+age_teaching ~ data_ imputed[[ age: teaching_ age 了]
+站 奏 疗 主 成 从 分 折 淹 兰 剖 六 状
+ZI1 = pca ft_transformage_teaching)
+# 状 主 威 从 从 拆 经 侨 庆 加 得 痢 菜 的
+data imputed[Z1] = Z1
+# 廊 号 评 成 办 麻 开 方才 此 匀
+print(fP" 主 成 分 分 析 解 释 方差 比例 : fpcaexplained_variance_ratio_[0].4 人 9
+ese-
+print(" 警告 : 数据 中 缺少 age 或 teaching_age 列 ， 无 法 进行 主 成 分 分 析 ")
+data imputed[Z1] = 0 * 糊 加 点 全 列 ， 避 侈 后 结扎 本 内 入
+# 4 困 漆 化 你 民
+# 倒 寺 SianaprclScaljer 行 记 ， 尤 产 几 区 革 内 纶
+scaler = StandardScaler0
+# 矿 华 希 划 大 众 比 田 罚
+# 久 绽 过 些 列 六 入
+numeric_cels = [Z1. weekly_lectures]
+第 34 页
+
+
+===== page 35 =====
+available_cols = [col for col in numeric_cols if colin data imputed columms]
+favailable_cols-
+单条 道生 罚 达 站 亲 从 亿 你 加
+data imputed[available_cols] = scaler 人 t_transform(data imputed[available_cols])
+ee-
+print(" 警告 : 没有 找到 可 标准 化 的 列 ?
+# 出 保 人 类 营 居 县 正 天 克 交加
+for col in [gender, titlev major, degree 二
+让 cal in data_imputed columms-
+data imputed[col] ~ data_imputed[col] astype(category)
+retum data_imputed
+# 友信 亲 经 前 方 硬 萤 久
+defbuild_bsem_modeltdata)-
+构建 贝 叶 斯 结构 方程 模型
+包括 测量 方程 和 结构 方程
+tm
+# 缮 伺 译 孵 朋 邦 六 站
+required_cols = [gender, title major，degree, weekly_lectures, Z1,TET QI]
+missing_cols = [col for colin required_cols ifcel notin data colummns]
+诈 missing_cols-
+raise ValueErmor(f' 构 建 模 型 巩 少 必要 的 列 : fmmissing_colsj 7
+impor pymc as pm
+import arviz as az
+print(f'PyYMC 版 本 : pm。 version_
+Print(f'rArviZ 版 本 : faz，version_}7
+withpmModel0 as model:
+# 范 彤 从 六 诊 技
+# 局 站 次 大 5 和 1 肘 范 彤 ， 全 疹 合 们 服 放 塘 代 为 0， 基 内 老 为 了 肘 正 疲 分 机
+EpPmNomal(E mu-0 sigma-1, hapeien(data)
+= pmNommal(P, mur0. sigma=1) * 劳 共 天才
+第 35 页
+
+
+===== page 36 =====
+##5 与 1 之 闭 大 乡 移 才 秋
+TImean 一 有 三
+人 =pmNormalm :mumLmean, sigma-1, shape-ien(data)
+# 丹 厌 天 少 肥 东风 ， 合 刘 鼻 第 开 痢 服 让 的 代为 0， 盯 从 卷 为 了 大 正直 从 六
+入 = pmNommal(), mu=0.sigma=1, shape=8) * 入 应 3 个 测 呈 方 盏
+# 调 民 误 老 失范 彤 ， 梧 认得 避 误 考 服 外 关 正 态 从 六
+5= pmHalfNommal(5', sigma=1,shape=s)
+# 测 基 方 王
+PmNormal( XI :mun[0] “二 sigma-5[0] observed-data[gender])
+PmNormmal(33 ,mon)[]] 二 sigma-5[1] observed data[tute])
+PmNormal(X5 .mun[2] “二 sigma-5D] observed-data[major)
+PmNormmal(X6 ,mun)[3] 二 sigma-5D] cbserved data[degee])
+PmNormal(XT :mun[4] “二 sigma-5[4], observed data[wesly_lectmes])
+PmNormal(Z1, mm)[5] “二 sgmar6[ observed-data[Z1])
+# 梧 正 IET 和 0 大 部 划 方 王
+PmNormal(TET: my[6] “二 + 和 7 sigmar5[6] observed-data[TET])
+PmNormmal(Q mu)D7] + 条 6]“m sigma-s[7] observed-data[Q])
+# 机 外 条 后
+# 盆 房 号 从 可 天 能 遍 豆 关 徊 CHMCMC) 旬 斌 过 克 从
+print(" 开 始 采样
+trace= pm sample(1000, tune=1000, chains=2 target_acceptr0 9. cores=1)
+Print 采样 完成 9
+
+Tetum trace
+
+excapt Exception as e-
+
+Import sys
+
+import traceback
+
+print(fP" 构 建 贝 叶 斯 模型 时 发 生 错 误 : {st(ej
+
+print(" 完 整 错 误 堆栈 :)
+
+traceback print_exc(fle=sys stdout)
+
+raise
+
+间 正己 化 拆 从 柑 应 从 新
+defregularized_mediation(data)-
+使 用 Lasse 回归 进行 中 介 效 应 分 析
+第 36 页
+
+
+===== page 37 =====
+# 久 弓 记 韦 及 六 六 生
+Tequired_cols= [gender ,title major,'degreev weekly_lectures,Z1TETQ]
+mmissing_cols = [col for col in required_colsif col notin data columns]
+让 missing_cols-
+
+raise ValueEmor( fr 中 介 效应 分 析 缺 少 必 要 的 列 : fmissing_colsj7)
+# 局 稚嫩
+和 = datal[gender, title major，degree' weekly_lectures, ZI 了]
+# 符 欠 闫 阁 攻 过 疗 one_jor 狼 邮
+和 = pdget_dummies(X，drop_fist= True)
+# 的 从 营 屋 先 团 营 屋
+M= data[TET]
+Y= data[Q]
+# 及 丰 ar-> 1
+# 便 志 TassoCP 行 粤 ， 验 厅 了 玉 帮 区 影 这
+lasso_a= LassoCV(cv=5)
+*# 癌 生 模 儿
+lasso_a ftCK: MD
+# 次 欣 人 各 和 不 a 及 天
+a_path= lasso_acoef
+# 器 古 0 -> 了 ( 沧 勒 习
+# 状 局 稚 居 神力 从 过 上 避 各 六
+RM= pdconcat([X. M]. axis=])
+## 倒转 IassoCF 行 奥 ， 嫉 他 了 下 交 史 尹 这
+lasso b= LassoCV(cv=5)
+# 六 侣 横 氏
+lasso_ bftCXM. 习
+# 将 如 矿 不 5 的 天 疡 ， 屠 的 从 营 居 区 天 六
+bb path= lasso_bcoef 上 1] * 慑 后 一 个 开 半生 应
+# 凡 不 co: 工 -> 工 ( 痢 蓉 硅 古 )
+# 便 导 LassoCF 宇和 ， 垃 疗 了 萎 帮 区 丸 巡
+lasso_c= LassoCV(cv=5)
+# 六 各 覃 名
+lasso_c faCX, 吕
+# 镑 各 可 杉 舍 应 外 天 者
+
+第 37 页
+
+
+===== page 38 =====
+ec_path=lasso_ccoef
+# 的 从 寿 应
+mediation_effect= a_path * b_path
+retumtf
+
+全 path- a_path,，
+
+_path: b_path_
+
+path: c_path,
+
+mediation_effect: mediation_effect，
+
+eature_names: XcolumnstolistO
+了
+
+单 团 区 区 扒 耸 煌
+def causal_frest_analysis(data)-
+
+使 用 随机 森林 进行 因果 分 析
+# 纤 伺 所 韦 有 入 六 竹
+required_cols= [gender ,itle' rnajor,'degree,'weskly_lectures.Z1TETQ]
+mmissing_cols = [col for col in required_colsif col notin data columns]
+fmissing_cols-
+
+raise ValueEmor(f' 因 果 森 林 分 析 缺 少 必要 的 列 : fmissing_colsj7)
+# 局 准 屋
+和 = datal[gender, title, major，degree' weekly_lectures, ZI 了]
+# 行 分 闫 营 屋 赔 one_jiof 状 弛
+和 = pdget_dummies(X, drop_fist=Tme)
+# 团 疼 避
+工 TEI= data[TET]
+工 Q=data[Q]
+# 六 民 葛 儿
+# 便 寺 月 大 区 产 同 轨 属 ， 岗 佑 州 的 省 攻 为 100， 明 加 头 殊 为 4
+过世 = RandomiForestRegressorn_estimators=100, random_state=42)
+于 q= RandomForestRegressor(mn_estimators=100, random_state=42)
+# 六 各 提名
+王公 CK,Y_TED
+于 qftCY Q)
+
+第 38 页
+
+
+===== page 39 =====
+# 余 征 轨 要 树
+# 锭 名 饥 大 匣 产 药 名 力作 多 征 肥 看 划 烃
+impartance_tei = rf tei feature_importances
+impartance_q= zf_q 人 ature_importances
+Tetum 攻
+
+TEL importance' importance tei
+
+'Q_impartance: importance_q,
+
+ature_names: XXcolummnstolistO
+了
+
+# 可 台 化 颖 人
+def visualize_results(mediation results causal_results)-
+可 视 化 分 析 结 果
+# 便民 民
+3g, axes = plt subplots(1, 2, figsize=(15.6)
+会 ature_names= mediation_results['feahure_names]
+mediation_effect= mediation_results[rnediation_effect]
+# 狂 程 人 入 信 习 无 凡 记 了 人 不 为 从 应
+top_indices = np argsort(np abs(mediation_e 依 cb)[-5:]
+top_features = [feature_names 国 ] foriin top_ indices]
+top_effects = [mediation_effed 国 fori in top_ indice]
+## 翁 勒 芒 内 名
+axes[0]barhttop_features, top_effects)
+axes[0] set_title(' 中 介 效 应 分 析 (Top 5) )
+axesf0] set_xlabel( (中 介 效应 值 7
+axes[0] axvlinek=0. colorblack' linestyle= 一 apha=03)
+# 2 带 征 轨 划 此 可 部 化
+全 ature_names = causal_results[ feahre_names]
+impartance_tei = causal_results[TEI_importance]
+impartance_q= causal_results[Q_importance]
+第 39 页
+
+
+===== page 40 =====
+# 疾 名 IEI 禄 才 所 所 了 个 台 要 秤 王
+tei_indices = np argsort(importance te[- 3]
+ti_ 和 eatures = [feature_names6] foriin tei_ indices]
+tei_impartance = [amportance teif] foriin tei_indices]
+# 参 制 友基 针
+axes[]] barhttei_feahures tei_importance color- skyblue)
+axesf1] set_tileCTEI 的 特征 重要 性 (Top5) )
+axes[1] set_xlabel( 重要 性 分 数 )
+Pttight_ laycutO
+pltsavefig(analysis_results png, dpi=300, bbax_inches=tight)
+Phtshow0
+defmain0:
+# 了 加 惕 痢 世
+# 叙说 孝 尊 口 经 加 贰 动 df 的 ， 负 各 以 下 网:
+##genzier age 1i 忆 ieacjing_qge miajor dagyee Week jacftires IET O
+# 过 名 绍 房 从 如 六 多
+mprandomseed(42)
+mn=500
+data= pdDataFrame({
+Bender: np random randint(0.2. ma * 差别 10= 葡 二 罚
+ages mp randommnormal(40. 10, njclip(20. 60)，* 先 玉
+idle: mprandomrandint(1. 5. am = 名 本 11- 引
+Yeaching age: np randomnommal(15, 8, njclip(0.40)，* 次 赂
+major: mp mandamzrandint(0, 2 加 ，# 学 至 0= 姜 踢 1= 座 测
+degree': np randomzrandint(1, 4, mm)，* 学历 JJ= 党 二 3= 抽 二 3 六 二
+weekly_lectures: np randomnormal(10. 3. n) clip(0. 20)，* 启东 全 避
+TTET: mp randomnormal(50, 10,m，* 者 语 考 产 贿 企 力帆 代 交响
+Qi: np randomnormal(50.10.m) * 者 党 历 号 中 从
+)
+# 卢 加 一 些 逆 尖 此 ， 侵 区 多 更 奉 癌 只
+data[TET]=(
+20+
+5* datafgender]+
+第 40 页
+
+
+===== page 41 =====
+3 * dataftitle] +
+
+2 * datafdegree]+
+
+0.5 * data[weekly lectures] +
+
+03 * data[age] +
+
+Tandommnormal(0 5.D)
+)
+dat[Q]=(
+
+30+
+
+0.6* data[TET] +
+
+2 * dataftitle] +
+
+1 * data[degree] +
+
+0.2 * datafteaching age]+
+
+mp random nammal(0. 5.m)
+)
+#2 贰 世 颜 处 认
+print(" 正 在 进行 数据 预 处 理 -)
+Processed_data= data_preprocessing(data)
+# 保 六 丽人 处 加 后 克 痢 基
+Processed_datato_csv(processed_teacher_data csv, index=False)
+print(f" 已 保存 预 处 理 后 的 数据 ， 包 含 flen(processed_data)} 条 记录 和 {flen(processed_data colummns)} 列 7)
+# 方 印 几 基本 天 从 局
+print('n 预 处 理 后 的 数据 基本 信息 :7
+Processed_datainfo0
+#3 男 太 垦 经 向 方 二 机 名
+print("m 正在 构建 贝 叶 斯 结构 方程 模型
+tm
+
+trace = build_bsem_modelprocessed_data)
+
+# 了 区 轨 只 饭
+
+print("m 模型 诊断 结果 :7
+
+# 方 印 货 罗 参考 克 绝 六 此 要
+
+prnt(azsummary(trace))
+
+# 参 负 参考 妈 妥 姥 贸
+
+第 41 页
+
+
+===== page 42 =====
+azplot_trace(trace)
+plt savefg(bsem_tace png, dpi=300. bbax_inches=tight)
+PltcloseO)
+# 参 制 蓝天 加
+az plot_forest(tace: var_names[P 7 了
+pltsavefig(bsem_forest png, dpi300,bbox_inches=tight)
+Pltclose()
+print(" 贝 叶 斯 模型 构建 完成 ， 结 果 已 保存 ?
+excapt Exception ase-
+print(f" 构 建 贝 叶 斯 模型 时 发 生 错误 : fej 7)
+trace= None
+# 了 正剧 秦 久 从 代 应 从 折
+print('n 正在 进行 正则 化 中 介 效 应 分 析 - 7)
+tm
+mediation results = regularized_mediation(processed_data)
+print("m 中 介 效 应 分 析 结果 :7
+# 方 印 吕 丰 天 六
+print(m 路 径 a 系数 人 ->MD:)
+fr feat coefin zip (mediation_results[feature_names] mediation_results[a patH])-
+证 abxcoeg > 1e-.6: * 多 脖 芝 第 芭 天 部
+Print(f，{featj- fcoef .4 全 7
+print(fgvm 路 径 b 系数 (M->Y)- fmediation_results[b_path] 4 全 7
+print("m 直接 效应 <CG-> :7
+fr feat coefin zip mediation_results[feature_names] mediation_results[c_path])-
+证 abxcoeg > 1e-6: * 多 辟 花 泊 第 区 天 攻
+print(f 《人 at 《coef .4 全 7)
+print(mn 中 介 效 应 arb)9
+fr feat efctin zip(mediation_results[ feature_names] mediation_results[ rnediation effect])-
+证 abx(effecb > le-6: * 名 有 蕊 好 条 风格 应
+Print(f， featj: effeet 4
+except Exception as e-
+第 42 页
+
+
+===== page 43 =====
+print(f" 中 介 效 应 分 析 时 发 生 错 误 : {ej
+mediation_results = None
+#6 厂区 怨 人 从业
+print('n 正在 进行 因果 森林 分 析 -")
+tmr
+Cansal_results -casal_forest_znalysis(processed_data)
+print("m 特征 重要 性 (TED-")
+far 全 at importance in zip (causal_results[ feature_names'] causal_results[TEI_importance])-
+了 Print(f” {featj: fimpertance-4 全 )
+print("m 特征 重要 性 (Q)-")
+扣 全 at importancein zip (causal_results[ feature_names] causal_results[Q_importance])
+了 Print(f” {featj: fimpertance-4 全 )
+excapt Exception as e-
+print(f' 因 果 森 林 分 析 时 发 生 锚 误 : {ej
+eausal_results = None
+#7 可 部 化 经 桥
+fmediation_results and causal_results-
+print("m 正在 生成 可 视 化 结果 -")
+visuafize_results(mediation_results, causal_results)
+print' 可 视 化 结果 已 保存 为 analysis_resultspng)
+print("m 分 析 完成 ， 请 参考 上 述 结果 进行 解释 .?
+证 _name_ 一” main
+main0
+第 43 页

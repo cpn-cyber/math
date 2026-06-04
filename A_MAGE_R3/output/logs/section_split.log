@@ -1,0 +1,64 @@
+2026-06-05 01:21:23 [INFO] Starting section splitting: input_dir=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\extracted_text output_dir=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections
+2026-06-05 01:21:23 [WARNING] 01.txt | missing sections: sensitivity_analysis,error_analysis
+2026-06-05 01:21:23 [INFO] 01.txt split successfully: headings=11 missing=2 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\01.json
+2026-06-05 01:21:24 [WARNING] 02.txt | missing sections: sensitivity_analysis,error_analysis
+2026-06-05 01:21:24 [INFO] 02.txt split successfully: headings=14 missing=2 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\02.json
+2026-06-05 01:21:24 [WARNING] 03.txt | missing sections: results,sensitivity_analysis,references
+2026-06-05 01:21:24 [INFO] 03.txt split successfully: headings=16 missing=3 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\03.json
+2026-06-05 01:21:24 [WARNING] 04.txt | missing sections: results,sensitivity_analysis,error_analysis,model_evaluation,references,appendix
+2026-06-05 01:21:24 [INFO] 04.txt split successfully: headings=14 missing=6 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\04.json
+2026-06-05 01:21:25 [WARNING] 05.txt | missing sections: results,error_analysis,references,appendix
+2026-06-05 01:21:25 [INFO] 05.txt split successfully: headings=13 missing=4 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\05.json
+2026-06-05 01:21:26 [WARNING] 06.txt | missing sections: assumptions,sensitivity_analysis,error_analysis,model_evaluation
+2026-06-05 01:21:26 [INFO] 06.txt split successfully: headings=10 missing=4 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\06.json
+2026-06-05 01:21:27 [WARNING] 07.txt | missing sections: results,sensitivity_analysis
+2026-06-05 01:21:27 [INFO] 07.txt split successfully: headings=17 missing=2 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\07.json
+2026-06-05 01:21:27 [WARNING] 08.txt | missing sections: results,sensitivity_analysis,error_analysis,model_evaluation
+2026-06-05 01:21:27 [INFO] 08.txt split successfully: headings=8 missing=4 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\08.json
+2026-06-05 01:21:28 [WARNING] 09.txt | missing sections: symbols,model_solving,sensitivity_analysis,error_analysis,model_evaluation
+2026-06-05 01:21:28 [INFO] 09.txt split successfully: headings=10 missing=5 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\09.json
+2026-06-05 01:21:28 [WARNING] 10.txt | missing sections: sensitivity_analysis,error_analysis,model_evaluation,appendix
+2026-06-05 01:21:28 [INFO] 10.txt split successfully: headings=13 missing=4 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\10.json
+2026-06-05 01:21:28 [WARNING] 11.txt | missing sections: assumptions,symbols,sensitivity_analysis,error_analysis,model_evaluation
+2026-06-05 01:21:28 [INFO] 11.txt split successfully: headings=9 missing=5 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\11.json
+2026-06-05 01:21:28 [WARNING] 12.txt | missing sections: assumptions,symbols,model_solving,sensitivity_analysis,error_analysis,model_evaluation
+2026-06-05 01:21:28 [INFO] 12.txt split successfully: headings=6 missing=6 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\12.json
+2026-06-05 01:21:28 [WARNING] 13.txt | missing sections: problem_statement,assumptions,symbols,model_solving,results,sensitivity_analysis,error_analysis,model_evaluation,appendix
+2026-06-05 01:21:28 [INFO] 13.txt split successfully: headings=4 missing=9 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\13.json
+2026-06-05 01:21:29 [WARNING] 14.txt | missing sections: sensitivity_analysis,error_analysis,model_evaluation,appendix
+2026-06-05 01:21:29 [INFO] 14.txt split successfully: headings=18 missing=4 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\14.json
+2026-06-05 01:21:29 [WARNING] 15.txt | missing sections: symbols,model_solving,sensitivity_analysis,error_analysis,model_evaluation
+2026-06-05 01:21:29 [INFO] 15.txt split successfully: headings=8 missing=5 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\15.json
+2026-06-05 01:21:30 [WARNING] 16.txt | missing sections: model_solving,sensitivity_analysis,error_analysis,references
+2026-06-05 01:21:30 [INFO] 16.txt split successfully: headings=12 missing=4 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\16.json
+2026-06-05 01:21:30 [WARNING] 17.txt | missing sections: results,error_analysis
+2026-06-05 01:21:30 [INFO] 17.txt split successfully: headings=19 missing=2 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\17.json
+2026-06-05 01:21:30 [WARNING] 18.txt | missing sections: assumptions,symbols,results,sensitivity_analysis,error_analysis,model_evaluation,appendix
+2026-06-05 01:21:30 [INFO] 18.txt split successfully: headings=11 missing=7 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\18.json
+2026-06-05 01:21:31 [WARNING] 19.txt | missing sections: results,sensitivity_analysis,error_analysis,appendix
+2026-06-05 01:21:31 [INFO] 19.txt split successfully: headings=9 missing=4 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\19.json
+2026-06-05 01:21:31 [WARNING] 20.txt | missing sections: results,sensitivity_analysis,error_analysis,model_evaluation,appendix
+2026-06-05 01:21:31 [INFO] 20.txt split successfully: headings=15 missing=5 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\20.json
+2026-06-05 01:21:31 [WARNING] 21.txt | missing sections: problem_statement,assumptions,symbols,error_analysis,model_evaluation
+2026-06-05 01:21:31 [INFO] 21.txt split successfully: headings=9 missing=5 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\21.json
+2026-06-05 01:21:31 [WARNING] 22.txt | missing sections: sensitivity_analysis,error_analysis,model_evaluation
+2026-06-05 01:21:31 [INFO] 22.txt split successfully: headings=13 missing=3 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\22.json
+2026-06-05 01:21:32 [WARNING] 23.txt | missing sections: sensitivity_analysis,model_evaluation
+2026-06-05 01:21:32 [INFO] 23.txt split successfully: headings=12 missing=2 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\23.json
+2026-06-05 01:21:33 [WARNING] 24.txt | missing sections: problem_statement,sensitivity_analysis
+2026-06-05 01:21:33 [INFO] 24.txt split successfully: headings=17 missing=2 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\24.json
+2026-06-05 01:21:33 [WARNING] 25.txt | no section headings detected
+2026-06-05 01:21:33 [WARNING] 25.txt | missing sections: abstract,problem_statement,assumptions,symbols,model_building,model_solving,results,sensitivity_analysis,error_analysis,model_evaluation,references,appendix
+2026-06-05 01:21:33 [INFO] 25.txt split successfully: headings=0 missing=12 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\25.json
+2026-06-05 01:21:34 [WARNING] 26.txt | missing sections: error_analysis
+2026-06-05 01:21:34 [INFO] 26.txt split successfully: headings=16 missing=1 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\26.json
+2026-06-05 01:21:36 [WARNING] 27.txt | missing sections: sensitivity_analysis,error_analysis
+2026-06-05 01:21:36 [INFO] 27.txt split successfully: headings=22 missing=2 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\27.json
+2026-06-05 01:21:37 [WARNING] 28.txt | missing sections: error_analysis,model_evaluation
+2026-06-05 01:21:37 [INFO] 28.txt split successfully: headings=16 missing=2 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\28.json
+2026-06-05 01:21:38 [WARNING] 29.txt | missing sections: sensitivity_analysis,error_analysis
+2026-06-05 01:21:38 [INFO] 29.txt split successfully: headings=21 missing=2 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\29.json
+2026-06-05 01:21:38 [WARNING] 30.txt | missing sections: results,sensitivity_analysis,appendix
+2026-06-05 01:21:38 [INFO] 30.txt split successfully: headings=17 missing=3 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\intermediate\sections\30.json
+2026-06-05 01:21:38 [INFO] Section split report saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\section_split_report.xlsx
+2026-06-05 01:21:38 [INFO] Finished section splitting: total=30
