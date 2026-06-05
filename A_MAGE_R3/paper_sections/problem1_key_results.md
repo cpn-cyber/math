@@ -182,9 +182,58 @@ w_j=\alpha w_j^{AHP}+(1-\alpha)w_j^E.
   - 25.pdf共36页；
   - OCR成功36页；
   - OCR总字数32064；
+  - 页均OCR字符数890.67；
+  - 页字符数中位数851；
+  - 最少字符页为第8页，123字；
+  - 最多字符页为第2页，1340字；
   - 未记录Tesseract逐字置信度，因此使用页成功率和字数密度作为OCR质量代理，不编造OCR置信度。
 - 反循环论证审计结论：
   - BT应表述为“基于五维rubric的规则化成对比较校准”，不要写成真实人工判断；
   - AHP的 \(CR=0\) 应解释为预设偏好向量构造的一致矩阵，不应过度宣称真实专家判断完全一致；
   - KMeans为主分级，Jenks为一维自然断点一致性校验。
 
+## 10. Claude评委意见修订审计
+
+- 修订审计文件：`output/tables/problem1_judge_revision_audit.xlsx`。
+- 外部锚模板：`output/tables/external_anchor_blind_review_template.xlsx`。
+- 修订记录：`paper_sections/problem1_judge_revision.md`。
+- 外部锚填写文件：`output/tables/external_anchor_blind_review_filled.xlsx`。
+- 外部锚状态：`completed`。
+- 注意：专家AHP模板尚未作为真实专家矩阵写入权重模型，因此AHP部分仍应表述为“预设重要性向量构造的一致偏好矩阵”，不能写成已由专家AHP重新赋权。
+- partial_missing可用性：
+  - 缺失单元数：19；
+  - 总指标单元数：630；
+  - 缺失率：3.0159%；
+  - `feature_quality_flag`：30篇均为 `partial_missing`；
+  - `score_confidence`：30篇均为 `usable`。
+- BT独立性审计：
+  - BT潜在排序与TOPSIS基础排序Spearman：0.189321；
+  - BT潜在排序与TOPSIS基础排序Kendall \(\tau\)：0.135632；
+  - 非tie成对比较中，规则化winner与 \(S_{base}\) 方向一致率：0.666667；
+  - 成对方向独立性指数：0.768116；
+  - 解释：该指标说明BT信号与TOPSIS不完全重复，但不等价于外部有效性。
+- AHP-熵权 \(\alpha\) 敏感性：
+  - \(\alpha\in\{0.4,0.5,0.6,0.7\}\)；
+  - 与最终排名Spearman最小值：0.968854；
+  - 最大排名变化：7；
+  - \(\alpha=0.6\) 为当前封版方案。
+- 稀疏二值指标剔除审计：
+  - 剔除 I16 灵敏度分析存在性后，Spearman = 0.774416，最大排名变化 = 12；
+  - 剔除 I04 附录代码存在性后，Spearman = 0.878087，最大排名变化 = 9；
+  - 同时剔除 I16 与 I04 后，Spearman = 0.727697，最大排名变化 = 12；
+  - 同时剔除所有0/1二值指标 I04、I16、I17 后，Spearman = 0.635595，最大排名变化 = 14。
+- 软指标消融审计：
+  - 剔除 I13 方法合理性语义评分后，Spearman = 0.999555；
+  - 剔除 I20 创新性表达后，Spearman = 0.999555；
+  - 同时剔除 I13、I20、I21 后，Spearman = 0.995551。
+- 绝对护栏审计：
+  - 违反护栏样本数：1；
+  - 触发样本：18.txt；
+  - 原因：18.txt 最终等级为良好，但核心章节完整率为0.416667，低于0.5，应在正文解释为“相对良好但结构完整性存在复核风险”。
+- 外部锚复核：
+  - 有效复核对数：12；
+  - 与规则化winner一致对数：9；
+  - 不一致对数：3；
+  - 与规则化winner一致率：75.00%；
+  - 不一致样本对：A02、A06、A10；
+  - 填写表中的 reviewer_id：`R1`。

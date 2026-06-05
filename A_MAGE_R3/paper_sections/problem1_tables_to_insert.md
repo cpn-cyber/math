@@ -14,13 +14,19 @@
 | 表X | BT异常排名变化审计表 | `output/tables/bt_rank_change_audit.xlsx` | `large_rank_changes` | 4.5 | 展示Step 7B原始融合中 `|rank_change| >= 8` 的论文，用于解释为何采用缩放BT。 |
 | 表X | 最终五级质量分布 | `output/tables/grade_distribution.xlsx` | `grade_distribution` | 4.6 | 展示优秀、良好、中等、及格、不及格的数量和分数区间。 |
 | 表X | KMeans分级中心与分数区间 | `output/tables/kmeans_grade_details.xlsx` | `kmeans_grade_summary` | 4.6 | 展示五个等级的聚类中心、分数范围和论文数量。 |
-| 表X | Jenks自然断点与稳健性验证 | `output/tables/jenks_grade_details.xlsx` | `jenks_breaks`、`kmeans_jenks_comparison` | 4.6 | 展示Jenks断点，并说明KMeans与Jenks一致率为1.000000。 |
+| 表X | Jenks自然断点一致性校验 | `output/tables/jenks_grade_details.xlsx` | `jenks_breaks`、`kmeans_jenks_comparison` | 4.6 | 展示Jenks断点，并说明KMeans与Jenks一致率为1.000000；该表用于内部一致性校验，不作为外部分级正确性的证明。 |
 | 表X | 附件1最终排名前5与后5 | `output/tables/final_problem1_ranking.xlsx` | `final_ranking` | 4.7 | 展示最终 `S_rank_v2`、等级和TOPSIS/BT融合分。 |
 | 表X | 问题1最终结果一致性审计 | `output/tables/problem1_final_audit.xlsx` | `summary`、`checks` | 4.7或附录 | 展示所有一致性检查均通过，结论为“问题1结果文件一致，可进入论文写作阶段”。 |
 | 表X | 问题1稳健性补充审计 | `output/tables/problem1_robustness_audit.xlsx` | `weight_perturb_summary`、`bootstrap_summary`、`leave_one_indicator` | 4.8 | 展示权重扰动、指标删除和Bootstrap理想解扰动下的排名稳定性。 |
 | 表X | 边界论文等级置信度 | `output/tables/problem1_robustness_audit.xlsx` | `boundary_confidence` | 4.8 | 展示每篇论文的等级置信度、最近等级边界和风险类型，重点解释02.txt与07.txt。 |
 | 表X | 证据型解释摘要 | `output/tables/problem1_robustness_audit.xlsx` | `evidence_summary`、`representative_evidence` | 4.7或4.8 | 展示每篇论文的主要正向证据、扣分证据、一级指标强弱项和风险类型。 |
 | 表X | 反循环论证审计表 | `output/tables/problem1_robustness_audit.xlsx` | `anti_circular_audit` | 4.8 | 说明BT来源、AHP一致性、KMeans/Jenks关系和OCR风险提示的修正表述。 |
+| 表X | Claude评委意见修订审计汇总 | `output/tables/problem1_judge_revision_audit.xlsx` | `summary` | 4.8或附录 | 汇总OCR细节、BT独立性、AHP敏感性、二值指标剔除、绝对护栏和外部锚状态。 |
+| 表X | BT独立性指数与边际贡献审计 | `output/tables/problem1_judge_revision_audit.xlsx` | `bt_independence` | 4.5或4.8 | 展示BT排序与TOPSIS排序的Spearman、Kendall tau、成对方向独立性指数和最终排名影响。 |
+| 表X | AHP-熵权alpha敏感性分析 | `output/tables/problem1_judge_revision_audit.xlsx` | `alpha_sensitivity` | 4.3或4.8 | 展示 \(\alpha=0.4,0.5,0.6,0.7\) 下最终排名的稳定性。 |
+| 表X | 稀疏二值指标剔除审计 | `output/tables/problem1_judge_revision_audit.xlsx` | `binary_indicator_ablation` | 4.3或4.8 | 专门回应I16、I04等稀疏二值指标权重偏高问题。 |
+| 表X | 绝对护栏审计表 | `output/tables/problem1_judge_revision_audit.xlsx` | `absolute_guardrail_audit` | 4.6或附录 | 说明最终等级为批内相对等级，并标记18.txt等需复核风险。 |
+| 表X | 外部锚复核一致性检查 | `output/tables/problem1_judge_revision_audit.xlsx`、`output/tables/external_anchor_blind_review_filled.xlsx` | `external_anchor_check`、`external_anchor_review_detail`、`blind_pairwise_review` | 4.5或附录 | 展示12对边界论文复核结果、与规则化winner的一致率75.00%，以及A02、A06、A10等不一致样本对。 |
 
 ## 正文表格优先级建议
 
@@ -32,6 +38,8 @@
 4. BT融合敏感性分析结果；
 5. 最终五级质量分布；
 6. 附件1最终排名前5与后5；
-7. 问题1稳健性补充审计。
+7. 问题1稳健性补充审计；
+8. BT独立性指数与边际贡献审计；
+9. 稀疏二值指标剔除审计。
 
 其余表格可放入附录，作为结果可追溯性支撑。

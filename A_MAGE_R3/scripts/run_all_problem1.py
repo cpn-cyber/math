@@ -30,6 +30,7 @@ STEPS = [
     ("step8_grade_visualize", "scripts/run_step8_grade_visualize.py"),
     ("step8b_final_audit", "scripts/run_step8b_final_audit.py"),
     ("step10_enhance", "scripts/run_step10_problem1_enhance.py"),
+    ("step11_judge_revision", "scripts/run_step11_problem1_judge_revision.py"),
 ]
 
 
