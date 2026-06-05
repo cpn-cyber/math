@@ -20,6 +20,13 @@ pdf_parser:
   enable_ocr_for_scanned_pdf: true
   step2_enable_ocr_fallback: false
   ocr_engine: "tesseract_or_fallback"
+  ocr_report_filename: "ocr_parse_report.xlsx"
+  ocr_log_filename: "ocr_parse.log"
+  ocr_render_dpi: 300
+  ocr_psm: 6
+  ocr_timeout_seconds: 180
+  tesseract_path: "C:/Program Files/Tesseract-OCR/tesseract.exe"
+  tesseract_cmd: ""
   scanned_pdf_text_threshold: 100
   ocr_languages:
     - "chi_sim"
@@ -220,5 +227,29 @@ feature_extraction:
 
 weights:
   subjective_method: "ahp"
-  objective_method: "critic"
+  objective_method: "entropy"
   fusion_alpha: 0.6
+  weight_table_filename: "appendix1_weights_ahp_entropy.xlsx"
+  weight_chart_filename: "appendix1_weights_ahp_entropy.png"
+  log_filename: "weighting.log"
+
+topsis:
+  score_table_filename: "appendix1_topsis_scores.xlsx"
+  score_distribution_chart_filename: "topsis_score_distribution.png"
+  ranking_bar_chart_filename: "topsis_ranking_bar.png"
+  log_filename: "topsis.log"
+
+pairwise_template:
+  template_filename: "pairwise_comparison_template.xlsx"
+  log_filename: "pairwise_template.log"
+  close_gap_threshold: 3.0
+  boundary_scores:
+    - 60
+    - 50
+    - 40
+  min_appearances_per_paper: 2
+
+bradley_terry:
+  fusion_lambda: 0.7
+  ridge: 0.001
+  log_filename: "bradley_terry.log"

@@ -1,0 +1,12 @@
+2026-06-05 11:03:46 [INFO] Starting feature quality audit with OCR report.
+2026-06-05 11:03:46 [INFO] Input found: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\appendix1_features_raw.xlsx
+2026-06-05 11:03:46 [INFO] Input found: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\appendix1_features_normalized.xlsx
+2026-06-05 11:03:46 [INFO] Input found: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\section_split_report.xlsx
+2026-06-05 11:03:46 [INFO] Input found: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\pdf_parse_report.xlsx
+2026-06-05 11:03:46 [INFO] Input found: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\ocr_parse_report.xlsx
+2026-06-05 11:03:46 [INFO] Raw rows=30, unique papers=30, feature columns=21
+2026-06-05 11:03:46 [INFO] Normalized rows=30, unique papers=30
+2026-06-05 11:03:47 [INFO] Paper25 flag=partial_missing text_chars=32064.0 ocr_success=True raw_missing=0 missing_core= reasonable_missing=model_evaluation,sensitivity_analysis
+2026-06-05 11:03:47 [INFO] Flag counts: partial_missing=30
+2026-06-05 11:03:47 [INFO] Saved audit workbook: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\feature_quality_audit.xlsx
+2026-06-05 11:03:47 [INFO] Recommendation: go | Can enter Step 5. No parse_failed papers remain after OCR; remaining missing values should be handled by the configured missing-value strategy before weighting.

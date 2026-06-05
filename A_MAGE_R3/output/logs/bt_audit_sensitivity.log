@@ -1,0 +1,6 @@
+﻿2026-06-05 14:20:57 [INFO] Starting Step 7C BT audit and lambda sensitivity.
+2026-06-05 14:20:57 [INFO] Large rank-change papers |rank_change| >= 8: 7
+2026-06-05 14:20:58 [INFO] Recommendation: {'recommended_bt_score_version': 'S_BT_scaled', 'recommended_lambda': 0.85, 'spearman_vs_topsis': 0.9670745272525029, 'max_abs_rank_change': 7, 'mean_abs_rank_change': 1.4, 'large_rank_change_count_gt_8': 0, 'reason': '优先采用映射到 TOPSIS 分数区间的 S_BT_scaled；在 Spearman>=0.80、无超过8名的大幅变化前提下，lambda=0.85 保留适度 BT 校准，同时避免大幅推翻 TOPSIS。'}
+2026-06-05 14:20:58 [INFO] Saved bt_rank_change_audit.xlsx, bt_lambda_sensitivity.xlsx, appendix1_rank_fusion_v2.xlsx
+2026-06-05 14:20:58 [INFO] Saved bt_lambda_spearman.png, bt_lambda_max_rank_change.png, rank_change_v2.png
+2026-06-05 14:20:58 [INFO] Finished Step 7C. Grade classification was not run.

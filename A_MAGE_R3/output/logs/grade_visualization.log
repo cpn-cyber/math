@@ -1,0 +1,34 @@
+﻿2026-06-05 14:37:29 [INFO] Starting Step 8 grade classification and visualization.
+2026-06-05 14:37:29 [INFO] Using final score field: S_rank_v2
+2026-06-05 14:37:31 [INFO] Final score field used: S_rank_v2
+2026-06-05 14:37:31 [INFO] Final S_rank_v2 range: 23.616646 - 71.670038
+2026-06-05 14:37:31 [INFO] Grade distribution:
+2026-06-05 14:37:31 [INFO]   优秀: 2 papers, score interval 67.393314 - 71.670038
+2026-06-05 14:37:31 [INFO]   良好: 6 papers, score interval 52.534990 - 59.108593
+2026-06-05 14:37:31 [INFO]   中等: 10 papers, score interval 44.605967 - 49.764098
+2026-06-05 14:37:31 [INFO]   及格: 9 papers, score interval 35.870799 - 43.190744
+2026-06-05 14:37:31 [INFO]   不及格: 3 papers, score interval 23.616646 - 31.817805
+2026-06-05 14:37:31 [INFO] KMeans silhouette score: 0.605625
+2026-06-05 14:37:31 [INFO] KMeans vs Jenks consistency: 1.000000
+2026-06-05 14:37:31 [INFO] Top 5 final ranking:
+2026-06-05 14:37:31 [INFO]   1. 28 28.txt S_rank_v2=71.670038 grade=优秀
+2026-06-05 14:37:31 [INFO]   2. 25 25.txt S_rank_v2=67.393314 grade=优秀
+2026-06-05 14:37:31 [INFO]   3. 26 26.txt S_rank_v2=59.108593 grade=良好
+2026-06-05 14:37:31 [INFO]   4. 01 01.txt S_rank_v2=55.063840 grade=良好
+2026-06-05 14:37:31 [INFO]   5. 29 29.txt S_rank_v2=54.907091 grade=良好
+2026-06-05 14:37:31 [INFO] Bottom 5 final ranking:
+2026-06-05 14:37:31 [INFO]   26. 22 22.txt S_rank_v2=36.254877 grade=及格
+2026-06-05 14:37:31 [INFO]   27. 04 04.txt S_rank_v2=35.870799 grade=及格
+2026-06-05 14:37:31 [INFO]   28. 19 19.txt S_rank_v2=31.817805 grade=不及格
+2026-06-05 14:37:31 [INFO]   29. 13 13.txt S_rank_v2=25.783640 grade=不及格
+2026-06-05 14:37:31 [INFO]   30. 12 12.txt S_rank_v2=23.616646 grade=不及格
+2026-06-05 14:37:31 [INFO] Boundary-nearby papers: 1
+2026-06-05 14:37:31 [INFO]   02 rank=19 score=43.190744 grade=及格 boundary=中等-及格 distance=0.362007
+2026-06-05 14:37:31 [INFO] KMeans/Jenks inconsistent papers: []
+2026-06-05 14:37:31 [INFO] Writing suggestions for Problem 1:
+2026-06-05 14:37:31 [INFO]   1. 论文中明确说明最终分级使用 Step 7C 的 S_BT_scaled + lambda=0.85 融合分。
+2026-06-05 14:37:31 [INFO]   2. 说明 KMeans 为主分级方法，Jenks 自然断点作为稳健性验证。
+2026-06-05 14:37:31 [INFO]   3. 对等级边界附近论文在正文中保留解释，避免给出过度绝对化结论。
+2026-06-05 14:37:31 [INFO]   4. 可结合雷达图解释不同等级论文在结构、逻辑、建模、结果、写作五方面的差异。
+2026-06-05 14:37:31 [INFO] Saved final workbooks and charts.
+2026-06-05 14:37:31 [INFO] Finished Step 8. Problem 2 was not run.

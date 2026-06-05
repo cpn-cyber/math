@@ -1,0 +1,7 @@
+2026-06-05 12:53:38 [INFO] Starting Step 7A pairwise template generation: score_path=C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\appendix1_topsis_scores.xlsx
+2026-06-05 12:53:38 [INFO] Pairwise template saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\pairwise_comparison_template.xlsx
+2026-06-05 12:53:38 [INFO] Pairs generated: 69
+2026-06-05 12:53:38 [INFO] Average appearances per paper: 4.6000
+2026-06-05 12:53:38 [INFO] Under-covered papers: none
+2026-06-05 12:53:38 [INFO] Winner and reason columns are intentionally blank.
+2026-06-05 12:53:38 [INFO] Finished Step 7A pairwise template generation.

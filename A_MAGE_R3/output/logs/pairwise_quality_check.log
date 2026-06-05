@@ -1,0 +1,6 @@
+2026-06-05 13:25:17 [INFO] Starting pairwise quality check: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\pairwise_comparison_filled.xlsx
+2026-06-05 13:25:17 [INFO] Total pairs=69 valid=69 tie=21 blank=0 invalid=0
+2026-06-05 13:25:17 [INFO] Undercovered papers: none
+2026-06-05 13:25:17 [INFO] Comparison graph connected=True components=1
+2026-06-05 13:25:17 [INFO] Pairwise quality report saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\pairwise_quality_check.xlsx
+2026-06-05 13:25:17 [INFO] Finished pairwise quality check. BT fitting was not run.

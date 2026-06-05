@@ -1,0 +1,18 @@
+﻿2026-06-05 14:48:49 [INFO] Starting Step 8B final consistency audit. No models will be recalculated.
+2026-06-05 14:48:50 [INFO] PASS | row_count_30 | actual_rows=30
+2026-06-05 14:48:50 [INFO] PASS | paper_id_no_duplicate | duplicate_ids=[]
+2026-06-05 14:48:50 [INFO] PASS | paper_id_no_missing | missing=[]; extra=[]
+2026-06-05 14:48:50 [INFO] PASS | s_rank_v2_consistency | inconsistent_paper_ids=[]
+2026-06-05 14:48:50 [INFO] PASS | rank_final_descending | rank_mismatch_ids=[]; rank_set_ok=True
+2026-06-05 14:48:50 [INFO] PASS | grade_distribution_sum | count_sum=30
+2026-06-05 14:48:50 [INFO] PASS | grade_distribution_labels | grades=['优秀', '良好', '中等', '及格', '不及格']
+2026-06-05 14:48:50 [INFO] PASS | final_kmeans_jenks_grade_consistency | inconsistent_ids=[]
+2026-06-05 14:48:50 [INFO] PASS | detail_workbook_grade_consistency | kmeans_detail_ok=True; jenks_detail_ok=True
+2026-06-05 14:48:50 [INFO] PASS | kmeans_jenks_consistency_rate | computed_consistency=1.000000; detail_sheet_consistency=1.000000
+2026-06-05 14:48:50 [INFO] PASS | top_bottom_log_consistency | top_ok=True; bottom_ok=True
+2026-06-05 14:48:50 [INFO] PASS | chart_files_exist | missing_or_empty=[]
+2026-06-05 14:48:50 [INFO] PASS | weight_file_basic_validity | indicator_count=21; combined_weight_sum=1.000000000000; missing_columns=[]
+2026-06-05 14:48:50 [INFO] Audit conclusion: 问题1结果文件一致，可进入论文写作阶段
+2026-06-05 14:48:50 [INFO] Audit workbook saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\problem1_final_audit.xlsx
+2026-06-05 14:48:50 [INFO] Markdown summary saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\paper_sections\problem1_result_summary.md
+2026-06-05 14:48:50 [INFO] Finished Step 8B. Original result files were not modified.

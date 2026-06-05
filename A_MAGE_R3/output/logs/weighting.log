@@ -1,0 +1,6 @@
+2026-06-05 11:14:14 [INFO] Starting Step 5 weighting: feature_table=C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\appendix1_features_normalized.xlsx alpha=0.6
+2026-06-05 11:14:14 [INFO] Entropy sample size=30 indicators=21
+2026-06-05 11:15:59 [INFO] Weight table saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\appendix1_weights_ahp_entropy.xlsx
+2026-06-05 11:15:59 [INFO] Weight chart saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\charts\appendix1_weights_ahp_entropy.png
+2026-06-05 11:15:59 [INFO] AHP CR max=0.000000; entropy missing cells imputed=19
+2026-06-05 11:15:59 [INFO] Finished Step 5 weighting.

@@ -1,0 +1,12 @@
+2026-06-05 12:42:40 [INFO] Starting Step 6 TOPSIS.
+2026-06-05 12:42:40 [INFO] Feature table: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\appendix1_features_normalized.xlsx
+2026-06-05 12:42:40 [INFO] Weight table: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\appendix1_weights_ahp_entropy.xlsx
+2026-06-05 12:42:40 [INFO] Quality audit: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\feature_quality_audit.xlsx
+2026-06-05 12:42:41 [INFO] No parse_failed papers found. score_confidence=usable for all papers.
+2026-06-05 12:42:41 [WARNING] TOPSIS feature matrix imputed missing cells: 19
+2026-06-05 12:42:41 [WARNING] I06_模型假设与问题匹配度 | missing=6 imputation_value=0.04065714357857236
+2026-06-05 12:42:41 [WARNING] I08_结果结论一致性 | missing=13 imputation_value=0.08065595716198126
+2026-06-05 12:42:43 [INFO] TOPSIS scores saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\appendix1_topsis_scores.xlsx
+2026-06-05 12:42:43 [INFO] Distribution chart saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\charts\topsis_score_distribution.png
+2026-06-05 12:42:43 [INFO] Ranking chart saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\charts\topsis_ranking_bar.png
+2026-06-05 12:42:43 [INFO] Finished Step 6 TOPSIS: papers=30 score_min=20.995250 score_max=73.446982

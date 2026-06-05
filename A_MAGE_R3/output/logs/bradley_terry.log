@@ -1,0 +1,14 @@
+2026-06-05 13:33:20 [INFO] Starting Step 7B Bradley-Terry calibration.
+2026-06-05 13:33:20 [INFO] Pairwise file: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\pairwise_comparison_filled.xlsx
+2026-06-05 13:33:20 [INFO] TOPSIS score file: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\appendix1_topsis_scores.xlsx
+2026-06-05 13:33:20 [INFO] Quality check file: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\pairwise_quality_check.xlsx
+2026-06-05 13:33:20 [INFO] Valid comparisons=69 ties=21 tie_strategy=half-win
+2026-06-05 13:33:24 [INFO] BT theta range: -7.077864 to 7.991698
+2026-06-05 13:33:24 [INFO] S_BT range: 0.000000 to 100.000000
+2026-06-05 13:33:24 [INFO] S_rank range: 23.609368 to 74.637350
+2026-06-05 13:33:24 [INFO] TOPSIS vs fused Spearman: 0.728587
+2026-06-05 13:33:24 [INFO] Tie sensitivity Spearman: 0.911902
+2026-06-05 13:33:24 [INFO] BT output saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\bradley_terry_scores.xlsx
+2026-06-05 13:33:24 [INFO] Rank fusion output saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\appendix1_rank_fusion.xlsx
+2026-06-05 13:33:24 [INFO] Tie sensitivity output saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\tables\bradley_terry_tie_sensitivity.xlsx
+2026-06-05 13:33:24 [INFO] Finished Step 7B Bradley-Terry calibration. Grade classification was not run.
