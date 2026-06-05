@@ -17,6 +17,10 @@
 | 表X | Jenks自然断点与稳健性验证 | `output/tables/jenks_grade_details.xlsx` | `jenks_breaks`、`kmeans_jenks_comparison` | 4.6 | 展示Jenks断点，并说明KMeans与Jenks一致率为1.000000。 |
 | 表X | 附件1最终排名前5与后5 | `output/tables/final_problem1_ranking.xlsx` | `final_ranking` | 4.7 | 展示最终 `S_rank_v2`、等级和TOPSIS/BT融合分。 |
 | 表X | 问题1最终结果一致性审计 | `output/tables/problem1_final_audit.xlsx` | `summary`、`checks` | 4.7或附录 | 展示所有一致性检查均通过，结论为“问题1结果文件一致，可进入论文写作阶段”。 |
+| 表X | 问题1稳健性补充审计 | `output/tables/problem1_robustness_audit.xlsx` | `weight_perturb_summary`、`bootstrap_summary`、`leave_one_indicator` | 4.8 | 展示权重扰动、指标删除和Bootstrap理想解扰动下的排名稳定性。 |
+| 表X | 边界论文等级置信度 | `output/tables/problem1_robustness_audit.xlsx` | `boundary_confidence` | 4.8 | 展示每篇论文的等级置信度、最近等级边界和风险类型，重点解释02.txt与07.txt。 |
+| 表X | 证据型解释摘要 | `output/tables/problem1_robustness_audit.xlsx` | `evidence_summary`、`representative_evidence` | 4.7或4.8 | 展示每篇论文的主要正向证据、扣分证据、一级指标强弱项和风险类型。 |
+| 表X | 反循环论证审计表 | `output/tables/problem1_robustness_audit.xlsx` | `anti_circular_audit` | 4.8 | 说明BT来源、AHP一致性、KMeans/Jenks关系和OCR风险提示的修正表述。 |
 
 ## 正文表格优先级建议
 
@@ -27,7 +31,7 @@
 3. TOPSIS基础评分前5与后5；
 4. BT融合敏感性分析结果；
 5. 最终五级质量分布；
-6. 附件1最终排名前5与后5。
+6. 附件1最终排名前5与后5；
+7. 问题1稳健性补充审计。
 
 其余表格可放入附录，作为结果可追溯性支撑。
-

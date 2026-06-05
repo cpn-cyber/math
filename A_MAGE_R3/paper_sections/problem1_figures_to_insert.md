@@ -15,6 +15,10 @@
 | 图X | 最终融合分直方图 | `output/charts/final_score_histogram.png` | 4.6或4.7 | 该图展示最终融合分的总体分布，可与五级分级结果配合说明分数区间。 |
 | 图X | KMeans五级分级散点图 | `output/charts/kmeans_grade_scatter.png` | 4.6 | 该图按最终排名和 `S_rank_v2` 展示KMeans五级分级结果，说明分级边界的样本分布。 |
 | 图X | KMeans与Jenks等级对比图 | `output/charts/kmeans_jenks_comparison.png` | 4.6 | 该图展示KMeans与Jenks分级结果完全一致，对应一致率为1.000000，用于支撑分级稳健性。 |
+| 图X | 多智能体可审计论文评估框架图 | `output/charts/multi_agent_framework.png` | 4.8 | 该图展示结构规范、逻辑一致、数学建模、结果验证、写作应用五类Agent如何向综合仲裁Agent提供可追溯证据。 |
+| 图X | 权重扰动下的排名稳定性图 | `output/charts/weight_perturbation_rank_stability.png` | 4.8 | 该图展示300次权重扰动中各论文排名标准差，用于说明最终排序对权重小幅变化的敏感程度。 |
+| 图X | Bootstrap理想解扰动排名稳定性图 | `output/charts/bootstrap_rank_stability.png` | 4.8 | 该图展示Bootstrap改变TOPSIS理想解参考集合后各论文排名标准差，用于说明理想解选取的稳健性。 |
+| 图X | 最终等级置信度与边界风险图 | `output/charts/boundary_grade_confidence.png` | 4.8 | 该图展示每篇论文的等级置信度，并标记边界等级样本，重点用于解释02.txt和07.txt。 |
 
 ## 正文图优先级建议
 
@@ -24,7 +28,8 @@
 2. TOPSIS基础评分排名柱状图；
 3. 推荐融合方案排名变化图；
 4. 最终融合分排名柱状图；
-5. 优秀-中等-不及格代表论文一级指标雷达图。
+5. 优秀-中等-不及格代表论文一级指标雷达图；
+6. 多智能体可审计论文评估框架图；
+7. 最终等级置信度与边界风险图。
 
 其余图可放入附录或作为论文支撑材料。
-
