@@ -10,5 +10,5 @@
 - final_key_feature：total_chars, method_fit, page_count, section_coverage, objective_constraint_completeness, task_coverage, figure_table_explanation_rate, conclusion_echo_rate
 - 成对排序：total_pairs=45，near_tie=3，overall_accuracy=0.622222，group_mean=0.622222，accuracy_without_near_tie=0.595238
 
-最终可写结论：第二问识别出的关键因素集中在方法匹配、任务覆盖、结构完整性、目标函数与约束完整性、图表解释和结论闭环等方面。篇幅类特征只表示信息承载量和完整性相关，不能解释为篇幅越长越好。PLS/QAF预测能力有限，结论应以解释性和可审计性为主。
+最终可写结论：第二问识别出的关键因素集中在方法匹配、任务覆盖、结构完整性、目标函数与约束完整性、图表解释和结论闭环等方面。篇幅类特征只表示信息承载量和完整性相关，不能解释为篇幅越长越好。由于 `Q_label` 是第一问封版评价系统产生的弱监督标签，第二问结论应写成该封版系统下的特征敏感性和可审计解释，不能写成外部真实质量因果发现。PLS/QAF预测能力有限，PLS的LOOCV应称为近似留一审计，成对排序也只是由 `Q_label` 诱导排序的一致性辅助检查。
 

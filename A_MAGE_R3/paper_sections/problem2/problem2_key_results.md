@@ -27,10 +27,12 @@
 
 ## Conclusion
 - **writeable conclusion**：Key features have moderate auxiliary ranking support; PLS/QAF are limited and auditable, not strong prediction models.
+- **scope defense**：Problem 2 explains feature sensitivity under the Problem 1 sealed weak-supervised evaluation system; it is not an independent external ground-truth prediction task.
 
 ## 最终可写结论
 - 第二问以第一问封版智能评估系统输出的 `Q_label` 作为弱监督质量标签，而非官方真实质量分。
+- 由于 `Q_label` 与部分文本解释特征同源，第二问应写成“封版评价系统下的关键特征敏感性与可审计解释”，不能写成外部真值因果发现。
 - `method_fit`、`section_coverage`、`task_coverage`、`objective_constraint_completeness`、`figure_table_explanation_rate` 等指标对质量差异具有较稳定解释力。
 - `total_chars` 与 `page_count` 只能解释为信息承载量和完整性相关，不代表篇幅越长越好。
-- PLS 和 QAF 的预测能力有限，应作为关键特征解释、稳健性审计和保守校正工具，而非强预测模型。
-- 成对排序辅助检验为中等支持，不能写成强验证。
+- PLS 和 QAF 的预测能力有限，应作为关键特征解释、稳健性审计和保守校正工具，而非强预测模型；PLS的LOOCV应称为近似留一审计。
+- 成对排序辅助检验为中等支持，其优劣方向来自 `Q_label` 差值，不能写成独立外部验证。
