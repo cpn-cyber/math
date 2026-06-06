@@ -2,7 +2,7 @@
 
 |表题|来源文件|建议位置|用途说明|
 |---|---|---|---|
-|表X 附件3当前质量复评结果|output/problem3_tables/appendix3_current_evaluation.xlsx|6.2|展示F1_score、F2_key_score、Q_cur_baseline和当前等级。|
+|表X 附件3当前质量复评结果|output/problem3_tables/appendix3_current_evaluation.xlsx|6.2|展示F1_score、F2_key_score、Q_cur_baseline和封版聚类相对等级，并说明其与预测达标等级口径不同。|
 |表X 五元论证链逻辑断层诊断结果|output/problem3_tables/logic_gap_diagnosis.xlsx|6.3|展示Gamma、G_logic_gap和主要弱边。|
 |表X AI辅助写作风险D-S融合结果|output/problem3_tables/ai_risk_ds_fusion.xlsx|6.4|展示R_AI、风险等级和主要风险来源，需保留免责声明。|
 |表X 多智能体评审分歧结果|output/problem3_tables/multi_agent_subjectivity_analysis.xlsx|6.5|展示Agent得分标准差、最高/最低评分Agent和分歧等级。|
