@@ -20,6 +20,14 @@ data/appendix1_papers/
 
 普通 PDF 后续由 PyMuPDF 提取文本；扫描型 PDF 后续通过 OCR 模块处理。
 
+将附件 2 的 10 篇同赛题论文 PDF 放入：
+
+```text
+data/appendix2_papers/
+```
+
+第二问将承接第一问封版评分体系，把第一问智能评估系统输出的综合质量分 \(Q_i\) 作为弱监督标签，用于分析可量化文本特征与论文质量之间的关系。
+
 ## 运行步骤
 
 请在 `A_MAGE_R3` 目录下运行。
@@ -41,6 +49,23 @@ python scripts/run_step8_grade_visualize.py
 python scripts/run_step8b_final_audit.py
 python scripts/run_step10_problem1_enhance.py
 python scripts/run_step11_problem1_judge_revision.py
+```
+
+第二问工程结构检查与后续预留步骤：
+
+```bash
+python scripts/run_step10_problem2_setup.py
+python scripts/run_step11_appendix2_parse_sections.py
+python scripts/run_step12_appendix2_features_labels.py
+python scripts/run_step13_deep_quality_features.py
+python scripts/run_step14_robust_correlation.py
+python scripts/run_step15_grey_key_index.py
+python scripts/run_step16_pls_vip_prediction.py
+python scripts/run_step17_quality_adjustment.py
+python scripts/run_step18_small_sample_validation.py
+python scripts/run_step19_pairwise_ranking_check.py
+python scripts/run_step20_problem2_final_audit.py
+python scripts/run_step21_problem2_draft.py
 ```
 
 也可以使用一键流程：
@@ -66,6 +91,18 @@ python scripts/run_all_problem1.py
 - Step 8B：问题1最终结果一致性审计。
 - Step 10：补充稳健性、等级置信度、OCR质量代理和证据解释。
 - Step 11：按 Claude 评委意见补 BT 独立性、AHP alpha敏感性、稀疏二值指标剔除、绝对护栏审计，并生成真人盲评/专家AHP外部锚模板。
+- Step 10（问题2）：建立并检查第二问工程结构与配置。
+- Step 11（问题2）：预留附件2 PDF解析、文本抽取和章节切分入口。
+- Step 12（问题2）：预留附件2可量化特征与弱监督质量标签 \(Q_i\) 构造入口。
+- Step 13（问题2）：预留任务覆盖率、数据可信度、方法匹配度等深层质量特征入口。
+- Step 14（问题2）：预留稳健标准化与相关性分析入口。
+- Step 15（问题2）：预留灰色关联和关键特征指数入口。
+- Step 16（问题2）：预留PLS-VIP小样本预测模型入口。
+- Step 17（问题2）：预留质量调整因子 \(\phi_i\) 入口。
+- Step 18（问题2）：预留LOOCV、Bootstrap和删除单样本敏感性检验入口。
+- Step 19（问题2）：预留45对成对排序稳定性检查入口。
+- Step 20（问题2）：预留第二问最终一致性审计入口。
+- Step 21（问题2）：预留第二问论文写作素材生成入口。
 
 ## 外部锚说明
 
@@ -76,3 +113,7 @@ python scripts/run_all_problem1.py
 - `output/tables/`：表格结果。
 - `output/charts/`：图表结果。
 - `output/logs/`：运行日志。
+- `output/problem2_tables/`：第二问表格结果。
+- `output/problem2_charts/`：第二问图表结果。
+- `output/problem2_logs/`：第二问运行日志。
+- `paper_sections/problem2/`：第二问论文写作素材。

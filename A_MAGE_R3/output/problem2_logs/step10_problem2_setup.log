@@ -1,0 +1,42 @@
+Step 10 Problem 2 setup check
+Time: 2026-06-05 23:36:20
+Project root: C:\Users\13178\Desktop\A题\A_MAGE_R3
+
+Required directories:
+  - data/appendix2_papers: OK
+  - data/appendix2_extracted_text: OK
+  - data/appendix2_intermediate: OK
+  - output/problem2_tables: OK
+  - output/problem2_charts: OK
+  - output/problem2_logs: OK
+  - paper_sections/problem2: OK
+
+Required modules:
+  - modules/appendix2_pipeline.py: OK
+  - modules/quality_label_builder.py: OK
+  - modules/deep_quality_features.py: OK
+  - modules/robust_preprocessing.py: OK
+  - modules/grey_relation.py: OK
+  - modules/pls_vip_model.py: OK
+  - modules/quality_adjustment_factor.py: OK
+  - modules/small_sample_validation.py: OK
+  - modules/pairwise_ranking_check.py: OK
+  - modules/problem2_report_generator.py: OK
+
+Required scripts:
+  - scripts/run_step10_problem2_setup.py: OK
+  - scripts/run_step11_appendix2_parse_sections.py: OK
+  - scripts/run_step12_appendix2_features_labels.py: OK
+  - scripts/run_step13_deep_quality_features.py: OK
+  - scripts/run_step14_robust_correlation.py: OK
+  - scripts/run_step15_grey_key_index.py: OK
+  - scripts/run_step16_pls_vip_prediction.py: OK
+  - scripts/run_step17_quality_adjustment.py: OK
+  - scripts/run_step18_small_sample_validation.py: OK
+  - scripts/run_step19_pairwise_ranking_check.py: OK
+  - scripts/run_step20_problem2_final_audit.py: OK
+  - scripts/run_step21_problem2_draft.py: OK
+
+Missing directories: none
+Missing files: none
+Result: PASS

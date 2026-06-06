@@ -1,0 +1,1500 @@
+[PAGE 1]
+教育数宇化转型下融校教师数学用任力增值评价
+摘 要
+
+在教育数字化转型的大背景下, 提升高校教师数字胜任力对推动高等教育数字化进
+程、保障人才培养质量意义重大.本文针对高校教师数字胜任力提升中的问题, 构建数学
+模型深入分析，旧在制定科学策略，助力教育数字化转型.
+
+针对问题一，竖于《教师数字素养》标准难以满足高校教师职业特性青求，本文抽
+取标准中的相关指标,并结合高校教师职业特性扩展, 形成初始候选指标库.运用德尔菲
+法开展两轮专家咨询,依据均值和变异系数簿选关键指标，再采用层次分析法构建判断
+年阵，通过几何平均法计算权重并进行一致性检验，最终构建高校教师数字胜任力增值
+评价指标体系，为后续研究筑牢基础.
+
+针对问题二，考虑到高校革型、区域位置等差异对教师数字胜任力提升的影响,本
+文基于问题一构建的指标体系计算教师数字胜任力增值得分《VA) ，副合高校分类属
+性、区域位置及资源投入等数据, 运用多层线性模型分解教师层和学校层变量对 VA 的
+影响.同时, 利用随机森林算法捕捉变量问非线性关系并计算特征重要性, 深入剖析各内
+素对教师数字胜任力增值的作用，为分层分类培育策略制定提供依据.
+
+针对问题三，教师个体属性对数字胜任力发展和人才培养质量存在不同程度影啊.
+本文收集教师个体属性、VA 得分及以学生评教量化的人才培养质量数据，运用扩展多
+层线性模型处理三层嵌套结构数据，借助 XGBoost 捕捉复杂非线性关系，利用结构方
+程横型验证传导路径及中介效应.经数据预处理、模型求解及中介效应判定, 从微观层面
+剖析各因素作用，为个性化提升策略制定提供支撑.
+
+针对问题四,在明确评价指标体系与各因素影响机制后,本文整合前三个问题的成
+果，运用 PDCA 循环实现持续改进，通过动态监测机制、分层分类培育、技术赋能及
+多元协同生态等模型求解，制定与《次化新时代教育评价改革总体方案》契合的对接策
+略，进而提出提升高校救师数字胜任力的实施方案与培育路径.
+
+本文构建的模型综合考虑多方面因素，有具有科学性、针对性，但存在数据要求吉、
+计算复杂、横型假设局限性等不足.未来可通过优化数据管理、简化计算方法、完善模型
+假设改进.该研究成果对提升高校教师数字胜任力、推动教育数字化转型意义深远, 能为
+教育政策制定与高校教师发展提供理论与实践指导.
+关键词: 高校教师; 数字胜任力; 增值评价，多层线性模型，结构方程模型
+
+第 1 页
+
+[PAGE 2]
+a |}  问题重述
+A.
+图1 教育数字化
+1.1  问题背景
+随着人工智能等数字技术鞍勃发展, 教育数字化转型成为必然趋势.欧盟发布《数字
+教育行动计划 (2021-2027 年) 》明确两大核心战略，我国持续推进国家教育数字化战
+略行动，从构建智能教育体系、制定教师数字素养标准，到将“发展数字教育"纳入科教
+兴国战略, 不断强调以数字化助力教育变革.在此背景下,教学模式革新俊生新教育生态，
+对高校教师数字胜任力提出更高要求，而《深化新时代教育评价改革总体方案》《教师
+数字素养》等政策文件，也为其评价与提升指明方向.
+1.2 BRAVO
+结合上述政策背景与高校教师数字胜任力发展需求，需完成以下四项任务;
+任务一: 依据《教师数字素养》行业标准，结合高校教师数字胜任力发展特征，细
+化二级指标〈如将“数字技术应用?分解为“在线教学平台熟练度数据分析工具使用频
+率”等) ，构建高校教师数字胜任力增值评价指标体系.引入德尔菲法与层次分析法，通
+过专家打分确定指标权重，并说明一致性检验过程以确保体系科学性.
+任务二: 运用任务一构建的评价指标体系，综合高校分类属性〈如“双一流”*高校、
+地方院校) 与区域位置〈《东部、中部、西部) ，构建可持续提升高校教师数字胜任力的
+增值评价模型.结合附件 4 数据，分析各因素对提升数字胜任力的促进作用.
+任务三: 在任务二基础上，纳入教师个体属性〈人性别、职称、年龄、教龄、专业、
+学历、授课类型等) ，利用附件 4数据，进一步分析各因素对提升教师数字胜任力与人
+才培养质量的影响机制.
+任务四: 结合数字技术赋能高校发展定位转变、育人环境改善及技术嵌入等维度，
+对接《深化新时代教育评价改革总体方案》，提出提升高校教师数字胜任力的实施方案
+与塔育路径，并分析教育数字化对数字胜任力增值评价的赋能举措.
+二、 问题分析
+第 2 页
+
+[PAGE 3]
+问题 1 是整个问题链条的基础, 它构建了测量高校教师数字胜任力增值评价的指标
+体系，为问题 2 和问题 3 提供了统一的测量标准和计算 VA 得分的依据.问题2在问题 1
+的基础上，综合高校分类属性和区域位置， 构建增值评价模型，分析宏观环境因素对教
+师数字胜任力增值的影响，其结论为问题 4 的分层培育策略提供依据，同时为问题 3 的
+教师个体属性分析提供宏观背景.问题 3 在问题 2 的基础上, 考虑教师个体必性, 分析微
+观个体因素对教师数字胜任力和人才培养质量的促进作用,其结论为问题 4 的个性化培
+育路径提供微观依据.问题 4 则是前三个问题的实践转化, 将理论成果转化为提升高校教
+师数字胜任力的实施方案和幸育路径，形成一个完整的“评价-分析-干预?闭环.
+2.1    任务一的分析
+
+本问题需以《教师数字素养》行业标准为基础，结合高校教师教学、科研、育人三
+位一体的职业特性, 构建适用于高校教师的数字胜任力增值评价指标体系.首先从标准中
+提取 5 个一级维度、13 个二级维度及 33 个三级维度作为初始指标库，结合高校科研数
+字化、跨学科资源整合等需求扩展“科研数据可视化能力交路学科数字资源整台能力”等
+候选指标，形成 40-50 个三级指标的初始集合.通过德尔菲法邀请 10-15 名履盖不同区域
+与高校类型的教育技术及管理专家，经 2-3 轮问卷筛选出 20-25 个关键三级指标.采用层
+次分析法 CAHP) 构建各层级判断矩阵，通过专家对指标两两比较的 1-9 标度打分计算
+特征向量确定权重，并进行一致性检验 (CR<0.1) 以确保科学性，重点需平衡高校教师
+与中小学教师的能力差异，突出科研数字化等特性.
+2.2 ， 任务二的分析
+
+在问题一构建的指标体系基础上，计算教师数字胜任力增值得分 〔VA=后测得分-
+前测得分)》，分析高校类型〈双一流/地方院校) 与区域位置〈东部/中部/西部) 对 VA
+的影响.采用多层线性模型 CHLM) 建模，其中教师层纳入教龄、职称等个体届性作为
+控制变量，学校层引入高校糯型、区域、资源投入等宏观变量， 通过虚拟变量转换实现
+分类变量量化.同时运用随机森林模型补充分析非线性关系及变量重要性排序, 预期揭示
+双一流高校因资源优势在 VA 上的领先性、东部地区教师在数字技术技能维度的增值差
+异，以及西部院校对政策支持的需求.数据处理需标准化 VA 得分以确保路区域可比性，
+并验证附件 4 中学校层与教师层变量的完整性.
+2.3 ， 任务三的分析
+
+本问题在问题二的宏观分析基础上，聚售教师个体属性《性别、职称、年龄、专业、
+学历等) 对 VA 及人才培养质量的影响机制.通过多元线性回归分析个体属性与 VA 的直
+接关联，如教授职称在“数字化教学研究与创新”难度的得分差异、理科教师在“数据分
+析工具使用”难度的增值优势.利用结构方程模型《SEM) 验证“个体属性一VA一学生评
+教分数"的中介效应，量化技术接受度、经验积累等因素的传导路径.再注意年龄与教龄
+的共线性问题，对学生评教分数进行标准化处理以降低主观偏差，揭示高职称教师通过
+
+第 3 页
+
+[PAGE 4]
+数字化教学设计提升学生科研参与度、年轻教师借助新技术接受度改善教学效果的有具体
+路径.
+2.4 ， 任务四的分析
+基于前三个问题的结论，本问题需将理论成果转化为对接《深化新时代教育评价改
+革总体方案》的实践方案.首先依托问题一的指标体系建立教师数字胜任力电子档案, 通
+过学习分析平台实时采集在线教学时长、资源使用频率等过程数据，生成VA EA
+支持增值评价与过程评价.针对高校类型与区域差异，实施分层培育; 双一流高校票焦
+Al 教学创新工作坊，地方院校提供低成本数字工具包与区域共享资源库， 针对教师个
+体，为新教师设计技术适应力培训、为文科教师增设数字资源制作工作坊、鼓励教授群
+体开展数字化教学研究.构建“<政府-企业-高校?三元协同生态，政府设立专项基金，企业
+提供技术接口〈如腾讯课认 API) ，高校将 VA 纳入职称评审〈前 20%优先晋升》 ，通
+过智能备课系统、学习分析仪表盘等技术工且降低使用门槛，确保方案的政策契合度与
+三、 问题假设
+为了能解决此建模问题，我们做出了以下假设:
+1假设经2-3轮德尔菲法，专家意见趋稳，且和群体覆盖多领域、区域及高校类型，意
+见县代表性与客观性.
+2- 假设高校类型区域位置对教师数字胜任力增值得分的影响独立且可通过量化变量
+表征.
+3- ”指标层级结构契合高校教师"教学-科研-育人”特性，三级指标可有效反映数字胜任
+力动态增值.
+4. 假设指标相对重要性可通过1-9标度两两比较量化为判断年阵，且年阵满足传递性
+与一致性假设.
+5. 假设教师层变量〈教龄、职称) 与学校层变量〈高校类型、区域、资源投入) 无显
+车共线性〈VIF<S) .
+四、 符号说明
+
+为了能解决此评价类问题，我们使用了以下符号:
+
+符号                         说明
+
+C ={Cl CC     -级维度集合，对应《教师数字素养》标准中的 5 个一级维度
+
+Wa                    -级指标 Aj, 的总权重
+
+CR                        :致性比率
+
+Yom                   多层线性模型 CHLM) 中学校层变量对教师层截距的回归系数
+
+B.         多层线性模型中教师层控制变量〈如教龄、职称) 对 VA 的回归系数
+
+第 4 页
+
+[PAGE 5]
+Importance(V )         随机森林 XGBoost 模型中变量 VO 的特征重要性
+Q                             以学生评教分数量化的人才培养质量指标，取值范围为[0.1]
+VIF                            用于检验自变量间共线性的指标
+五、 模型建立与求解
+5.1 问题一建模与求解
+图 问题一流程图
+本问旨在构建高校教师数字胜任力增值评价指标体系, 为此采用德尔菲法与层次分
+析法(AHP) .其中, 德尔菲法用于筛选关键指标，层次分析法用于确定指标权重并开展
+-致性检验.
+5.1.1 数据预处理
+构建指标体系依下两半数据.其一，《教师数字素养 TY/T0646—2022) 标准文本所
+提供的 5 个一级维度、13 个二级维度和 33 个三级维度的指标框架，以此生成候选指标
+清单: 其二，专家对指标两两比较的打分数据，借助层次分析法计算指标权重，保障指
+标体系兼县科学性与合理性.
+5.1.2 模型构建
+1.指标簿选: 德尔菲法流程
+《教师数字素养》标准提供了 33 个三级指标，结合高校教师职业特性《如"科研数
+据可视化能力""跨学科数字资源整合能力"), 扩展构建初始候选指标库 A,» FL 7 40-50
+第 5 页
+
+[PAGE 6]
+个三级指标，全面涵盖高校教师数字胜任力各方面.
+接着邀请大名专家对4。中指标从"重要性" (1-5 分) 和"高校教师特性相关性"(1-5
+1 =     _ 5
+.       ee         ae       Fa yr)
+Sd) VES abe 7 均值公式为元 = 7 x 一致性衡量公式为CP = —— ，
+i=l                           j
+变异系数越小，专家意见越一致.最后保留条件为元>4且CP <0.2，形成初步筛选指标
+FE Aves, (30-35 个指标) .
+然后进行第二轮德尔菲咨询，针对争议指标〈噩<4或C太> 0.2) 进行冰释.重新计算与
+最终筛选，最终保留条件为亏>4.2且C太<0.15，形成关键指标库 4g, (20-25 个三级
+指标，对应 12-15 个二级指标) .
+2.权重计算: 层次分析法 CAHP)
+首先构造判断怎阵，以一级维度判断年阵 于-为例，为5xs算阵;
+My, My --- Ms
+MMs, Misa e+ MMs
+Jif m,, € {1,3,5, 7,9} (plig Bete) ，  Mg =1/ Myg -
+n    Ln
+然后计算特征向量〈权重) ，步奏如下.首先计算每行几何 vst, =| TT ms  ，
+g=l
+然后归一化得权重:
+_      a                   .          » (M.
+wp =P, RURTWET BPR. FSECRMIENDY Aug, = POM, wy, 4
+_                                     FM 1
+>a,                                     aM,
+pa
+矩阵M Sle) Siw FeRAM p oc ea Th BES Bg CI =“, 最终计算一到
+性比率CR=己 ，
+RI
+ACR <0.1. THEME SPER Be. ARGUE.
+3.增值评价指标体系组合公式
+:级指标 本六 总权 重 为 Wa, = We xWe. KW 4B,
+其中we 为一级指标权重， Ws. 为二级指标权重， Wig, 为三级指标局部权重《通过 AHP
+第 6 页
+
+[PAGE 7]
+计算) .
+5     Ny
+增值得分计算: 到=六亲人{Sa Soong, Wg, ,其中Sa 和Sci 为指标前后测
+ml jo iS
+#24) (0-100 分) .
+5.1.3 模型求解
+在层次分析法(AHP ) 中,一致性检验是确保权重计算有效性的关键步骤.以下通过
+构建一级维度判断矩阵 M-为例，详细说明一致性检验的计算过程.
+假设针对高校教师数字胜任力的 5 个一级维度《如数字教学能力、科研创新能力、
+育人实践能力、资源整合能力、专业发展能力) ，专家给出的判断矩阵 Mr如下:
+专家意见音成矩阵〈几何平均法)
+a       0 382           OTe           1.000           0.255           0203
+机
+ai
+图3 专家意见台成拒阵
+首先计算每行元素的几何平均数击 :
+而=(1.000x2.289x2.621x0.437x0.275)5 = 0.90 ，
+im, = (0.437 x1.000 x 1.260 x 0.275 0.215)" = 0.40 ，
+im, = (0.382 x 0.794 x 1.000 x 0.255 0.203)" = 0.30.
+im, = (2.289 x 3.634 x 3.915 x1.000 0.500)” = 1.74,
+in, = (3.634 x 4.642 x 4.932 x 2.000x1.000)' + 2.89.
+第 7 页
+
+[PAGE 8]
+然后进行归一化处理得到权重向量 丈 的各分量:
+一级指标权重分布
+四                                                            O27
+i
+arr
+O 16?
+|         SFieiR        REHM SRE        数字化应用          数字社会责任           专业党展
+一级指标
+图4 一级权重分布图
+RAM HE [rn] BE = (0.1462, 0.0787, 0.0680, 0.2728, 0.4342)’ .
+fe PORT Sli SCRMIEAE A,,, Seth AME Mg BU [BW 的乘积M :于的各分量;
+(ML -W), =1* 0.49 + 2x 0.29+3x0.15+5x 0.07+7 0.05 = 2.22.
+1
+(M, -W), = 5% 0-49+1%0.29 + 20.15 +3x0.07+5x0.05 = 1.30.
+1            1
+(MUM- -W); =—*0.49+—x 0.29+1x0.15+ 2x 0.07+3x0.05 = 0.78,
+3            2
+1            1             1
+(M.-W), = 5049 += x0.29 +x 0.15 +1x0.07+2x0.05 +048.
+1             1            1            1
+(M, -W); =—x0.49 +—x0.29+—x0.15+—%0.07 +1x0.05 ~ 0.26 ，
+7            5            3            2
+\[
+a, (Me -W)
+再计算~一 之的值:
+wW
+P
+(Mc-W), 2.22 4 5.
+Wy         0.49
+(Me Why 130 、448，
+WwW         0.29
+(Mc -W); 0-78 sag,
+Ws         0.15
+第 8 页
+
+[PAGE 9]
+(Me -开) 9-48 、5 gg,
+W,        0.07
+(Mc -W)s 0.26 sa,
+Ws         0.05
+最后计算最大特征根忆。:
+放， 一 - x (5.43 +4.484+ 5.20+ 6.86 +5.20) = 5.0651.
+计算一致性指标 CI:
+CI= Am — 1 一 3.0651-5 _ 0.0651 — 0.016275.
+n-1         5-1           4
+查随机一致性指标表，当mn=s时，RT=1.12 .计算一致性比率 CR:
+cra ~ 9.016275 «0.0145.
+RI       1.12
+由于 CR=0.0145<0.1, [AU FT AAD Ad, ST ea BE. BUG [ay W 有效.
+通过一致性检验后，可确认一级维度权重分配人台理，即数字教学能力 0.47、科研创新能
+0.28、育人实践能力 0.16、资源整合能力 0.09、专业发展能力 0.05.后续可基于此权重体
+系，进一步计算二级和三级指标的权重，最终构建完整的高校教师数字胜任力评价指标
+体系.
+通过德尔菲法笨选关键指标，结全层次分析法确定权重并通过一致性检验，最终构
+Ey 20 个三级指标、10 个二级指标、5 个一级维度的高校教师数字胜任力增值评
+价指标体系，权重分布合理，可有效衡量教师数字胜任力的动态提升
+5.2 问题二建模与求解
+Settee (HLM) 学校屋模型
+图5 问题二流程图
+本问研究旧在构建可持续助力提升高校教师数字胜任力的增值评价模型，基于此，
+选用多层线性模型 CHLM) 与随机森林算法.多层线性模型用于剖析有具有崔套结构的数
+第 9 页
+
+[PAGE 10]
+据，能有效分解教师层和学校层变量对教师数字胜任力增值得分《VA) 的影响，随机
+森林算法则用于捕捉变量间可能存在的非线性关系,并计算各变量对 WA 的特征重要性，
+以补充多层线性模型的线性假设局限.
+5.2.1 数据预处理
+问题二所再数据普盖基于问题1构建的指标体系计算得出的教师数字胜任力增值得
+分【5VA) ，以及附件4 中高校分类属性《如双一流/地方院校) 、区域位置《东部/中部
+/西部) 、资源投入，还有教师个体属性中的教龄、职称等数据.其中，VA 得分作为因变
+时，反有映教师数字胜任力的提升情况，高校分类、区域位置、资源投入等作为自变量，
+用于探究不同高校和区域因素对教师数字胜任力增值的影响.通过对这些数据的分析, 可
+明确各因素对教师数字胜任力的促进作用.
+5.2.2 模型建立
+多层线性模型 (HierarchicalLinearModeLHLM) 用于解析教师数字胜任力增值 CVAD
+在个体层与学校层的嵌套结构关系，揭示不同层级变量的影响机制.
+《1) 教师层模型《第一层)
+教师层模型可表示为:
+VA, = By, + BX yy + ByXry +7; »
+AAR RE: VA, 表示第;位教师在第地所学校的数字胜任力增值得分, 反映教师能力的
+动态变化.
+By, 为学校层截距，表征第地所学校教师增值的平均水平〈《控制教龄、职称等变
+BE) .
+BA B, DIN ABU CX) AUR CX, 的回归系数，量化教师个体特征对增值的
+随机误差项: 7, ~ W(0.G ) 表示教师个体层面的随机扰动，体现未观测到的个体差
+异【《如学习机会、职业发展路径等) .
+(2) 学校层模型《第二层)
+Boj = Yoo t+ ¥orZ1; + YorZ2; + Yo3xZ35 + YosZaj + Mo; *
+总截距: yo 为所有学校的平均增值水平，即模型的全局基准值.
+Zi, 〈高校类型，双一流=1，地方高校<0) . Z,, 〈区域经济水平) 、Z3， CX BRC
+第 10 页
+
+[PAGE 11]
+政策指数) 、Z4 《学校数字资源投入) 的回归系数ou 一zo ，分别刻画学校属性对教师
+增值平台的影啊方癌与程度.
+
+随机和截中项: Up, ~ N(0,77) RARER ELE COA A Be. RRA
+
+项目等) .
+(3) 联立教师层与学校层模型，得到完整的多层线性模型;
+VA, = Jo十0 + ¥0Z2; +¥03Z3; + YosZa; + A X1y + eX ry +o; +75 »
+
+庶模型通过分层参数” 《学校层) BB 《教师层) ，实现对“环境-个体”交互作用的
+量化分析.例如，双一流高校的资源投入《2Z4 ) 可能通过提升房,间接促进教师增值，
+ieee CX, 的影响则独立于学校坏卉.
+
+(4) 随机森林 CRandomForest.RF ) 通过集成学习算法构建非线性而测模型，并评估变
+量重要性.
+~ 12
+V4 =—>°T,(X.Z).
+Ba
+
+其中，现 为增值得分预测值，刀为决策树数量〈通常取刀= 500-1000 ) .7,(X.Z) #
+ANS b 棵决策树, 基于教师层特征系={9 和学校层特征马= ,22 2生成
+预测结果.
+
+通过自助抽样 (Bootstrap) 和随机特征选择构建树群，利用投票机制《回归问题取
+均值) 降低过拟人台风险，提升模型汉化能力.
+
+(5) 采用均方误差增益法计算变量重要性;
+1 3
+Importance(V) = 7 L(MSE; origitat MSE) someatm )
+iA
+
+其中，MSE; aaa AUER ME Bd TES b PRS A THM ES te AEs | MSE, snmsamm 为随机打
+乱变量严后的数据预测均方误差.
+
+大变量矿的重要性得分显得为正，表明其对模型预测县有关键作用，得分越高则解
+FE BGR.
+
+(6) 多层线性模型估计
+采用限制极大似然法《REML ) 估计模型参数，通过组内相关系数〈ICC) 验证分
+第 11 页
+
+[PAGE 12]
+r
+
+HICCHMBAK EO Cul p<0.05) . dH] SUE EAE eRe EE
+多层模型的适用性.
+5.2.3 模型求解
+1. Be Fh
+
+在获取教师数字胜任力增值得分〈J4, ) 、高校分类属性、区域位置、资源投入等
+数据后，首先对Ta4; 进行标准化处理.计算所有教师Ji; 的均值 bs 与标准差 gs ，通过全
+
+VA, —
+式Zu =一上 将原始得分转化为标准分数，消除量纲差异.同时，将区域位置变量进
+Fa
+
+行虚拟化处理，以西部为参照组, 构建两个虚拟变量分别表示东部与中部地区.针对数据
+中的缺失值，采用多重填补法: 对于教龄数据，根据学校类型与职称分层计算均值进行
+填充; 资源投入数据则结合区域经济水平与高校层级进行预测填充，确保数据完整性.
+2.多层线性模型 (HLM) 参数估计
+
+使用 Python 语言对多层线性模型进行估计.首先构建教师层模型
+VA, = By t+ BX yt yXy +7, > HBR 与职称 X,, 纳入模型.在学校层，通过
+Boj =7Jo+7oZU + Yo2Z2; + YosZ3j +T70D + oj 分析高校类型五|、区域Z, 、Z3; 和资源投
+AZ 4, 的影响.
+
+在参数估计过程中, 采用限制极大似然法(REML) 夺代求解.以资源投入系数os 为
+例，初始假设ju = 0 ，通过最小化模型残差平方和yy 4, Vay)» BPE S Be.
+
+Al jal
+经 200 IRIE» FEE 7, = 0.001 (p< 0.001) ，表明资源投入每增加 1 万元，标准化
+后的$SVAS$得分提升 0.001.完整参数估计结果显示: 总截距 yo =0.3，双一流高校系数
+Yu =0-3 Cp<0.001) ，东部区域系数zo =02 Cp<0.01) ，中部区域系数zo =0.1
+(P<0.05) ， 教龄系数=0.02 (p<0.001) . RAB, =0.1 ( p<0.001) .
+3.多层线性模型 (HLM) 假设检验
+第 12 页
+
+[PAGE 13]
+各高校教师平均数字胜任力增值
+_                                                    de
+AMA                                                   ue
+as                                                  “<
+Hake                                                            456     EE 二
+图6 数字胜任力增值图
+在变量独立性检验中，计算方差采胀因子 CVIE) .以教龄与高校类型的共线性检验
+为例，先将教龄对高校类型及其他控制变量进行回归，得到判定系数妨，再通过
+VIF = sit  结果显示所有变量J7F <3 ，满足无共线性假设.对于方差齐性检验，
+绘制标准化残差与预测值的散点图，发现残差分布未呈现明显的漏斗形或局形，结合
+Levene 检验〈P= 0.12> 0.05 ) ，接受方差齐性假设.
+4.随机森林模型构建与训练
+使用 Python fi) scikit-learn’ 库构建随机森林模型, 设定决策树数量下=500.在训练过
+程中，每棵决策树通过自助抽样 (Bootstrap) 从原始数据中随机抽取 80%样本，并随机
+选取 3 个特征进行节点分型.
+etree La                         ”                       = ee
+oe 国人到
+~~wEEag
+ee gg
+图7 特征慎重要性图
+以资源投入变量的重要性计算为例，首先记录原始模型在测试集上的均方误差
+第 13 页
+
+[PAGE 14]
+MSFunea =0.15: 随后随机打乱资源投入变量的取值顺序，重新计算模型均方误差
+B
+MSE uggs = 0.23 H8i/8 3% Importance(V) = = Y (MSE jocgins -MSEssumestn ,得到资源投
+é=1
+入的特征重要性为(0.23-0.13)= 0.08. 经 500 棵树平均后最终重要性为 0.42.关似地, 计
+算出高校类型重要性为 0.31，教龄为 0.18，职称为 0.16，区域为 0.12.
+5.结果分析
+区域对综合评分的影响
+2 75
+a          &          ra           ra
+区域
+图8 区域对综合评分影响图
+
+从多层线性模型结果可知，双一流吉校使教师数字胜任力增值平均提升 0.3 个标准
+差，东部和中部区域分别提升 0.2 和 0.1 个标准差，资源投入与教龄、职称的正加作用
+也得到验证.随机森林模型进一步揭示资源投入的非线性关键作用: 当资源投入超过 200
+万元时, 通过交叉验证发现模型预测误差显著下降, 印证其“阔值效应”高校类型的重要
+性源于资源聚集效应, 而区域差异更多通过资源投入间接影响增值.教龄与职称的相对弱
+影响表明，个体发展再依托学校资源支持才能充分发挥作用.
+
+综上，资源投入与高校类型是提升教师数字胜任力的核心因素，区域发展不平衡可
+通过资源倾斜改善, 教师个体发展需结合学校资源配套策略.建议优先保障地方院校资源
+投入，推动双一流高校资源共享，实施区域差异化扶持政策，并建立教师分层培养机制.
+5.3 问题三的模型建立与求解
+
+第 14 页
+
+[PAGE 15]
+ ome [le
+(SEM)  E (ee Be + ae Seal PR CORT
+图9问题三流程图
+
+根据问题要求，本问选用扩展多层线性模型(三层 HLM) 、XGBoost、结构方程模
+HY (SEM) ，深入剖析各因素对提升教师数字胜任力和人才培养质量的促进作用.其中，
+扩展多层线性模型〈三层HLM) 用于处理具有三层嵌套结构的数据，能细致分解教师
+个体层、学校层和区域层变量对教师数字胜任力增值《VA) 及人才培养质量《Q) 的影
+啊: XGBoost 算法可捕捉变量间复条的非线性关系，计算各变量的重要性，以补充线性
+模型的局了眼， 结构方程模型 (SEM) 则用于验证教师个体必性、数字胜任力增值与人才
+培养质量之间的传导路径及中介效应.
+5.3.1 模型建立
+(1) 扩展多层线性模型【三层HLM))
+
+第一层【教师个体层) 模型:
+
+Vue = Bose + BiGye + BoTyn + Bs Age + BsE yet BsSye+ BeDye + BsCyet tip +
+
+SHH, VA A SEE 7 TE BES BOTA EE HAPS: By gp ARE
+METRE SMAARIE, Gy (性别) . Th, (职称) 4, CRBD 5 Ey (教龄) 、
+Sg 《专业) 5 Dg CRUD 5 Cy 《授课类型) 为个体属性变量，所-万为对应变量的
+ARAM: ry ~ (00°) 为个体层随机误关
+
+第二层【学校层) 模型:
+
+Boje = Voor t Va Z1jx + V2 25x + VaZ3jn + Vou Z jx + Moje?
+JOE. 7g A PORAPEREDEBDEMIREHE: Z,, 《高校类型) 、Z as/1Z;。 《区域虚
+第 15 页
+
+[PAGE 16]
+拟变量)、Z4x# (资源投入 )为学校层变量; yu — Yop 为对应变量的回归系数: zx ~ W(0.r )
+Aye Ree bE BLE.
+
+ie CPi) 模型:
+
+Voor = Ono + Ooi + O~p a5 + Vooe
+
+JEP Sym 为全局平均增值基准: Wh. Wy, ARK RUR AR CUES RACK. BCRSCEF
+
+2一2为对应变量的回归系数，x ~ NW(0,er ) 为区域层随机截距.
+(2) 组全模型;
+7六三Goo + SoM + SoM oe + YorZ1 je + YorZ 4 + YosZs x + VosZa je > Bi X ge 十Yo0F Uy ig +7 *
+CGH: AG Rm RAI TERETE)
+(3) XGBoost 模型
+模型公式:
+~       B
+VA = 过 罗有CXWi)，
+
+其中，责六为预测值， 为决策树数量 @ 为单棵树权重，了为第洲棵决策树，
+基于个体层变量Xir、学校层变量也kr、区域层变量Wit 进行预测.
+
+特征重要性计算:
+
+Importance(V) = FD (MSE ssi —MSE, sere) )
+
+其中，MSE， usa “YEOH BUH 3 b PRET e+ MSE, snmsan 为变量矿随机打
+
+乱后的均方误差，差值均值表征变量素的重要性.
+(3) 结构方程模型《SEMD)
+方程 1《〈自变量对中介变量的影响) :
+VA, = Pot BX i+ BZ + BW+O% >
+方程2〈自变量对因变量的总效应) :
+Oi = Ay + GX jp + OZ + OW, + Nips
+方程3《〈自变量对因变量的直接效应+中介效应) :
+Ox = Oy +O X ye + OV AG +032 + OW, + Gy »
+ah, Xi_g APMAPERI, 2, APRA. WAU AEE, O,, AAA TSE
+第 16 页
+
+[PAGE 17]
+质量 n> Mz Oy, 为各方程随机误差项.通过联 下方程可分解自变量对因变量的直接
+Moe (40d, 与中介效应〔〈如局-8 ) .
+
+5.3.2 模型求解
+
+1.数据预处理与撒述性统计
+
+研究整合教师个体属性〈性别、年龄、职称、学历、专业、授课类型、教龄) 、数
+字胜任力增值 CVA) 及人才培养质量〈学生评教分数Q) 数据，共涉及 1500 名教师样
+本.对 Q 进行标准化处理后均值为 0.75，VA 均值为4.95〔〈满分5分) .统计显示， 性别对
+VA (t=-0.0219,p=0.9825) 和 Q (t=-0.1978,p=0.8432) 无显著差异，年龄与 VA Shay A
+关 《=-0.1382.p<0.001) ，但与Q 显普正相关 (r=0.4209.p<0.001) ，反喘资深教师教学
+经验对学生评价的正向作用.职称`.学历.专业和授课类型对YA和Q的影响显著(ANOVA
+JY p<0.001) ，其中教授的WA (4.982) 和Q (5.000) 最高，助教的VA (4.869) 和Q
+(4.193) 最低，显示职称层级的核心影响.
+
+2.三层 HLM 模型参数估计
+
+通过 Python 语言包拟合三层模型，结果表明:
+
+HARK (B2=0.12,p<0.001) 、学历〔有Be=0.08.p<0.01) . FER} Sk (Bs=0.07,p<0.05) 和
+实验课〈B=0.06.p<0.05) 显著提升 VA，而教龄 (Bs=-0.03,p<0.05) 呈现负向影响，可能
+因高教龄教师对新技术接受度较低.
+
+双一流高校〈Yyo=0.15.p<0.001) 和资源投入〈?yo=0.02.p<0.01) se BET REPLY
+VA，反有映资源富集效应.
+
+区域经济水平 《ao=0.10,p<0.05 ) 与区域平均 VA 正相关, 但影响幅度小于学校层因
+VA, = 4.85+0.10M, +0.15Z,, +0.02Z,, +0.12T + 0.08D,, + 0.07S,, +0.06C,, —0.03E,, +, +
+该模型解释了 VA ASE 68%, 其中区域层、学校层、个体层分别页献 129%6、25%、3194.
+3.XGBoost 模型特征重要性分析
+
+利用 Python fi) xgboost’ 构建回归模型，经 $ 折交义验证优化后，模型 RMSE=0.11，
+R:=0.83.特征重要性排序显示:
+
+第 17 页
+
+[PAGE 18]
+High
+remainder pre DC score    lh 00  dhe om Mee dbe ly etedfes-
+remainder_annual_training_hours            s
+remainder_age                                           3
+remainder_workload                      .                     g
+remainder_health_status                                           8
+remainder_education_level
+remainder_years_of_service
+了       4       0       1       2     sw
+SHAP value (impact on model output)
+图10 SHAP值可视化图
+核这张 SHAP 值可视化图展示了各特征对模型输出的影响.其中, “剩余预DC 得分”
+和“剩余年度培训时长"是核心驱动因素，它们对模型输出起决定性作用，意味着前期基
+础及持续学习提升公关重要“剩余年龄”剩余工作量剩余健康状次”剩余教育水
+平”剩余工作年限?*等特征也有一定影响力，年龄和工作年限体现经验积累，工作量、
+健康状况与教育水平反映当下工作状态和能力储备情况.而“剩余健康状况交剩余教育水
+平”剩余工作年限*等特征，相较于核心驱动因素，对模型输出影响较蚤，改变效果不
+Toe
+4.SEM 中介效应验证
+以职称为自变量 CX=T) ，VA 为中介变量，Q 为因变量，构建结构方程模型:
+直接效应路径: 职称一Q 的总效应为 0.30(p<0.001), 其中直接效应为 0.10(p<0.05)，
+间接效应通过 VA 实现〈0.80x0.25=0.20) ，占总效应的 66.7%.
+VA与Q 的各维度显著正相关 (=-0.297-0.401.p<0.001) ，其中与实践能力培养
+Gr-0.401) 和创新能力培养 (0.395) 相关性最强，表明数字胜任力提升对学生实践
+PREM HEHE HE se
+5.25 RE GS BUR AAS
+See RMA AR. BOM ACP HEE AGE REA: 高职称+高学历+实践导向教学
++优质资源支持.具体表现为教授和博士群体的\A优势显壮(分别比助教高0.113 和0.063
+分)》，但教龄每增加5年，VA 下降 0.03x5=0.15 分，需针对性设计“资深教师数字转型”
+培训项目，双一流高校教师 VA 比地方高校高 0.15 分，资源投入每增加 100 Fic. VA
+提升 0.02x100=2 分， 建议建立“数字资源共享平台”篆小校际差距; 东部区域教师 VA 比
+西部高 0.10 分，震通过“中西部数字教育专项基金"平衡资源分配: 将 VA 纳入教师考核
+《权重建议 20%) ，并设立“数字化教学创新奖”，激励教师通过提升数字能力癌接提升
+人才培养质量《Q 与 VA 的中介效应占比超 60%) .
+5.4 问题四模型建立与求解
+第 18 页
+
+[PAGE 19]
+结音前三问周论与政策要求
+制定提升教师数字手任力方案与路径
+前三问分析结时
+wees es
+问题四           短中长戎防段目标
+moss { mone
+HIRES PI
+ease —
+ALR
+图10 问题四流程图
+本问在一二两问的基础上，引在构建提升高校教师数字胜任力的策略模型，经分析
+选用 PDCA 循环和协同治理模型PDCA 循环包含 Plan〔计划) 、Do CAFS) . Check
+《检查》 和 Act《〈行动) 四个阶段，通过不断循坏以持续改进提升教师数字胜任力的方
+案.协同治理模型则强调企业、政府、高校三方主体协同合作,， 整台各方资源，共同推动
+教师数字胜任力的提升.
+提升高校教师数字胜任力青结合教师群体特征, 实施分层分儒培育路径.东部双一流
+高校教师起点高S。。= 75 ，干预效果显著w, = 0.8，但存在协同投入宛余问题，因此聚
+焦“高阶创新”方向.县体通过开展每月 12 小时的 AI 教学工作坊, 联合企业开发智能
+教研平台，并确保工具使用频率不低于每月 25 次，同时由政府提供 100 万元专项经
+费，支持教学研究与创新.而西部地方院校教师起点低S。=60，且工具使用频率低 F=5
+次/月，致使技术赋能模型 VA 为负，所以以“基础赋能”为核心.具体措施包括推广低
+成本工具包，将基础数字技能培训时长从每月 5 小时提升至 8 小时，企业提供 30 万
+元免费工具试用, 政府补贴 40 万元网络费用，并将工具使用频率提升至每月 10 次以
+上 .
+在教育数字化赋能增值评价方面, 主要有三项举措.首先是过程数据采集, 运用学习
+分析仪表盘实时采集教师在线教学时长、资源使用频率、学生评教反馈等数据，以此实
+现“过程评价”其次是智能诊断与干预，借助 AI 模型分析教师数字胜任力短板，为西
+部新教师精准推送“工具使用 + 基础技能”组合培训，为东部教授推送“AI 创新 +
+跨学科融合”研修计程.最后是构建多元协同机制，建这“企业 - 政府 - 高校”数字教
+育联盟，企业负责技术支持与工具迭代,，政府将教师数字胜任力纳入职称评审等激励政
+策,， 高校建立“数字胜任力发展档案”，从而推动“增值评价”与“专业发展”的深度联
+Al).
+SE WABI T SEY A Le BE A IS AM. ER PT. BO Ne 4S 2% ac A] PY Py Ts
+第 19 页
+
+[PAGE 20]
+监测旨在持续跟踪两类教师数字胜任力, 东部双一流教授昌 VA 增速放缓但仍有提升空
+间预测 10.5 分,西部新教师增速稳定预测 8.5 分，并及时发现如西部教师工具使用不
+是等问题.分层干预根据两甘教师特点，东部减少玫余投入, 西部增加基础培训强度，实
+现资源优化配置.技术赋能基于工具使用频率了与 VA 的正相关关系(6G= 0.4) ，重点推
+广工具使用, 为西部教师提供“一键式”备读工具等.多元协同则充分发挥三方协同效应
+(o=0.0010 ，东部高校协同项页献占总 VA 的 69.7%. 西部院校占 47.3%，通过企业提
+供工具、政府补贴、高校组织培训等方式，有效放大资源效益.
+六、模型评价与推广
+
+6.1 模型的评价
+
+本研究围绕高校教师数字胜任力, 通过四个递进任务构建研究体系.任务一构建增值
+评价指标体系，任务二分析宏观环境因素影响,任务三探究个体属性作用机制，任务四
+转化为分层培育方案，形成*评价-分析-干预"闭环.该体系既揭示数字胜任力发展影响办
+素，又为高等教育数字化转型提供评价工具与实践路径，下文将对其进行模型评价与推
+广探讨.
+
+6.1.1 模型优点
+本文所建立模型具有以下优点 :
+
+1. 在指标体系构建中，以《教师数字素养》行业标准为基准，结合高校教师职业
+特性，通过德尔菲法和层次分析法筛选指标并确定权重，姓保证了理论依据的权威性，
+又通过专家群体决策和数学验证《CR<=0.1) 确保指标体系的科学性.多层线性模型和随
+机森林模型结合分析宏观因素，多元线性回归与结构方程模型探究徽观机制，不同模型
+的选择适配对应研究问题，充分考虑变量间的线性与非线性关系、直接与间接影响，使
+模型结构严谨合理.数据驱动: 基于数据驱动,利用真实数据进行计算和分析,， 保证了方
+案的科学性和合理性.
+
+2，指标体系扩展“科研数据可视化能力”等契合高校科研数字化需求的指标，突破
+传统框架;评价过程中采用增值评价理念， 动态衡量教师数字胜任力发展，相较于静态
+评价更能反映真实提升情况.实践方案结合宏观分层与微观个体差异设计培育策略, 引入
+“政府-人企业-高校?协同生态和技术工具，实现了理论成果到实践应用的创新转化，对推
+动高等教育数字化转型且有较强的实用价值.
+
+6.1.2 模型缺点
+
+本文所建立模型仍有以下不足:
+
+德尔菲法中专家样本数量和上履盖范围可能影响指标得选结果的普适性; 模型中部分
+变量存在共线性问题〈如年龄与教龄) ，虽采取处理措施，但仍可能对结果精度产生一
+定影响.学生评教分数标唯化处理虽降低主观侦差, 但仍难以完全消除评价主观性-此外，
+
+第 20 页
+
+[PAGE 21]
+模型未充分考虑突发政策变化、技术达代等动态因素对教师数字胜任力发展的影响.
+6.2 模型推广
+
+本模型可推广至中小学教师数字胜任力评价与培育，根据不同教育阶段调整指标体
+系侧重点，如中小学更强调课堂互动数字化、学生管理数字化等能力: 也适用于职业院
+校教师评价，结合职业教育实践教学特点，增加实训设备数字化操作、校企合作数字化
+管理等指标，助力各阶段教育数字化转型.
+
+七、参考文献
+[1] 赵彬竹，申文结，邹行行.教育数字化背景下初中生数字素养测评指标体系的建构
+[VOL]. 教育测量与评价，2025, 1-13 [2025-05-25].
+http://kns.cnki.net/kems/detail/43.1482.G4.20250523.1552.006.html.
+[2] ie. Wea. FEC. Se HOT BUN BC AC BORE: mt AC Se eG A La 4
+[VOL]. 重庆高教研究，2025, 1-15 [2025-05-25].
+http://kns.cnki.net/kems/detail/50.1028.G4.20250520.1844.002.html.
+[3] 马云秀，黄志城，王淮昌.基于“发现教育”的“数字赋能教学评”的实践研究 [J].
+学校管理，2025, (02): 16-20.
+[4] 杨俊峰.数字教育让知识更加 “触手可及?”[. ALG AFR bi. 2025-05-20 (005).
+DOI:10.28656/n.cnki.nrmrh.2025.002355.
+[5] libel. URE. aie See HE: 联合国教科文组织推动高等教育数字化转型的价值
+理念、行动机制与实践经验 [T). 河北师范大学学报 (教育科学版), 2025, 27 (03): 63-72.
+DOI:10.13763/j.cnki.jhebnu.ese.2025.03.007.
+[6] 申仁法,，赵雨晴.特殊教育数字化的困境与突破: 基于数字正义视角 LT). 现代特殊教
+育，2025, (10): 18-25.
+[7] 魏顺平，杨雨获，吴淑苹.我国基础教育数字化发展水平及区域差异研究 —— 基于
+《中国教育信息化发展报告六2017-2021)的分析 [OL]. 甘肃开放大学学报,2025, 1-14
+[2025-05-25]. http://kns.cnki.net/kcms/detail/62.5125.G4.20250517.2219.002.html.
+[8] 闫智.夯实智慧教育发展“数字撒座?[N]. 各界导报, 2025-05-16 (001).[9] ar F}. Ber AL
+育背景下人工智能赋能成人教育发展研究一一基于人工智能在欧美教育中应用的启示
+[可.继续教育研究,2025,(06):83-89.
+[10]称航,刘善槐.数字技术赋能农村职业教育高质量发展的逻辑疝度与实践路向加.教育
+与职业,2025,(10):31-38.DOI:10.13615/j.cnki.1004-3985.2025.10.008.
+第 21 页
+
+[PAGE 22]
+附录
+import numpy as np
+import pandas as pd
+from scipy import stats
+from skleam_utils import resample
+from numpy lnalg import eig
+def bootstrap_delphi(experts_scores, n_iterations=1000):
+基于 Bootstrap i Rae ines th
+‘param experts_scores: 3e WPSTA BS. F214 4) (n_experts, n_indicators)
+-paramn_iterations: Bootstrap 抽样次娄
+-Tetum: 保留的指标索引到表
+n_experts, n_indicators = experts_scores shape
+retained_indicators = []
+for indicator in range(n_indicators):
+bootstrap_samples = []
+for _im range(n_iterations):
+2 A Gla
+sample = resample(experts_scores[:, indicator], replace=Tmue)
+bootstrap_samples.append(sample)
++f RSME AM Kendall HG RH
+w_values = []
+for sample in bootstrap_samples:
+2 RA Bet
+ranks = stats rankdata(sample)
+m = len(sample)
+2 PRA POR aR RE aa
+R_k=npsumiranks)
+= PEE FE SCP
+第 22 页
+
+[PAGE 23]
+R_bar=m* (m+ 1)/2
+4 tE Kendall i ig Rai ot F
+numerator = 12 * npsum{(ranks - R_bar)**2)
+# ti Kendall Reise we
+denominator = m**2 * (m**3 -m)
+# (7 Kendall i
+W = numerator / denommator
+w_values.append(w)
+a Be
+mean w= np.mean(w_values)
+# ANSE Bee Brees
+ifmean_w > 0.5:
+retamed_indicators.append(mdicator)
+retum retamed_mdicators
+def cloud _ahp(comparison_miatrix):
+云模型改进的层次分析法计算权重
+‘param comparison_miatrix: 判盯拒阵
+-Tetum- 权重向量. — EX EEL CR
+=P PRE ORE ee
+eigenvalues, eigenvectors = eig(companson_miatnx)
+eee cea aes -e
+max. eigenvalue = np max{elgenvalues.real)
+# RG AEE a eS!
+max_index = np.argmax(eigenvalues.real)
+# RAE AA AE Aa aT a PAE aE ea
+weights = elgenvectors[:, max index] real
+28 -£RE
+weights = weights / np.sum(weights)
+# — a fe aba
+第 23 页
+
+[PAGE 24]
+n=companson_matix shape[0]
+CI=(max_eagenvalue - n)/ (n - 1)
+RI= {1: 0,2: 0,3: 0.58, 4: 0.90, 5: 1.12, 6: 1.24, 7: 1.32, 8: 1.41, 9: 1.45}get(n, 1.45)
+CR=CI/RI
+retum weights, CR
+def calculate_tei(scores, weights):
+WHASHitA Sas
+‘param scores: HS this at > W218 Al(m_imdicators,)
+:param weights: G48 471! » 4 Al(m_indicators,)
+cretum: 总指数 TEI
+retum np.sum(scores * weights)
+def caleulate_value_added(tei_t, te1_0):
+WHEE
+-paramtei_t: 48h S48
+:paramtei_0: Ble 3 Haz
+cretum: 增值挛 V_t
+if tei_O < 60:
+alpha= 1.2
+elif 60 <= tei_0< 80:
+alpha= 1.0
+else:
+alpha= 0.8
+retum ((tei_t - tei_0) / tei_0) * alpha
+def maim():
+第 24 页
+
+[PAGE 25]
+# MPA 20 SS RAT lO PST AYIA AY
+npzandomseed(42)
++e SR ESE
+experts_scores = np randomrandint(1. 6. size=(20, 10))
+# SiED 1: BMAP (EES a)
++ Step 2: BF Bootstrap HEA EE ME
+retained_indicators = bootstrap_delphi(experts_scores)
+Printff"保留的指标索引: {retained _indicators}")
+# Step 3 BF Clow! Model- AHP S09 S520 8 ¢
++ TAA E 3 MRO
+comparison_matrix = np.array([
+[1. 3, 51.
+[1/3. 1.2]
+[1/5, 1/2, 1]
+了
+22 Ree, SRE ee
+while True:
+weights, CR = cloud_shp(comparison_matrix)
+ifCR<0.1:
+break
+else:
+Print("一致性检验未通过，需要调整判断矩阵.")
+2 Ae SE ee PS RS A
+break 7 SRS, BREA Ee
+Prnt(f"权重: {weights}, 一致性比训 CR: {CR:4f}")
+# Step 4:7 SBS SSG
+# FEE 3 Ne St
+baseline_scores = np aray([70, $0, 60])
+current_scores =np_array([80, 85, 75])
+tei 0= calculate tei(baseline_scores, weights)
+第 25 页
+
+[PAGE 26]
+tei_t=calculate_tei(current_scores, weights)
+Printtf'基线总指数: {tei_O-2f}, SHR SISM: {tei_t.2f}")
+# Step 了 RS
+vt= caleulate value_added(tei_t, tei_0)
+print(f' 1818 3: {v_t:4f}")
+if name —="_ main
+main()
+import pandas as pd
+import numpy as np
+import statsmodels api as sm
+from statsmodels.stats.outliers_influence import variance inflation_factor
+from skleam preprocessing import StandardScaler
+from skleam experimental import enable_iterative_imputer
+from skleam impute import Iterativelmputer
+import wamings
+wamings. filterwamings(ignore’)
+def data_preprocessing(raw_data):
+S048 Habe eh
+ELS MAH. ESET BARE tk eB th ae
+2) RY CP SSB
++ AE AE TE AEE BE at fr BBP
+if ‘Tenure’ in raw_data columnms and ‘Title’ in raw_data cohmmns:
+4 RS
+if raw_data[['Tenure’, 'Title']] isnull().any(). anyQ):
+imputer = Iterativelmputer(max_iter=10, random_state=12)
+imputed_data = imputer fit_transform(raw_datal['Tenure’, ‘Title'J))
+tHE Soe a eee
+raw_data[Tenure'] = imputed _data[-, 0]
++R EAP AE eA
+第 26 页
+
+[PAGE 27]
+TawW_data[ Title] = np round(amputed_dataf-, 1])
+#2. FHP PRE
+scaler = StandardScaler()
+# AT a iT oe ee
+if ‘Tenure’ in raw_data columns:
+raw_data[Tenure_std’] = scaler-fit_transform(raw_data[[Tenure']))
+#3. SSE SE BP Eo a
+# RED, A a1, Ab are 0
+if ‘UnivType' im raw_data. cohmmns:
++ HRS SE ie ee
+raw_data['UnivType'] = pdto_mumeric(raw_data[UnivType']map( (‘9 — 3: 1, "地方院核': 只) exrors='coerce’)
++ OME EE OUR AEA Ee
+if raw_data['UnivType']isnull().any():
+prnt(“24: UnivType WES A SRA: GRRE RA NaN")
+raw_data[UnivType]] = raw_data[UnivType'Lfillna(0) # #2 Saas
++O RAIS], PAH2, GAT 0( 88H)
++18 cot dummies HE ANP RRA E S, RS PRESB Re ES ee
+if Region! inraw_data columns:
+# SPER Region FE StH
+raw_data[Region'] = raw_data[Region'].astype(‘category")
+raw_data= pd get_dummies(raw_data, columms=[‘Region'], prefix"Region’, drop_first= True)
+tA R TR ASE Se ee
+for col in raw_data columns:
+ifraw_datafcol].dtype = bool’:
+raw_data[col] =raw_data[col] astype(int)
+print(f" 2443! {col} 从 bool 转换为int
+retum raw_data
+def calculate_tei(cumrent_scores, baseline_scores):
+计算教师数字胜任力增值指数(TEIT)
+TEI=(当前得分 - BS y Bis * 100%
+# APRS Ge ie
+mask = baseline_scores != 0
+tei= np zeros like(current_scores, dtype=float)
+tei[mask] = (current_scores[mask] - baseline_scores[mask]) / baselime_scores[mask] * 100
+retum tei
+第 27 页
+
+[PAGE 28]
+defbuild base modeltdatar
+构建基础线性回归模型
+TEI~ UnivType+了Region+ 控制变量
+tER MBH ALE DE
+required_cols = ['UnivType’, 'Title’, 'Tenure_std’, 'TET]
+region_cols = [Region _ 东部, ‘Region 中部]
+available_region_cols = [col for col in region_cols if col in data columms]
+if not all (col in data.columms for col in required_cols) or len(available_region_cols) 一 0:
+missing = [col for col in required_cols if col notin data columns] + \
+[col for col in region_cols if col notin data columms]
+raise ValueError( 如构建基础模型缺少必要的列: (missing}")
+2S SSS map
+X= data[[UnivType’, ‘Title’, ‘Tenure_std] + available_region_cols]
+tHUPBS MER, APP
+print("\n 49) 12 2) ay SR Bis By)
+for col in X.cohmmns:
+punt(f" {col}: {X[col].dtype}, HE—{B: {X[col].unique()[: 5]}")
++ EL SE AS Bea SE
+for col in X.cohmmns:
+if X[col] dtype = ‘object or pd apitypesis_categorical_dtype(X[col]):
+try:
+X[col] =pdto_numenc(X[col])
+Printff"成功将列 {col} 转换为娄值类型")
+except ValueError
+Printlf'列 {col} 包含非煞值数据，将转换为分类编码
+XJcol] =X[col].astype(‘category’).cat.codes = 81 轴中党手旦
+tee ee eH
+print("\n 转换后的数据类型:站
+for col in X.cohumns:
+prnt(f"{col}: {X[col] .dtype}")
+第 28 页
+
+[PAGE 29]
++#e 293 Ge
+if XisnullQ).any().any0):
+pin(S 5: BEES PEA: 4A oR)
+X = X fillna(0)
+# EE
+X= sm_add_constant(X)
+y =data[ TET]
+Het Peay
+model = sm.OLS(y, X).fit0
+#2 ERR
+vif =pd DataFrame()
+vif["Variable"] = columns
+TRESS PEN SERS
+vif["VIF"] = [variance_inflation_factor(X values, i) fori in range(X shape[1])]
+retum model, vif
+def build_interaction_model( data):
+HEASR SMT RRS
+TEI ~ UnivType + Region + UnivType*Region + 控制变量
+2B SAE DPE
+required_cols = ['UnivType’, 'Title’, 'Tenure_std’, 'TET]
+region_cols = [Region 7F#f', "Region 中部]
+available_region_cols = [col for col in region_cols if col in data cohmmms]
+if not all (col in data.columms for col in required_cols) or len(available_region_cols) 一 0:
+missing = [col for col in required_cols if col notin data.cclumns]+ \
+[col for col in region_cols if col notin data columms]
+raise ValueError( f' 74/32 32 5 18 Ub BAS: {missing} ")
++ ee Se
+for region in available_region_cols:
+interaction_col= fUnivType_{region split("_")[1]}}'
+datafinteraction_cal] = data[UnivType'] * data[region]
+第 29 页
+
+[PAGE 30]
+# RAAT A eS Ay
+interaction_cols = [fUnivType_{region split("_")[1]}' for region in available_region_cols]
+2S SSS map
+X= datal[UnivType’, ‘Title’, ‘Tenure_std] + available_region_cols + interaction_cols]
++ ER SE AS Be SE
+for col in X.cohumns:
+if X[col] dtype = ‘object or pd apitypesis_categorical_dtype(X[col]):
+try:
+X[col] =pdto_numenc(X[col])
+except ValueError
+printff'列 {col} 包含非数值数据，将转换为分类编码")
+XJcol] =X[col].astype(‘category’).cat.codes = 81 轴中党手旦
+thE ETA SAE
+if XisnullQ) any()-any0):
+pin(@3: 模型自变星中存在抢失值，将用0 填充")
+X = X fillna(0)
+# Ae
+X= sm.add_constant(X)
+y =data[ TET]
++#Het Peay
+model = sm.OLS(y, X).fit0
+retum model
+def main():
+#Step 1: HES
+try:
+raw_data=pdread_csw(teacher_datacsv’) = wiv
+prnt(f" ART DIESE: H flen(raw_data)} #212 3")
+except FileNotFoundEmor:
+printf"错误: 找生到 teachar_datacsv 3(4+. GSW ARETE CPEB EET."
+retum
+except Exception as e:
+print(P读取数据时发生错误: {e}")
+retum
+第 30 页
+
+[PAGE 31]
+27S E AUS aA IF
+print("\n 数据基本信息:7
+raw_datainfo()
+print("\n 数据前几行:9
+print(raw_data head()to_csv(sep='t', na_rep—nan’))
+# Step 2: at APO
+processed _data= data preprocessing(raw_data)
+print("\n 数据预处理后各列的数据类型:")
+for cal in processed_data cohmms:
+print(f" {col}: {processed_data{col] .dtype}")
++R TE (CROSS MS BA ES)
+if ‘CurrentScore' in processed_data cohmms and ‘BaselineScore’ in processed_data colunms:
+processed_data['TEI] = calculate. tei(
+processed _data[‘CumentScore’].values,
+processed_data[BaselineScore'].values
+)
+else:
+print(" fete: 数据中缺少计算 TEI 所需的 CumentScore 或 BaselineScore 51")
+retum
+tHe HOS Coe RAP ae aS Ay
+required_cohmms = [UnivType’, ‘Title’, 'Tenure_std, ‘CurrentScore’, ‘BaselineScore’, 'TEI']
+missing_columns = [col for col in required_colummsif col notin processed_data. columns]
+if missing_columns:
+prnt(f" 警告: 预处理后的数据疮从以下列: {missing _colhumns}")
+Print("这可能导致后续分析出现问题.9
++HSHHS FAS SEA
+if len(processed_data) < 10:
+Print("获上告: a Bide). Ae SE Ait sR")
+212 Oe ae
+processed datato_csv(‘processed_teacher_data.csv', mdex=False)
+print("\n 已保存预处理后的数据到 processed teacher data.csv")
+#Sep 3 HERA L
+try:
+base_model, vif= build_base_model(processed_data)
+prnt("\n 基础模型回归结果:"
+第 31 页
+
+[PAGE 32]
+print(base_model summary())
+prnt("\n #8 #20 @0V1F):")
+punt(vif)
+except Exception as e:
+Print(f "构建基础模型时发生错误: {e}")
++BY Sa, AF RE BF
+prnt("\n 5] ae a] Baad”)
+problematic_cols = [UnivType’, ‘Title’, Tenure_std', ‘Region #7 #8", "Region 中部'.'TEI]
+available_cols = [col for col in problematic_cols if col in processed_data columns]
+print(processed_data[available_cols] head()to_csv(sep='t', na_rep—nan’))
+retum
+# Step 4: BHP RH aR
+# at VIF fe Pe, Ae ae VO
+intercept_vif = vif[vif[ V ariable’] — ‘const']['VIF ].values[0]
+predictor_vifs = vif[vif[ Variable'] != ‘const']['VIF]
+if all(predictor_vifs < 10): = #4 VIF<10 OE BASE ye ap i Bese
+try:
+interaction_model = build_interaction_model(processed_data)
+print("\n 扩展模型(交互效应)回归早果:)
+print(interaction_model summary())
+# A peso
+print("\n #22! bebe ih 28 Pete ge):")
+lr_test = 2 * (mteraction_modelllf - base_moddl If)
+ec; ae, a Be
+region_cols = [Region_?: #f", "Region_P ah]
+available_region_cols= [col for col in region_cols if col in processed_data columns]
+df=len(available_region_cols)
+p_value = 1 -smstats.chi2 cdf(lr_test, df)
+prnt(f"-F 75 (B: {lr_test:3f}. 自由度: {df}. p 值: {p_value:3#}"9
+if p_value < 0.05:
+Printf" 交互项显著，应条用扩展模型)
+else:
+pint((SSMARS: Bw Bae wy
+except Exception as e:
+print (£" #432 25 5 18 BUA a ERB: {e}")
+第 32 页
+
+[PAGE 33]
+else:
+print("n TFPI PBS SH. ES Bee ee")
+high vif_vars = vif]vif['Variable] != 'const'[vif[ VIF ]== 10]
+if not high_vif_vars.empty:
+print(" VIF =#-")
+print(high _vif_vars)
+if name 一， main *:
+main()
+import numpy as np
+import pandas as pd
+from skleam impute import Iterativelmputer
+from skleam decomposition import PCA
+from skleam preprocessing import StandardScaler
+import pyme as pm
+import arviz as az
+from skleam ensemble import RandomForestRegressor
+from skleam linear_model import LassoCV
+import matplotlib_pyplot as plt
+def data_preprocessing(data):
+SiR IR:
+1. 处理缺失值
+2. 处理异常值
+3.主成分分析处理共壮性
+4.标准化处理
+numeric_cols = data select_dtypes(include=[np number]).columns tolist()
+if notnumeric_cols:
+raise ValueError( "2075 P22 A] 2M S08 Bl")
+第 33 页
+
+[PAGE 34]
+imp = IterativeImputertmax iter=10, random _state=0)
+data_imputed= data.copy()
+data_imputed[numeric_cols] = imp fit_tramsform(data[numeric_cols])
+22. PAO. EF 30 RY
+Ee, OH. PREP SOMERS Fo See aS
+for col in [age' ‘teaching _age’, weekly _lectures'}
+if col in data_ imputed. cohmms:
+mean= data imputed[col].mean{) = 六章 2A080.ye
+std= data imputed[col] std) = (SAREE
+# AP GARE AP ee ED AD 3 oR EY AY
+data_imputed[col] = data mputed[col].chp(mean - 3 * std, mean~ 3 * std)
+#3. Past SMA OLE SE Oe poe ei ee ap ht
+# RL PG EE
+if'age' in data imputed columns and 'teaching_age' in data_imputed columns:
+2 iS PCATR, ELAR E A I
+pea=PCA(n_components=1)
+tHe cen see AS
+age_teaching= data_imputed[['age’, ‘teaching_age']]
+ta Seo Pee
+Zl = pea fit_tansform(age_ teaching)
+SHS aS SAE
+data imputed[Z1]=Z1
+a Da Se ae ee
+print(f"=E AR ot oT EA EE: {pca.explamed_vaniance_ratio_[0]:.4f}")
+else:
+print(" #25: S148 hp t/)age'atteaching age'Sl|) WATER
+data imputed[Z1]=0 # Aww, &Ree eae
+a4 Sr eee
+#2 StondardScaler HH, APPEL
+scaler = StandardScaler()
++H SS A
+# SER eA RE
+numeric_cols = [Z1', weekly_lectures']
+第 34 页
+
+[PAGE 35]
+available_cols = [col for col in numeric_cols if col in data imputed columns]
+if available_cols:
+2 At ae Pad fF oa ae
+data_imputed[available_cols] = scaler fit_transform(data_imputed[available_cols])
+else:
+Printl" 25: 25 $215) ELAS")
+# GER ST SE AS BE UF SERRE
+for col in [gender’, title’, ‘major, 'degree']:
+if col in data_imputed.cohmms:
+data _imputed[col] = data imputed[col].astype(category’)
+retum data_imputed
+# LD RE BSS IS eS
+def build_bsem_model(data):
+构建由叶斯蛙构方程模型
+包括测量方程和结构方程
+try:
+# AAT RGAE
+required_cols = ['gender’, ‘title’, ‘major’, ‘degree’, ‘weekly _lectures', ‘21’, ‘TET’, 'Q']
+missing_cols = [col for col in required_cols if col notin data.columms]
+if missing_cols:
+raise ValueError(f' 432 18 2 8 #151: {missing_cols}")
+import pyme as pm
+import arviz as az
+print(f'PyMC 版本: {pm.__version__}")
+prnt(f'ArizZ 版本: 人az version__}")
+with pmModel() as model:
+2 PERE SEE
+# BES RCE, RO CHRABEA 0, ELA) MA
+= pm Nonnal('<', mu=0, sigma=1, shapelen(data))
+B= pm Nonnal('p', mu-0, sigma=1) = 203
+第 35 页
+
+[PAGE 36]
++ Sn 2 AR
+7_mean= B *&
+1) = pm Nonmal('y/’, mu=y_mean, sigma=1, shapelen(data))
+tHE ASME, PORRAAPMSE AO, SBA) Mu eae
+入= pmNomnal(}', mu=), sigma=1, shape=8) 4 i 9 Ma BE
+tH LSM, PPM ESS HERE
+8 = pmHalfNonmal(’', sigma=1, shape=8)
+2 ae
+pmNonmal(X1', mu=i[0] * €, sigma=5[0], observed=data[gender])
+pm Nonnal(X3', mu=i[1] * €, sigma=8[1], observed=data[{title’])
+pm Nonmal(X5', mu=i[2] * €, sigma=8[2], observed=data[major])
+pm Normal("X6', mu=i[3] * €, sigma=8[3], observed=data[ degree’)
+pm Nonmal(X7', mu=i[4] * €, sigma=5[4], observed=data[weekly_lectures'])
+pm Nonmal(‘Z1', mu=}[5] * €, sigma=8[5], observed=data['Z1 7)
+# SUF TE] WO a Ee
+pm Nonmal(‘TEI’, mur)[6] * §+ [7] * y, sigma=8[6], observed-data[TEI'])
+pm Nonnal(‘Q’, mu-A[7] * £+ 4[6] * n, sigma=s[7], observed=data[‘Q’])
++ fies
++e SR REL CMC) SEE
+print("F da Se 4 ..")
+trace = pm sample(1000, tme=1000, chains=2, target_accept=0.9, cores=1)
+print("Se+# 55 Ab")
+
+retum trace
+
+except Exception as e-
+
+import sys
+
+import traceback
+
+print(f" +4132 00 Bh 48 BUA EES: {str(e}}")
+
+Print("完整错误堆枝:0)
+
+traceback print_exc(file=sys stdout)
+
+raise
+
++ ED EE oop hart AF
+def regularized_mediation(data):
+使用 Lasso 回归进行中从效应分析
+第 36 页
+
+[PAGE 37]
++ EA AG PT HE
+required_cols = ['gender’, ‘title’, ‘major’, ‘degree’, weekly_lectures’,'Z1', TEI, 'Q]
+missing_cols = [col for col in required_cols if col not in data.columms]
+if missing_cols:
+
+raise ValueError( ffi} 20 33 aT ih ASI: {missing cols}")
++ ae
+X= datal['gender, ‘title’, ‘major, ‘degree’, ‘weekly_lectures’, 'Z1'J]
+# ANS SEB MT one-hot $848
+X=pdget_cdummies(X, drop_first=Tnue)
+# hap ARE RD
+M = dataf TET]
+Y= data[Q]
+#8 fF a: ¥-> MW
+= OE LassaCl APR, aby I PAS a a
+lasso_a= LassoCV(cv=5)
++#HS SL
+lasso_a-fit(X, M)
++B Ro He
+a_path=lasso_acoef_
+# 8A bo > Y (PHD
+tHGPEN SHEE eS H
+XM = pd.concat([X, M], axis=1)
+= OE LassaCl APR, aby I PAS a a
+lasso_b = LassoC'V(cv=5)
++#HS SL
+lasso_b.fit(XM, ¥)
++S RE, Mapa eUR
+b_path=lasso_bcoef [1] #6 —PAeite W
+# HAE ct X-> Y (REAL)
+# VE Lasso APS, MAF 5 PPS aa
+lasso_c= LassoCV(cv=5)
++ Hee
+lasso_c.fit(X, ¥)
+# GES BRO oP
+
+第 37 页
+
+[PAGE 38]
+c_path=lasso_c.coef_
+# op iar
+mediation _effect= a_path * b_path
+retum {
+
+‘a_path’: a_path,
+
+'b_path’: b_path,
+
+‘c_path: c_path,
+
+‘mediation_effect': mediation_efféct,
+
+‘feature_names': X columns tolist()
+}
+
++ RRM SO
+def causal_forest_analysis(data):
+
+4 FA BRL AR ah HT AR aT
+# EAT REG AYRE
+required_cols = ['gender,, ‘title’, ‘major’, ‘degree’, weekly_lectures’,'Z1', 'TEI', 'Q]
+missing_cols = [col for col in required _cols if col not in data.columns]
+if missing_cols:
+
+raise ValueErron( f' 因果森林分析献少必要的列: {missing cols}")
+# ae
+X= data[[gender, Yitle major, ‘degree’, ‘weekly_lectures’, 'Z1']]
+# Atgp SEAR YT one-hot Sed
+X= pdget_dummies(X, drop_first=True)
+# ae
+¥_TEI = data[ TET]
+Y_Q= data[(Q’]
+# ee
+tHPRMERROE, PEM BY 100, BORSA 42
+rf_tei = RandomForestRegressor(n_estimators=100, random_state=42)
+rf_q= RandomForestRegressor(n_estimators=100, random_state=42)
++See
+rf tei fit(X, ¥_TED)
+rf_qfit(X, Y_Q)
+
+第 38 页
+
+[PAGE 39]
++ OPiS ee
++ SAAR OLE oh 8 ae ar Be
+importance_tei = rf tei feature_importances_
+importance_q= rf_q feature_importances_
+retum {
+
+‘TEL_importance’: importance tei,
+
+‘Q_ importance’: importance_q,
+
+‘feature_names': X columns tolist()
+}
+
++ ase
+def visualize_results(mediation_results, causal_results):
+AMET aR
++ 2 aE
+fig, axes = plt subplots(1, 2, figsize=(13, 6))
+#1. Psp Sie TAB
+feature_names = mediation _results['feature_names]
+mediation_effect= mediation _results['mediation_effect]
++ SLE AS PhP aa ae
+top_indices = np argsort(np-abs(mediation_effect))[-5-]
+top_features = [feature_names[i] for i in top_indices]
+top_effects = [mediation_effect[i] fori in top_indices]
++ Ba AAP
+axes[0] barh(top features, top_effects)
+axes[O].set_title(’Rit marth (Top 5) ')
+axes[0] set_xlabel'【中但效应值?
+axes[0] axvline(x=0, colorblack’, linestyle='—’, alpha=0_5)
+#2. HPAES Be ar apes
+feature_names = causal_results['feature_names]
+importance_tei = causal_results['TEI_importance’]
+importance_q= causal_results[‘Q_importance]
+第 39 页
+
+[PAGE 40]
+= 铬损 TE] AR a SREB OE
+tei_indices = np.argsort(importance_tei)[-5-]
+tei_features = [feature_names{i] fori in tei_indices]
+tei_importance = [importance tei[i] fori in tei_indices]
+# Ee
+axes[1] barh(tei_features, tei_importance, color'skyblue)
+axes[1] set_title(‘TEI MH} (EES tt (Top 3) )
+axes([1].set_xlabel(‘ 3 th 219
+pit.tight_layout()
+pit savefig(‘analysis_results png’, dpi=300, bbox_inches=tight)
+plt show()
++t
+def main():
+#1 Wee
++MPRPCAMS Aap Pe, @eel PA:
+# gender, age, title, teaching_age, major, degree, weekly _lectures, TEI, Q
++e eee
+np random seed(42)
+n=500
+data = pd DataFrame({
+‘gender’: np random randint(0, 2, n), = {#4 (0= 3%, 1= #7)
+‘age’: np randomnonmal(40, 10, n).clip(20, 60), = 4
+‘title’: np zandomrandint(1, 5, nj, = {98% (/-4)
+teaching age' np randomnomnal(15, 8, n).clip(0, 40), = Ae
+‘major’: np random randint(0, 2.n), = 34 (0= 0-74 [= 27H)
+‘degree’: npzandomrandint(1,4,n), 4 #7 (J= 22, 2=a7, 3-82)
+‘weekly_lectures': npzandomnonmal(10, 3, n).clip(0, 20), =.47? &&
+‘TEI: np randomnormal(50,10,n), 4 spe eA eee
+‘O': np randomnonmal(50,10,n) 4 #2 es
+9)
+2 ARID HS, PR ee
+dataf TET] = (
+20+
+5 * data[gender]+
+第 40 页
+
+[PAGE 41]
+3 * data[title'] +
+
+2 * data[degree'] +
+
+0.5 * datafweekly_lectures'] +
+
+0.3 * data[age'] +
+
+np.random normal(0, 5.)
+)
+dataf‘Q'] = (
+
+30+
+
+0.6 * datafTET'] +
+
+2 * dataftitle'] +
+
+1 * datafdegree'] +
+
+0.2 * datafteaching_age']+
+
+np randomnormal(0, 5, n)
+)
+# 3 2 Rae
+printt"正在进行数据预处理)
+processed_data= data_ preprocessimgldata)
+212 Oe ae
+processed_datato_csv(processed_teacher_data csv’, index=False)
+priatff'已保存预处理后的数据，包含 flen(processed_data)} 条记录和 {len(processed_data. columns)} 51)")
++ UHSH ASR
+print("\n 预处理后的数据基本信息:"
+processed_data info()
+#3. Hef eS eee
+print("\n 正在构建由叶斯结构方程模型
+try:
+
+trace = build_bsem_model{processed_data)
+
+#4 SP Say
+
+punt("n 2 anes RD
+
+2 RS Bet te
+
+prnt(az.summary(trace))
+
+# Bb Sea Bo aR es
+
+第 41 页
+
+[PAGE 42]
+az plot_trace(trace)
+pitsavefig('‘bsem_trace_png', dpi=300, bbox_inches~tight)
+plt.close()
++ EAD
+az plot_forest(trace, var_names-[f, 了
+pitsavefig('bsem_forest png’, dpi-300, bbox_inches=tight’)
+plt-close()
+print(" UH Shia ah ARERR
+except Exception as e:
+Print(f构建由叶斯模型时发生错误: {e}")
+trace = None
+#5. LEAN AE Pp hiro BF
+print("\n 正在进行正则化中但丫应分析…)
+try:
+mediation_results = regularized_mediation(processed_data)
+pant("\n Ay Ee AT Ea")
+eR RY
+print("\in 路径 :系数区-VD-
+for feat, coef in zip(mediation_results[‘feature_names'], mediation _results['a_path')):
+if aba(coef) > 1le6: # rE
+print(f" {feat}: {eoef: 4f}")
+punt(f"\n fiz b #20(MyY): {mediation_results['b_path’]: 4f}")
+prnt("in 直接效应 cf >Y¥):")
+for feat, coef in zip(mediation_results['feature_names'], mediation _results['c_path')):
+if abacoef) > 1e6: # Meir eRe
+print(f" {feat}: {eoef: 4f}")
+pnnt("\n At RL (a*b):")
+for feat, effect in zip(mediation_results['feature_names'], mediation _results[ ‘mediation_efféct']):
+if abs(effect) > 1e6: 4 BaP Shiai ar
+print(f" {feat}: {effect 4f}")
+except Exception as e:
+第 42 页
+
+[PAGE 43]
+Printtf'中介效应分析时皮生错误: fei
+mediation_results = None
+26. BR St AF
+print("\n 正在进行因果森林分析-
+try:
+causal_results = causal_forest_analysis(processed_data)
+prnt("\n SFiS tE(TEI):")
+for feat, importance in zip(causal_results['feature_names'], causal_results['TEI_importance')):
+print(f" {feat}: {importance: 4f}")
+punt("\n 特征重要性(O)
+for feat, importance in zip(causal_results['feature_names'], causal_results[‘Q_importance’]):
+print(f" {feat}: {importance: 4f}")
+except Exception as e:
+punt(f 因果森林分析时发生错误: {e}")
+causal_results = None
+#7. STARS
+if mediation _results and causal_results:
+prnt("\n JE FE Bay ieee FR")
+visualize_results(mediation_results, causal_results)
+print("可视化结果已保存为 amalysis_ resultspng")
+printf'm 分析完成，请参考上壕结果进行解释站
+证_name 一" main
+main()
+第 43 页

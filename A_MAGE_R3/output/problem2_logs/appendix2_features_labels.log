@@ -1,0 +1,10 @@
+2026-06-06 00:30:44 [INFO] Starting Step 12 Appendix 2 surface features and Q labels
+2026-06-06 00:30:44 [INFO] Using sections_dir=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\appendix2_intermediate\sections_refined
+2026-06-06 00:30:45 [INFO] No missing surface feature values detected.
+2026-06-06 00:30:46 [INFO] Q labels built by AHP-entropy-TOPSIS base fallback; BT not applied for Appendix2. q_min=35.892975 q_max=70.222043
+2026-06-06 00:30:46 [INFO] Raw surface features saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem2_tables\appendix2_surface_features_raw.xlsx
+2026-06-06 00:30:46 [INFO] Normalized surface features saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem2_tables\appendix2_surface_features_normalized.xlsx
+2026-06-06 00:30:46 [INFO] Candidate usage report saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem2_tables\appendix2_candidate_usage_report.xlsx
+2026-06-06 00:30:46 [INFO] Q labels saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem2_tables\appendix2_q_labels.xlsx
+2026-06-06 00:30:46 [INFO] Features with Q saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem2_tables\appendix2_features_with_q.xlsx
+2026-06-06 00:30:46 [INFO] Finished Step 12: papers=10 candidates_used=8 q_min=35.892975 q_max=70.222043

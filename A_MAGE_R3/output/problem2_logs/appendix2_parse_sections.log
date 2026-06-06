@@ -1,0 +1,175 @@
+2026-06-05 23:45:22 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | Starting Step 11 Appendix 2 PDF parse and section split
+2026-06-05 23:45:23 [INFO] A_MAGE_R3.pdf_parser | 2-1.pdf parsed successfully: pages=69 chars=49297 blank_pages=0
+2026-06-05 23:45:23 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-1.pdf parsed for Appendix 2
+2026-06-05 23:45:23 [INFO] A_MAGE_R3.pdf_parser | 2-2.pdf parsed successfully: pages=30 chars=21275 blank_pages=0
+2026-06-05 23:45:23 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-2.pdf parsed for Appendix 2
+2026-06-05 23:45:23 [INFO] A_MAGE_R3.pdf_parser | 2-3.pdf parsed successfully: pages=22 chars=11948 blank_pages=0
+2026-06-05 23:45:23 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-3.pdf parsed for Appendix 2
+2026-06-05 23:45:23 [INFO] A_MAGE_R3.pdf_parser | 2-4.pdf parsed successfully: pages=19 chars=15517 blank_pages=0
+2026-06-05 23:45:23 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-4.pdf parsed for Appendix 2
+2026-06-05 23:45:23 [INFO] A_MAGE_R3.pdf_parser | 2-5.pdf parsed successfully: pages=48 chars=25344 blank_pages=0
+2026-06-05 23:45:23 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-5.pdf parsed for Appendix 2
+2026-06-05 23:45:23 [INFO] A_MAGE_R3.pdf_parser | 2-6.pdf parsed successfully: pages=34 chars=25438 blank_pages=0
+2026-06-05 23:45:23 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-6.pdf parsed for Appendix 2
+2026-06-05 23:45:23 [INFO] A_MAGE_R3.pdf_parser | 2-7.pdf parsed successfully: pages=18 chars=12305 blank_pages=0
+2026-06-05 23:45:23 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-7.pdf parsed for Appendix 2
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 1 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 2 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 3 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 4 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 5 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 6 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 7 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 8 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 9 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 10 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 11 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 12 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 13 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 14 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 15 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 16 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 17 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 18 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 19 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 20 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 21 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 22 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 23 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 24 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 25 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 26 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 27 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 28 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 29 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 30 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 31 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 32 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 33 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 34 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 35 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 36 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 37 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 38 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 39 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 40 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 41 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 42 extracted empty text
+2026-06-05 23:45:23 [WARNING] A_MAGE_R3.pdf_parser | 2-8.pdf | page 43 extracted empty text
+2026-06-05 23:45:23 [INFO] A_MAGE_R3.pdf_parser | 2-8.pdf parsed successfully: pages=43 chars=0 blank_pages=43
+2026-06-05 23:45:23 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf needs OCR fallback: parse_success=True chars=0 blank_pages=43 pages=43 threshold=100
+2026-06-05 23:45:28 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 1 OCR chars=964
+2026-06-05 23:45:31 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 2 OCR chars=738
+2026-06-05 23:45:35 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 3 OCR chars=1203
+2026-06-05 23:45:38 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 4 OCR chars=808
+2026-06-05 23:45:40 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 5 OCR chars=441
+2026-06-05 23:45:42 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 6 OCR chars=655
+2026-06-05 23:45:43 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 7 OCR chars=488
+2026-06-05 23:45:45 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 8 OCR chars=518
+2026-06-05 23:45:47 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 9 OCR chars=594
+2026-06-05 23:45:50 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 10 OCR chars=764
+2026-06-05 23:45:52 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 11 OCR chars=705
+2026-06-05 23:45:54 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 12 OCR chars=740
+2026-06-05 23:45:57 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 13 OCR chars=421
+2026-06-05 23:45:59 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 14 OCR chars=591
+2026-06-05 23:46:02 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 15 OCR chars=631
+2026-06-05 23:46:04 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 16 OCR chars=650
+2026-06-05 23:46:06 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 17 OCR chars=924
+2026-06-05 23:46:09 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 18 OCR chars=1058
+2026-06-05 23:46:12 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 19 OCR chars=889
+2026-06-05 23:46:15 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 20 OCR chars=1029
+2026-06-05 23:46:18 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 21 OCR chars=1211
+2026-06-05 23:46:19 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 22 OCR chars=675
+2026-06-05 23:46:21 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 23 OCR chars=626
+2026-06-05 23:46:22 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 24 OCR chars=512
+2026-06-05 23:46:23 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 25 OCR chars=632
+2026-06-05 23:46:25 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 26 OCR chars=854
+2026-06-05 23:46:27 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 27 OCR chars=1115
+2026-06-05 23:46:29 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 28 OCR chars=944
+2026-06-05 23:46:30 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 29 OCR chars=880
+2026-06-05 23:46:32 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 30 OCR chars=775
+2026-06-05 23:46:34 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 31 OCR chars=1052
+2026-06-05 23:46:36 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 32 OCR chars=1097
+2026-06-05 23:46:37 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 33 OCR chars=637
+2026-06-05 23:46:39 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 34 OCR chars=916
+2026-06-05 23:46:40 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 35 OCR chars=858
+2026-06-05 23:46:42 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 36 OCR chars=997
+2026-06-05 23:46:44 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 37 OCR chars=715
+2026-06-05 23:46:45 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 38 OCR chars=784
+2026-06-05 23:46:47 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 39 OCR chars=893
+2026-06-05 23:46:49 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 40 OCR chars=966
+2026-06-05 23:46:50 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 41 OCR chars=603
+2026-06-05 23:46:52 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 42 OCR chars=934
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf | page 43 OCR chars=675
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.ocr_parser | 2-8.pdf OCR succeeded: pages=43 success_pages=43 chars=34162 output=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\appendix2_extracted_text\2-8.txt
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=1 OCR chars=964 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=2 OCR chars=738 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=3 OCR chars=1203 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=4 OCR chars=808 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=5 OCR chars=441 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=6 OCR chars=655 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=7 OCR chars=488 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=8 OCR chars=518 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=9 OCR chars=594 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=10 OCR chars=764 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=11 OCR chars=705 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=12 OCR chars=740 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=13 OCR chars=421 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=14 OCR chars=591 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=15 OCR chars=631 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=16 OCR chars=650 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=17 OCR chars=924 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=18 OCR chars=1058 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=19 OCR chars=889 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=20 OCR chars=1029 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=21 OCR chars=1211 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=22 OCR chars=675 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=23 OCR chars=626 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=24 OCR chars=512 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=25 OCR chars=632 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=26 OCR chars=854 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=27 OCR chars=1115 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=28 OCR chars=944 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=29 OCR chars=880 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=30 OCR chars=775 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=31 OCR chars=1052 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=32 OCR chars=1097 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=33 OCR chars=637 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=34 OCR chars=916 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=35 OCR chars=858 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=36 OCR chars=997 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=37 OCR chars=715 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=38 OCR chars=784 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=39 OCR chars=893 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=40 OCR chars=966 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=41 OCR chars=603 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=42 OCR chars=934 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf page=43 OCR chars=675 success=True error=
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.pdf parsed for Appendix 2
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.pdf_parser | 2-9.pdf parsed successfully: pages=32 chars=22903 blank_pages=0
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-9.pdf parsed for Appendix 2
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.pdf_parser | 2-10.pdf parsed successfully: pages=53 chars=43441 blank_pages=0
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-10.pdf parsed for Appendix 2
+2026-06-05 23:46:53 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | Appendix 2 PDF parse report saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem2_tables\appendix2_pdf_parse_report.xlsx
+2026-06-05 23:46:54 [WARNING] A_MAGE_R3.problem2.appendix2_parse_sections | 2-1.txt missing sections: abstract,error_analysis
+2026-06-05 23:46:54 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-1.txt section split done: headings=19 missing=2 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\appendix2_intermediate\sections\2-1.json
+2026-06-05 23:46:54 [WARNING] A_MAGE_R3.problem2.appendix2_parse_sections | 2-2.txt missing sections: results,sensitivity_analysis,error_analysis,model_evaluation
+2026-06-05 23:46:54 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-2.txt section split done: headings=15 missing=4 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\appendix2_intermediate\sections\2-2.json
+2026-06-05 23:46:54 [WARNING] A_MAGE_R3.problem2.appendix2_parse_sections | 2-3.txt missing sections: assumptions,results,sensitivity_analysis,error_analysis
+2026-06-05 23:46:54 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-3.txt section split done: headings=9 missing=4 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\appendix2_intermediate\sections\2-3.json
+2026-06-05 23:46:54 [WARNING] A_MAGE_R3.problem2.appendix2_parse_sections | 2-4.txt missing sections: results,sensitivity_analysis,error_analysis,appendix
+2026-06-05 23:46:54 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-4.txt section split done: headings=10 missing=4 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\appendix2_intermediate\sections\2-4.json
+2026-06-05 23:46:55 [WARNING] A_MAGE_R3.problem2.appendix2_parse_sections | 2-5.txt missing sections: sensitivity_analysis,error_analysis
+2026-06-05 23:46:55 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-5.txt section split done: headings=16 missing=2 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\appendix2_intermediate\sections\2-5.json
+2026-06-05 23:46:55 [WARNING] A_MAGE_R3.problem2.appendix2_parse_sections | 2-6.txt missing sections: sensitivity_analysis,error_analysis
+2026-06-05 23:46:55 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-6.txt section split done: headings=19 missing=2 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\appendix2_intermediate\sections\2-6.json
+2026-06-05 23:46:56 [WARNING] A_MAGE_R3.problem2.appendix2_parse_sections | 2-7.txt missing sections: sensitivity_analysis,error_analysis,model_evaluation,appendix
+2026-06-05 23:46:56 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-7.txt section split done: headings=15 missing=4 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\appendix2_intermediate\sections\2-7.json
+2026-06-05 23:46:56 [WARNING] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.txt missing sections: assumptions,sensitivity_analysis,error_analysis
+2026-06-05 23:46:56 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-8.txt section split done: headings=16 missing=3 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\appendix2_intermediate\sections\2-8.json
+2026-06-05 23:46:57 [WARNING] A_MAGE_R3.problem2.appendix2_parse_sections | 2-9.txt missing sections: sensitivity_analysis
+2026-06-05 23:46:57 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-9.txt section split done: headings=16 missing=1 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\appendix2_intermediate\sections\2-9.json
+2026-06-05 23:46:57 [WARNING] A_MAGE_R3.problem2.appendix2_parse_sections | 2-10.txt missing sections: abstract,problem_statement,assumptions,symbols,model_building,model_solving,results,sensitivity_analysis,error_analysis
+2026-06-05 23:46:57 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | 2-10.txt section split done: headings=3 missing=9 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\appendix2_intermediate\sections\2-10.json
+2026-06-05 23:46:57 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | Appendix 2 section split report saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem2_tables\appendix2_section_split_report.xlsx
+2026-06-05 23:46:57 [INFO] A_MAGE_R3.problem2.appendix2_parse_sections | Finished Step 11: pdf_total=10 parse_success=10 ocr_used=1 section_total=10

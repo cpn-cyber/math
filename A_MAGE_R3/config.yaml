@@ -253,3 +253,22 @@ bradley_terry:
   fusion_lambda: 0.7
   ridge: 0.001
   log_filename: "bradley_terry.log"
+
+problem2:
+  appendix2_papers_dir: "data/appendix2_papers"
+  appendix2_extracted_text_dir: "data/appendix2_extracted_text"
+  appendix2_intermediate_dir: "data/appendix2_intermediate"
+  problem2_output_tables_dir: "output/problem2_tables"
+  problem2_output_charts_dir: "output/problem2_charts"
+  problem2_output_logs_dir: "output/problem2_logs"
+  robust_scale_epsilon: 0.000001
+  qaf_eta_grid:
+    - 0.05
+    - 0.10
+    - 0.15
+  qaf_clip_min: 0.90
+  qaf_clip_max: 1.10
+  pls_components_grid:
+    - 1
+    - 2
+  bootstrap_B: 1000

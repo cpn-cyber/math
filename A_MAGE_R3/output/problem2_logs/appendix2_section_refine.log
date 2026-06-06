@@ -1,0 +1,15 @@
+2026-06-06 00:03:33 [INFO] Starting Step 11B Appendix 2 section quality audit and refinement
+2026-06-06 00:03:33 [INFO] 2-1 refined: recognized=11 missing=1 candidates=none valid=True
+2026-06-06 00:03:33 [INFO] 2-2 refined: recognized=8 missing=4 candidates=results valid=True
+2026-06-06 00:03:33 [INFO] 2-3 refined: recognized=9 missing=3 candidates=results valid=True
+2026-06-06 00:03:33 [INFO] 2-4 refined: recognized=9 missing=3 candidates=none valid=True
+2026-06-06 00:03:33 [INFO] 2-5 refined: recognized=10 missing=2 candidates=none valid=True
+2026-06-06 00:03:33 [INFO] 2-6 refined: recognized=10 missing=2 candidates=none valid=True
+2026-06-06 00:03:34 [INFO] 2-7 refined: recognized=8 missing=4 candidates=none valid=True
+2026-06-06 00:03:34 [INFO] 2-8 refined: recognized=10 missing=2 candidates=none valid=True
+2026-06-06 00:03:34 [INFO] 2-9 refined: recognized=11 missing=1 candidates=none valid=True
+2026-06-06 00:03:34 [INFO] 2-10 refined: recognized=4 missing=8 candidates=abstract valid=True
+2026-06-06 00:03:34 [INFO] Refined report saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem2_tables\appendix2_section_split_report_refined.xlsx
+2026-06-06 00:03:34 [INFO] Compare report saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem2_tables\appendix2_section_refine_compare.xlsx
+2026-06-06 00:03:34 [INFO] Audit report saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem2_tables\appendix2_section_quality_audit.xlsx
+2026-06-06 00:03:34 [INFO] Finished Step 11B: missing_counts={'abstract': 1, 'problem_statement': 1, 'assumptions': 1, 'symbols': 1, 'modeling': 1, 'solution': 1, 'results': 2, 'sensitivity_analysis': 9, 'error_analysis': 9, 'model_evaluation': 2, 'references': 0, 'appendix': 2} candidates=[{'paper_id': '2-2', 'section_name': 'results'}, {'paper_id': '2-3', 'section_name': 'results'}, {'paper_id': '2-10', 'section_name': 'abstract'}]

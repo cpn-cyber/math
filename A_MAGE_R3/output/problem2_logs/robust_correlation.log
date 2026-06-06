@@ -1,0 +1,12 @@
+2026-06-06 02:28:16 [INFO] Starting Step 14 robust preprocessing and correlation analysis; epsilon=1e-06
+2026-06-06 02:28:16 [WARNING] scipy is unavailable; Spearman/Pearson coefficients are computed by rank/numpy fallback and p_value columns are NaN.
+2026-06-06 02:28:16 [WARNING] MAD=0 for feature figure_table_explanation_rate; scaled with epsilon and flagged for low variance review.
+2026-06-06 02:28:16 [WARNING] MAD=0 for feature problem_restatement_coverage; scaled with epsilon and flagged for low variance review.
+2026-06-06 02:28:16 [WARNING] MAD=0 for feature reference_norm_rate; scaled with epsilon and flagged for low variance review.
+2026-06-06 02:28:16 [WARNING] MAD=0 for feature appendix_code_presence; scaled with epsilon and flagged for low variance review.
+2026-06-06 02:28:16 [WARNING] MAD=0 for feature citation_norm_rate; scaled with epsilon and flagged for low variance review.
+2026-06-06 02:28:17 [INFO] Merged feature count=25
+2026-06-06 02:28:17 [INFO] Caution/excluded features: [{'feature_name': 'reference_norm_rate', 'variance_flag': 'constant_feature', 'use_in_model': 'False'}, {'feature_name': 'appendix_code_presence', 'variance_flag': 'low_variance_feature', 'use_in_model': 'Caution'}]
+2026-06-06 02:28:17 [INFO] Spearman Top 8: [{'feature_name': 'method_fit', 'spearman_corr': 0.6121212121212121, 'spearman_abs': 0.6121212121212121}, {'feature_name': 'citation_norm_rate', 'spearman_corr': 0.5890767338705079, 'spearman_abs': 0.5890767338705079}, {'feature_name': 'section_coverage', 'spearman_corr': 0.5539117094069973, 'spearman_abs': 0.5539117094069973}, {'feature_name': 'task_coverage', 'spearman_corr': 0.4545454545454545, 'spearman_abs': 0.4545454545454545}, {'feature_name': 'figure_table_explanation_rate', 'spearman_corr': 0.4438126822992972, 'spearman_abs': 0.4438126822992972}, {'feature_name': 'objective_constraint_completeness', 'spearman_corr': 0.44304562390441615, 'spearman_abs': 0.44304562390441615}, {'feature_name': 'total_chars', 'spearman_corr': 0.4424242424242424, 'spearman_abs': 0.4424242424242424}, {'feature_name': 'paragraph_balance', 'spearman_corr': -0.34545454545454546, 'spearman_abs': 0.34545454545454546}]
+2026-06-06 02:28:17 [INFO] Saved outputs to C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem2_tables and C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem2_charts
+2026-06-06 02:28:17 [INFO] Finished Step 14
