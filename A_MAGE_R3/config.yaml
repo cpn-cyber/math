@@ -272,3 +272,35 @@ problem2:
     - 1
     - 2
   bootstrap_B: 1000
+
+problem3:
+  appendix3_papers_dir: "data/appendix3_papers"
+  appendix3_extracted_text_dir: "data/appendix3_extracted_text"
+  appendix3_intermediate_dir: "data/appendix3_intermediate"
+  output_tables_dir: "output/problem3_tables"
+  output_charts_dir: "output/problem3_charts"
+  output_logs_dir: "output/problem3_logs"
+  output_reports_dir: "output/problem3_reports"
+  alpha_problem1_weight: 0.80
+  lambda_logic_gap: 0.10
+  lambda_ai_risk: 0.05
+  argument_chain_edges:
+    - "T_to_D"
+    - "D_to_HM"
+    - "HM_to_R"
+    - "R_to_C"
+    - "C_to_T"
+  ai_risk_evidence_reliability:
+    template_expression: 0.75
+    unsupported_conclusion: 0.80
+    data_untraceable: 0.85
+    method_result_jump: 0.85
+  reviewer_agents:
+    - "structure_reviewer"
+    - "logic_reviewer"
+    - "modeling_reviewer"
+    - "result_validation_reviewer"
+    - "application_value_reviewer"
+  revision_budget_default: 10
+  action_cost_max: 10
+  robustness_bootstrap_B: 500

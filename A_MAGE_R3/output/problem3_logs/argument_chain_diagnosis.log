@@ -1,0 +1,10 @@
+2026-06-06 14:47:21 [INFO] Starting Step 25 argument chain diagnosis
+2026-06-06 14:47:21 [INFO] Using sections_dir=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\appendix3_intermediate\sections_refined
+2026-06-06 14:47:21 [INFO] 3-1 edge scores: {'T_to_D': 0.764921, 'D_to_HM': 0.672473, 'HM_to_R': 0.613025, 'R_to_C': 0.622027, 'C_to_T': 0.649519}
+2026-06-06 14:47:21 [INFO] 3-2 edge scores: {'T_to_D': 0.683471, 'D_to_HM': 0.679132, 'HM_to_R': 0.615104, 'R_to_C': 0.62512, 'C_to_T': 0.722755}
+2026-06-06 14:47:21 [INFO] 3-3 edge scores: {'T_to_D': 0.859823, 'D_to_HM': 0.646614, 'HM_to_R': 0.682991, 'R_to_C': 0.697235, 'C_to_T': 0.65264}
+2026-06-06 14:47:23 [INFO] Nodes saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\argument_chain_nodes.xlsx rows=15
+2026-06-06 14:47:23 [INFO] Edges saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\argument_chain_edges.xlsx rows=15
+2026-06-06 14:47:23 [INFO] Diagnosis saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\logic_gap_diagnosis.xlsx
+2026-06-06 14:47:23 [INFO] Evidence saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\logic_gap_evidence.xlsx rows=7
+2026-06-06 14:47:23 [INFO] Finished Step 25

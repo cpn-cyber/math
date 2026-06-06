@@ -1,0 +1,5 @@
+2026-06-06 16:29:04 [INFO] Step 31 final audit started
+2026-06-06 16:29:05 [INFO] Audit status counts: {'PASS': 53, 'WARNING': 7}
+2026-06-06 16:29:05 [INFO] Data consistency pass: True
+2026-06-06 16:29:05 [INFO] Disclaimer complete: True
+2026-06-06 16:29:05 [INFO] Step 31 outputs written

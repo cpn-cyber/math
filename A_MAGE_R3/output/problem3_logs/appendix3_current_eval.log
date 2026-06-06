@@ -1,0 +1,20 @@
+2026-06-06 14:37:06 [INFO] Starting Step 24 Appendix 3 current quality reevaluation
+2026-06-06 14:37:06 [INFO] Using sections_dir=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\appendix3_intermediate\sections_refined
+2026-06-06 14:37:06 [INFO] 3-1.json Problem1-style features extracted
+2026-06-06 14:37:07 [INFO] 3-2.json Problem1-style features extracted
+2026-06-06 14:37:07 [INFO] 3-3.json Problem1-style features extracted
+2026-06-06 14:37:07 [WARNING] I08_结果结论一致性 has 1 missing values; imputed with 0.080656
+2026-06-06 14:37:07 [INFO] F1 TOPSIS scores calculated: min=23.119646 max=65.405593
+2026-06-06 14:37:07 [INFO] No standalone problem-statement keyword file was found; task keywords inferred from Appendix 2 high-frequency terms and subquestion markers: 指标,模型,评价,质量,能力,影响,问题三,问题一,数字,问题二,预测,路径
+2026-06-06 14:37:07 [INFO] 3-1 task_coverage=0.718750 evidence=评估与优化需求；从康养资源丰富度、居民健康状况、环境质 量、经济发展水平等多个维度设定评价指标，构康养城市综合评价模型；以最大化康养 服务的覆盖率和资源利用效率，最小化成本为要求，建立康养资源优化配置模型。因此， 本研究不仅具备现实紧迫性与政策导向性，还为建立数据驱动型城市康养评价与优化模 型提供了重要契机，具有较强的应用价值。
+2026-06-06 14:37:07 [INFO] 3-1 method_fit=0.900000 evidence=度算法 耦合度： 协调度： 协调性等级判定 D C T =  组合赋权算法 层次分析法（AHP） 标准差客观赋权 权重融合计算 深度强化学习算法 DQN 网络结构设计 MDP 状态空间建模 奖励函数构建 主要研究结论 龙华区协调度 0.81 琼山区协调度 0.45 环境质量得分 75.0 资源丰富度 44.8 政策建议与策略 专项康
+2026-06-06 14:37:07 [INFO] 3-2 task_coverage=0.371875 evidence=估现有康养资源分 布的合理性，再着重解决如何优化康养资源布局的问题。基于此，本文建立了综合指标 构建法与资源供需适配量化评估模型，采用熵权法确定各项指标权重，计算初始匹配度， 分析是否合理，引入粒子群优化算法（PSO）进一步优化，设定粒子参数、以匹配度为 适应度函数进行迭代寻优，得到更优的资源匹配方案，提升区域康养资源利用效率 2.
+2026-06-06 14:37:07 [INFO] 3-2 method_fit=0.960000 evidence=，如医疗设施数量、健康满意度等。整体来看，需评估现有康养资源分 布的合理性，再着重解决如何优化康养资源布局的问题。基于此，本文建立了综合指标 构建法与资源供需适配量化评估模型，采用熵权法确定各项指标权重，计算初始匹配度， 分析是否合理，引入粒子群优化算法（PSO）进一步优化，设定粒子参数、以匹配度为 适应度函数进行迭代寻优，得到更优
+2026-06-06 14:37:07 [INFO] 3-3 task_coverage=0.662500 evidence=市的康养资源分布的空间特征，判断康养资源的富集 区和匮乏区，通过分析康养资源分布与居民健康指标的相关性，判断当前康养资源分布 的合理性。在此基础上，针对康养资源分布不均衡的问题，提出优化布局的初步思路， 重点提升康养服务的公平性与可达性。 （2）问题二是康养城市综合评价模型的构建与应用问题。康养城市建设已成为提 升城市竞争力与居民生
+2026-06-06 14:37:07 [INFO] 3-3 method_fit=0.963472 evidence=立体评价框架。因此，针对问题 二，选取各个维度下具有代表性的定量指标，我们设计了基于熵权和TOPSIS 方法的 多维综合评价模型来评价北京市康养城市的发展水平，根据评价结果进行聚类对多个区 进行发展水平等级划分，并通过多种可视化分析北京市不同地区发展水平及分布差异， 最后创新性的应用了强化学习方法进行提出改进意见，该方法定量的指出了每个区未
+2026-06-06 14:37:09 [WARNING] Missing feature values detected: problem1={'I08_结果结论一致性': 1} key={}
+2026-06-06 14:37:09 [INFO] F2 key score range: 50.336167 - 75.196292
+2026-06-06 14:37:09 [INFO] Q_cur range: 28.562951 - 63.341079
+2026-06-06 14:37:09 [INFO] Current evaluation saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\appendix3_current_evaluation.xlsx
+2026-06-06 14:37:09 [INFO] Low feature report rows: 31
+2026-06-06 14:37:09 [INFO] Finished Step 24

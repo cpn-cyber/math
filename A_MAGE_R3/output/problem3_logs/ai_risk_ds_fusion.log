@@ -1,0 +1,23 @@
+2026-06-06 15:17:12 [INFO] Chinese font selected: Microsoft YaHei
+2026-06-06 15:17:12 [INFO] Starting Step 26 AI-assisted writing risk D-S fusion.
+2026-06-06 15:17:12 [INFO] No external detector is used; outputs are not misconduct or authorship judgements.
+2026-06-06 15:17:12 [INFO] Using sections_dir=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\appendix3_intermediate\sections_refined
+2026-06-06 15:17:12 [INFO] Evidence reliability: {'template_expression': 0.75, 'unsupported_conclusion': 0.8, 'data_untraceable': 0.85, 'method_result_jump': 0.85}
+2026-06-06 15:17:12 [INFO] 3-1 raw paragraph candidates=127
+2026-06-06 15:17:12 [INFO] 3-1 scored_paragraphs=125 skipped_formula_or_short=2
+2026-06-06 15:17:12 [INFO] 3-2 raw paragraph candidates=120
+2026-06-06 15:17:12 [INFO] 3-2 scored_paragraphs=119 skipped_formula_or_short=1
+2026-06-06 15:17:12 [INFO] 3-3 raw paragraph candidates=376
+2026-06-06 15:17:12 [INFO] 3-3 scored_paragraphs=340 skipped_formula_or_short=36
+2026-06-06 15:17:13 [INFO] 3-1 evidence aggregated: e1=0.185511 e2=0.257231 e3=0.688402 e4=0.411642 boosts=(0.013,0.004,0.015)
+2026-06-06 15:17:13 [INFO] 3-2 evidence aggregated: e1=0.151020 e2=0.250232 e3=0.666227 e4=0.459086 boosts=(0.013,0.003,0.015)
+2026-06-06 15:17:13 [INFO] 3-3 evidence aggregated: e1=0.218083 e2=0.316922 e3=0.622980 e4=0.452216 boosts=(0.000,0.008,0.003)
+2026-06-06 15:17:13 [INFO] 3-1 D-S conflict normal: K_max=0.504526
+2026-06-06 15:17:13 [INFO] 3-2 D-S conflict normal: K_max=0.497606
+2026-06-06 15:17:13 [INFO] 3-3 D-S conflict normal: K_max=0.457038
+2026-06-06 15:17:14 [INFO] Saved chart: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_charts\ai_risk_radar.png
+2026-06-06 15:17:14 [INFO] Saved chart: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_charts\ai_risk_bar.png
+2026-06-06 15:17:15 [INFO] Saved chart: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_charts\ai_evidence_stack.png
+2026-06-06 15:17:15 [INFO] No high D-S conflict detected. max_conflict=0.504526
+2026-06-06 15:17:15 [INFO] Required disclaimer written to fusion and disclaimer tables: 该指标仅表示文本存在 AI辅助写作风险，不构成学术不端判断，也不等同于AI生成判定。
+2026-06-06 15:17:15 [INFO] Finished Step 26.

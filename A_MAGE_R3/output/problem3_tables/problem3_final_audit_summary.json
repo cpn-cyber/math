@@ -1,0 +1,17 @@
+{
+  "status_counts": {
+    "PASS": 53,
+    "WARNING": 7
+  },
+  "core_missing_or_problem_files": [],
+  "data_consistency_pass": true,
+  "disclaimer_complete": true,
+  "paper_ready_conclusion_count": 10,
+  "recommended_top_figures": [
+    "ai_risk_radar.png",
+    "ai_risk_bar.png",
+    "agent_disagreement_bar.png",
+    "revision_priority_bar.png",
+    "score_before_after.png"
+  ]
+}

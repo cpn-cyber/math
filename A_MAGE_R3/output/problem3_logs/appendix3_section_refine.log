@@ -1,0 +1,5 @@
+2026-06-06 14:23:15 [INFO] A_MAGE_R3.problem3.appendix3_section_refine | Starting Step 23B Appendix 3 section quality audit and results refinement
+2026-06-06 14:23:16 [INFO] A_MAGE_R3.problem3.appendix3_section_refine | 3-1 refined: results=found missing=sensitivity_analysis,error_analysis,model_evaluation,appendix recognition_failed=sensitivity_analysis,error_analysis,model_evaluation
+2026-06-06 14:23:16 [INFO] A_MAGE_R3.problem3.appendix3_section_refine | 3-2 refined: results=found missing=error_analysis recognition_failed=error_analysis
+2026-06-06 14:23:16 [INFO] A_MAGE_R3.problem3.appendix3_section_refine | 3-3 refined: results=found missing=sensitivity_analysis,error_analysis recognition_failed=sensitivity_analysis,error_analysis
+2026-06-06 14:23:16 [INFO] A_MAGE_R3.problem3.appendix3_section_refine | Finished Step 23B: papers=3 refined_results_found=3 candidate_results=0

@@ -1,0 +1,16 @@
+2026-06-06 14:07:59 [INFO] A_MAGE_R3.problem3.appendix3_parse_sections | Starting Step 23 Appendix 3 PDF parse and section split
+2026-06-06 14:07:59 [INFO] A_MAGE_R3.pdf_parser | 3-1.pdf parsed successfully: pages=28 chars=20546 blank_pages=0
+2026-06-06 14:07:59 [INFO] A_MAGE_R3.problem3.appendix3_parse_sections | 3-1.pdf parsed for Appendix 3
+2026-06-06 14:07:59 [INFO] A_MAGE_R3.pdf_parser | 3-2.pdf parsed successfully: pages=35 chars=27371 blank_pages=0
+2026-06-06 14:07:59 [INFO] A_MAGE_R3.problem3.appendix3_parse_sections | 3-2.pdf parsed for Appendix 3
+2026-06-06 14:07:59 [INFO] A_MAGE_R3.pdf_parser | 3-3.pdf parsed successfully: pages=69 chars=46988 blank_pages=0
+2026-06-06 14:07:59 [INFO] A_MAGE_R3.problem3.appendix3_parse_sections | 3-3.pdf parsed for Appendix 3
+2026-06-06 14:07:59 [INFO] A_MAGE_R3.problem3.appendix3_parse_sections | Appendix 3 PDF parse report saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\appendix3_pdf_parse_report.xlsx
+2026-06-06 14:07:59 [WARNING] A_MAGE_R3.problem3.appendix3_parse_sections | 3-1.txt missing sections: sensitivity_analysis,error_analysis,model_evaluation,appendix
+2026-06-06 14:07:59 [INFO] A_MAGE_R3.problem3.appendix3_parse_sections | 3-1.txt section split done: headings=18 missing=4 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\appendix3_intermediate\sections\3-1.json
+2026-06-06 14:08:00 [WARNING] A_MAGE_R3.problem3.appendix3_parse_sections | 3-2.txt missing sections: results,error_analysis
+2026-06-06 14:08:00 [INFO] A_MAGE_R3.problem3.appendix3_parse_sections | 3-2.txt section split done: headings=16 missing=2 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\appendix3_intermediate\sections\3-2.json
+2026-06-06 14:08:01 [WARNING] A_MAGE_R3.problem3.appendix3_parse_sections | 3-3.txt missing sections: sensitivity_analysis,error_analysis
+2026-06-06 14:08:01 [INFO] A_MAGE_R3.problem3.appendix3_parse_sections | 3-3.txt section split done: headings=17 missing=2 json=C:\Users\13178\Desktop\A题\A_MAGE_R3\data\appendix3_intermediate\sections\3-3.json
+2026-06-06 14:08:01 [INFO] A_MAGE_R3.problem3.appendix3_parse_sections | Appendix 3 section split report saved: C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\appendix3_section_split_report.xlsx
+2026-06-06 14:08:01 [INFO] A_MAGE_R3.problem3.appendix3_parse_sections | Finished Step 23: pdf_total=3 parse_success=3 ocr_used=0 section_total=3

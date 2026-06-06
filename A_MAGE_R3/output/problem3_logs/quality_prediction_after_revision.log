@@ -1,0 +1,18 @@
+2026-06-06 16:01:09 [INFO] Step 29 quality prediction after revision started
+2026-06-06 16:01:09 [INFO] Score gain mapping: score_gain=min(expected_total_gain_knapsack*0.12, 12)
+2026-06-06 16:01:09 [INFO] Risk reduction rules: A11=0.03 data; A12=0.03 method; A7=0.015 method; A10/A14=0.015 writing/application
+2026-06-06 16:01:09 [INFO] Disagreement reduction rules: weakest target=0.25 std; >=3 actions=0.10 std; A11/A12=0.05 std
+2026-06-06 16:01:09 [INFO] Loaded revision_plan from C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\revision_action_optimization.xlsx
+2026-06-06 16:01:09 [INFO] Loaded revision_details from C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\revision_action_details.xlsx
+2026-06-06 16:01:09 [INFO] Loaded subjectivity from C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\multi_agent_subjectivity_analysis.xlsx
+2026-06-06 16:01:09 [INFO] Loaded ai_fusion from C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\ai_risk_ds_fusion.xlsx
+2026-06-06 16:01:09 [INFO] Loaded ai_evidence from C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\ai_risk_evidence.xlsx
+2026-06-06 16:01:09 [INFO] Loaded current_evaluation from C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\appendix3_current_evaluation.xlsx
+2026-06-06 16:01:09 [INFO] Loaded problem1_base from C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\appendix3_problem1_base_scores.xlsx
+2026-06-06 16:01:09 [INFO] Loaded features_normalized from C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\appendix3_features_normalized.xlsx
+2026-06-06 16:01:09 [INFO] Merged Step 29 input columns: ['paper_id', 'filename', 'disagreement_level', 'weakest_agent', 'strongest_agent', 'agent_score_std', 'R_AI', 'risk_level', 'main_risk_sources', 'selected_actions_knapsack', 'selected_actions_greedy', 'expected_total_gain_knapsack', 'expected_total_gain_greedy', 'total_cost_knapsack', 'total_cost_greedy', 'risk_reduction_summary', 'revision_priority_level', 'final_recommendation_text', 'agent_score_mean', 'min_score_agent', 'main_risk_source', 'Q_cur_baseline', 'current_grade', 'F1_score', 'F2_key_score', 'F1_score_problem1', 'R_AI_ai_fusion', 'risk_level_ai_fusion', 'main_risk_source_ai_fusion']
+2026-06-06 16:01:11 [INFO] Used sources: ['C:\\Users\\13178\\Desktop\\A题\\A_MAGE_R3\\output\\problem3_tables\\revision_action_optimization.xlsx', 'C:\\Users\\13178\\Desktop\\A题\\A_MAGE_R3\\output\\problem3_tables\\revision_action_details.xlsx', 'C:\\Users\\13178\\Desktop\\A题\\A_MAGE_R3\\output\\problem3_tables\\multi_agent_subjectivity_analysis.xlsx', 'C:\\Users\\13178\\Desktop\\A题\\A_MAGE_R3\\output\\problem3_tables\\ai_risk_ds_fusion.xlsx', 'C:\\Users\\13178\\Desktop\\A题\\A_MAGE_R3\\output\\problem3_tables\\ai_risk_evidence.xlsx', 'C:\\Users\\13178\\Desktop\\A题\\A_MAGE_R3\\output\\problem3_tables\\appendix3_current_evaluation.xlsx', 'C:\\Users\\13178\\Desktop\\A题\\A_MAGE_R3\\output\\problem3_tables\\appendix3_problem1_base_scores.xlsx', 'C:\\Users\\13178\\Desktop\\A题\\A_MAGE_R3\\output\\problem3_tables\\appendix3_features_normalized.xlsx']
+2026-06-06 16:01:11 [INFO] Average score gain: 7.564236
+2026-06-06 16:01:11 [INFO] Average risk reduction: 0.070000
+2026-06-06 16:01:11 [INFO] Average disagreement std reduction: 6.018782
+2026-06-06 16:01:11 [INFO] Step 29 outputs written

@@ -1,0 +1,19 @@
+2026-06-06 16:14:35 [INFO] Step 30 robustness analysis started
+2026-06-06 16:14:35 [INFO] Parameter grid size: 225
+2026-06-06 16:14:35 [INFO] Score gain factors: [0.08, 0.1, 0.12, 0.14, 0.16]
+2026-06-06 16:14:35 [INFO] Budgets: [6, 8, 10, 12, 14]
+2026-06-06 16:14:35 [INFO] Risk multipliers: [0.8, 1.0, 1.2]
+2026-06-06 16:14:35 [INFO] Disagreement multipliers: [0.8, 1.0, 1.2]
+2026-06-06 16:14:35 [INFO] Loaded prediction from C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\quality_prediction_after_revision.xlsx
+2026-06-06 16:14:35 [INFO] Loaded prediction_details from C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\quality_prediction_details.xlsx
+2026-06-06 16:14:35 [INFO] Loaded revision_plan from C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\revision_action_optimization.xlsx
+2026-06-06 16:14:35 [INFO] Loaded revision_details from C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\revision_action_details.xlsx
+2026-06-06 16:14:35 [INFO] Loaded action_library from C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\revision_action_library.xlsx
+2026-06-06 16:14:35 [INFO] Loaded subjectivity from C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\multi_agent_subjectivity_analysis.xlsx
+2026-06-06 16:14:35 [INFO] Loaded ai_fusion from C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\ai_risk_ds_fusion.xlsx
+2026-06-06 16:14:35 [INFO] Loaded ai_evidence from C:\Users\13178\Desktop\A题\A_MAGE_R3\output\problem3_tables\ai_risk_evidence.xlsx
+2026-06-06 16:14:40 [INFO] Average score gain interval: 3.004779 ~ 12.000000
+2026-06-06 16:14:40 [INFO] Positive gain proportion: 1.000000
+2026-06-06 16:14:40 [INFO] Average risk reduction interval: 0.036000 ~ 0.102000
+2026-06-06 16:14:40 [INFO] Average std reduction interval: 3.611269 ~ 7.222538
+2026-06-06 16:14:40 [INFO] Step 30 outputs written
