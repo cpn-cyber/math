@@ -43,5 +43,5 @@
 ## 表X 成对排序辅助检验表
 - 来源文件：`output/problem2_tables/pairwise_ranking_check.xlsx；output/problem2_tables/pairwise_group_validation.xlsx`
 - 建议位置：第5.8节
-- 说明：展示pairwise accuracy和留一论文组验证。
+- 说明：展示pairwise accuracy和留一论文组结果，仅作为弱监督排序一致性辅助审计；需说明MAD=0特征可能带来差分尺度放大。
 

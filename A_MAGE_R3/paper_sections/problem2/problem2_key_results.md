@@ -26,7 +26,7 @@
 - **pairwise accuracy**：total_pairs=45, near_tie=3, overall=0.622222, group_mean=0.622222, no_near_tie=0.595238
 
 ## Conclusion
-- **writeable conclusion**：Key features have moderate auxiliary ranking support; PLS/QAF are limited and auditable, not strong prediction models.
+- **writeable conclusion**：Key features are mainly supported by correlation, grey relation, PLS-VIP, Bootstrap and delete-one sensitivity; pairwise ranking is only an auxiliary consistency audit because MAD=0 features may amplify pairwise differences.
 - **scope defense**：Problem 2 explains feature sensitivity under the Problem 1 sealed weak-supervised evaluation system; it is not an independent external ground-truth prediction task.
 
 ## 最终可写结论
@@ -35,4 +35,4 @@
 - `method_fit`、`section_coverage`、`task_coverage`、`objective_constraint_completeness`、`figure_table_explanation_rate` 等指标对质量差异具有较稳定解释力。
 - `total_chars` 与 `page_count` 只能解释为信息承载量和完整性相关，不代表篇幅越长越好。
 - PLS 和 QAF 的预测能力有限，应作为关键特征解释、稳健性审计和保守校正工具，而非强预测模型；PLS的LOOCV应称为近似留一审计。
-- 成对排序辅助检验为中等支持，其优劣方向来自 `Q_label` 差值，不能写成独立外部验证。
+- 成对排序辅助检验的优劣方向来自 `Q_label` 差值，且 `figure_table_explanation_rate` 等特征存在MAD=0后的尺度放大风险，因此只能写成辅助一致性审计，不能写成独立外部验证或主要支撑证据。

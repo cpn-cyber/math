@@ -105,13 +105,15 @@ $$K_j=0.35|r^S_j|+0.25G_j+0.25VIP^{norm}_j+0.15SC_j,$$
 
 该检验中的相对优劣方向由 `Q_i` 的差值确定，而非外部人工排序或官方排序，因此其作用是检查最终关键特征能否较好复现弱监督标签诱导的相对排序，而不是提供独立外部验证。
 
+此外，Step14稳健标准化日志显示 `figure_table_explanation_rate` 等特征存在 `MAD=0` 情况，采用 $\varepsilon$ 兜底缩放后，在成对差分加权中可能放大局部贡献量级。因此，Step19结果只作为排序一致性辅助审计和复现性风险提示，不作为支撑关键特征结论的主要证据。
+
 结果显示，成对样本数为 `45`，near_tie数量为 `3`，总体pairwise accuracy为 `0.622222`，留一论文组平均accuracy为 `0.622222`，accuracy标准差为 `0.140546`，去除near_tie后accuracy为 `0.595238`，`2-1` 留一组accuracy为 `0.888889`。
 
-该结果对K_final关键特征结论提供中等支持，但不是强验证。小样本、弱监督标签和成对样本非独立性仍限制了排序结论的泛化。
+该结果仅说明最终关键特征与弱监督标签诱导排序之间存在一定一致性参考，但受小样本、弱监督标签、成对样本非独立性以及MAD=0特征尺度放大的共同限制，不能写作独立验证或中等强度支撑证据。
 
 ## 5.9 第二问结果总结
 
-综合相关性分析、灰色关联度、PLS-VIP、Bootstrap稳定性、删除单样本敏感性和成对排序辅助检验，第二问最终识别出的关键特征为：total_chars, method_fit, page_count, section_coverage, objective_constraint_completeness, task_coverage, figure_table_explanation_rate, conclusion_echo_rate。
+综合相关性分析、灰色关联度、PLS-VIP、Bootstrap稳定性和删除单样本敏感性分析，第二问最终识别出的关键特征为：total_chars, method_fit, page_count, section_coverage, objective_constraint_completeness, task_coverage, figure_table_explanation_rate, conclusion_echo_rate。成对排序仅作为上述结论的辅助一致性审计，不作为主证据。
 
 其中，`total_chars` 和 `page_count` 仅表示信息承载量和结构完整性相关，并不意味着篇幅越长越好；`method_fit`、`task_coverage`、`section_coverage`、`objective_constraint_completeness`、`figure_table_explanation_rate` 和 `conclusion_echo_rate` 更能体现论文的实质质量。由此可见，影响数学建模论文质量的关键因素不是单纯篇幅、公式数量或图表数量，而是方法是否贴题、任务是否覆盖、结构是否完整、目标函数与约束是否清晰、图表是否被解释以及结论是否形成闭环。
 
